@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {Gupta07}
+\btxnamefont {\btxlastnamefont {Gupta}, A.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Jalote}, P.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {An experimental evaluation of the effectiveness and
+  efficiency of the test driven development}{An Experimental Evaluation of the
+  Effectiveness and Efficiency of the Test Driven Development}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Empirical Software Engineering and
+  Measurement, 2007. ESEM 2007. First International Symposium on},
+  \btxpageslong {}\ 285--294, \btxprintmonthyear{.}{Sept}{2007}{long}.
+
+\bibitem {Wilkerson12}
+\btxnamefont {\btxlastnamefont {Wilkerson}, J.W.}, \btxnamefont
+  {\btxlastnamefont {Nunamaker},~J.F., Jr.}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Mercer}, R.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Comparing the defect reduction benefits of code inspection
+  and test-driven development}{Comparing the Defect Reduction Benefits of Code
+  Inspection and Test-Driven Development}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  38(3):547--560, \btxprintmonthyear{.}{May}{2012}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+
+\end{thebibliography}

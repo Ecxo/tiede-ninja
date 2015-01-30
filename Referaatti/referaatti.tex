@@ -1,0 +1,232 @@
+% --- Template for thesis / report with tktltiki2 class ---
+% 
+% last updated 2013/02/15 for tkltiki2 v1.02
+
+\documentclass[finnish]{tktltiki2}
+
+% tktltiki2 automatically loads babel, so you can simply
+% give the language parameter (e.g. finnish, swedish, english, british) as
+% a parameter for the class: \documentclass[finnish]{tktltiki2}.
+% The information on title and abstract is generated automatically depending on
+% the language, see below if you need to change any of these manually.
+% 
+% Class options:
+% - grading                 -- Print labels for grading information on the front page.
+% - disablelastpagecounter  -- Disables the automatic generation of page number information
+%                              in the abstract. See also \numberofpagesinformation{} command below.
+%
+% The class also respects the following options of article class:
+%   10pt, 11pt, 12pt, final, draft, oneside, twoside,
+%   openright, openany, onecolumn, twocolumn, leqno, fleqn
+%
+% The default font size is 11pt. The paper size used is A4, other sizes are not supported.
+%
+% rubber: module pdftex
+
+% --- General packages ---
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsfonts,amsmath,amssymb,amsthm,booktabs,color,enumitem,graphicx}
+\usepackage[pdftex,hidelinks]{hyperref}
+
+% Automatically set the PDF metadata fields
+\makeatletter
+\AtBeginDocument{\hypersetup{pdftitle = {\@title}, pdfauthor = {\@author}}}
+\makeatother
+
+% --- Language-related settings ---
+%
+% these should be modified according to your language
+
+% babelbib for non-english bibliography using bibtex
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{finnish}
+
+% add bibliography to the table of contents
+\usepackage[nottoc]{tocbibind}
+% tocbibind renames the bibliography, use the following to change it back
+\settocbibname{Lähteet}
+
+% --- Theorem environment definitions ---
+
+\newtheorem{lau}{Lause}
+\newtheorem{lem}[lau]{Lemma}
+\newtheorem{kor}[lau]{Korollaari}
+
+\theoremstyle{definition}
+\newtheorem{maar}[lau]{Määritelmä}
+\newtheorem{ong}{Ongelma}
+\newtheorem{alg}[lau]{Algoritmi}
+\newtheorem{esim}[lau]{Esimerkki}
+
+\theoremstyle{remark}
+\newtheorem*{huom}{Huomautus}
+
+
+% --- tktltiki2 options ---
+%
+% The following commands define the information used to generate title and
+% abstract pages. The following entries should be always specified:
+
+\title{Test Driven Developement-menetelmän tehokkuus ja laatu}
+\author{Petri Pihlajaniemi}
+\date{\today}
+\level{Referaatti}
+\abstract{Tiivistelmä.}
+
+% The following can be used to specify keywords and classification of the paper:
+
+%\keywords{avainsana 1, avainsana 2, avainsana 3}
+
+% classification according to ACM Computing Classification System (http://www.acm.org/about/class/)
+% This is probably mostly relevant for computer scientists
+% uncomment the following; contents of \classification will be printed under the abstract with a title
+% "ACM Computing Classification System (CCS):"
+% \classification{}
+
+% If the automatic page number counting is not working as desired in your case,
+% uncomment the following to manually set the number of pages displayed in the abstract page:
+%
+% \numberofpagesinformation{16 sivua + 10 sivua liitteissä}
+%
+% If you are not a computer scientist, you will want to uncomment the following by hand and specify
+% your department, faculty and subject by hand:
+%
+% \faculty{Matemaattis-luonnontieteellinen}
+% \department{Tietojenkäsittelytieteen laitos}
+% \subject{Tietojenkäsittelytiede}
+%
+% If you are not from the University of Helsinki, then you will most likely want to set these also:
+%
+% \university{Helsingin Yliopisto}
+% \universitylong{HELSINGIN YLIOPISTO --- HELSINGFORS UNIVERSITET --- UNIVERSITY OF HELSINKI} % displayed on the top of the abstract page
+% \city{Helsinki}
+%
+
+
+\begin{document}
+
+% --- Front matter ---
+
+%\frontmatter      % roman page numbering for front matter
+
+\maketitle        % title page
+%\makeabstract     % abstract page
+
+%\tableofcontents  % table of contents
+
+% --- Main matter ---
+
+\mainmatter       % clear page, start arabic page numbering
+
+
+% Mikä on TDD?
+
+\section*{Test Driven Development}
+
+Test Driven Development (TDD) on Kent Beckin esittelemä ohjelmistokehityksen suunnittelumalli, jossa kehittäjä kirjoittaa automaattiset testit ennen koodia. Testin kirjoittamisen jälkeen kehittäjä kirjoittaa ohjelmakoodin jota pidetään hyväksyttävänä vasta, kun se läpäisee uuden ja kaikki vanhat testit. TDD:tä käyttäessä ei vaadita tarkkaa suunnittelua, vaan ohjelman rakenne kehittyy iteratiivisesti ohjelman vaatimusmäärittelyn mukaan rakennettujen testien perusteella.
+
+%Pitääkö tässä pistää lähteistä otetuista väitteistä kaikista viittaus, tulee joka kappaleeseen samat. Nämä lauseet siis artikkeleista referoitu.
+
+
+% Kuka testasi
+
+
+
+Perehdyin kahteen TDD:n toimivuutta käsittelevään artikkeliin, Guptan ja Jaloten \textit{An Experimental Evaluation of the Effectiveness and Efficiency of the Test Driven Development}\cite{Gupta07} sekä Wilkersonin, Nunamakerin ja Mercerin \textit{Comparing the Defect Reduction Benefits of Code Inspection and Test-Driven Development}\cite{Wilkerson12}. Tutkimuksissa on arvioitu käytännön ohjelmistokehityksen perusteella menetelmän toimivuutta.
+
+
+\section*{Testimenetelmät}
+
+Molemmissa kokeissa koeryhmänä on käytetty yliopisto-opiskelijoita. Guptan ja Jaloten ryhmässä oli IIT Kanpurin Advanced Object-Oriented Analysis and Modeling-kurssin 25 oppilasta, joista 22 tietojenkäsittelytieteen opiskelijoita. Kolme elektroniikan opiskelijaa jaettiin satunnaisesti tietojenkäsittelytietelijöistä muodostettuihin kahteen 11 hengen ryhmään. Opiskelijoilla oli valmiiksi vähintään kahden ohjelmointikurssin taidot ja he tunsivat tutkimuksessa käytetyn Java-ohjelmointikielen. Ryhmien tehtävänä oli kirjoittaa kaksi ohjelmaa: opiskelijoiden rekisteröintijärjestelmä (P1) ja yksinkertainen raha-automaattiohjelma (P2).
+
+Kahden viikon aikana ryhmät käyttivät perinteistä CCD-ohjelmistokehitystä jossa he ensin suunnittelivat sekvenssi- ja luokkakaavioiden avulla ohjelman rakennetta sekä TDD-ohjelmistokehitystä. Ryhmä 1 teki ensin ohjelman P1 käyttäen CCD-menetelmiä ja ohjelman P2 TDD-menetelmällä, ryhmä 2 toimi päinvastoin. Kolmannella viikolla ryhmille annettiin valmiit testipaketit, ilmenneet virheet ohjelmakoodissa korjattiin ja raportoitiin. Oppilaat palauttivat tiedonkeräyslomakkeet ohjelmien kehitysvaiheiden ja testausvaiheen jälkeen. Lisäksi lopussa oppilaat palauttivat myös kyselylomakkeen.
+
+Wilkersonin, Nunamakerin ja Mercerin tutkimuksessa oli Yhdysvaltalaisen yliopiston olio-ohjelmointiin ja suunnitteluun keskittyneen kurssin osaanottajat, joista kaikki ylioppilaita. 58 vapaaehtoisesta valittiin lähtotasotestin perusteella 40 korkeimman pistemäärän saanutta oppilasta koeryhmään. Tutkimukseen liittyneet tehtävät kuuluivat myös kurssin tehtäviin ja osallistujien kesken arvottiin 100 dollarin rahapalkinto, joten tutkijat uskovat opiskelijoiden olleen motivoituneita. Oppilaat jaettiin algoritmin perusteella neljään tasaiseen 10 hengen ryhmään. Osa oppilaista jouduttiin kuitenkin poistamaan kokeesta, eivätkä lopulliset ryhmät olleet tasavahvoja.  Oppilaille annettiin yksi luento JUnitin ja TDD:n käytöstä.
+
+Tutkimuksen koehenkilöt tekivät tehtäväviä itsenäisesti. Ryhmät käyttivät eri menetelmiä: kontrolliryhmä ei käyttänyt katselmointia eikä TDD:tä, TDD-ryhmä käytti testivetoista ohjelmistokehitystä, Inspection-ryhmä teki korjauksia tarkistuksen perusteella ja Inspection+TDD-ryhmä käytti molempia menetelmiä. Kolmen tarkistajan ryhmä tarkisti Inspection ja Inspection+TDD ryhmien koehenkilöiden palauttamat tuotokset, jonka jälkeen oppilaille annettiin viikko aikaa korjata merkittävät viat. Tarkistajat etsivät koodista puuttuvia toimintoja, virheellisiä toimintoja ja virheellistä Java-koodia. Oppilaiden korjattua virheet, he palauttivat raportin jossa tarkistajian havaitsemat virheet oli luokiteltu joko selvitetyiksi, huomioimattomiksi, ei virhettä-luokkaan tai luokkaan muu. Ei virhettä- ja muu-luokkaan luokitelluille virheille vaadittiin myös tarkempi selitys.
+
+
+%Mitä havaittiin?
+
+
+
+\section*{Havainnot}
+
+Guptan ja Jaloten tutkimusryhmässä ohjelmalla P1 havaittiin koodin laadun olevan parempaa TDD-ryhmässä kuin CCD-ryhmässä. TTD-ryhmän havaittiin käyttäneen vähemmän vaivaa (effort), mutta kehittäjän tuottavuudessa ei löytynyt tilastollisesti merkittävää eroa CCD-ryhmään. CCD-ryhmän käytti vähemmän vaivaa testaamiseen ohjelman kehitysvaiheessa joka saattoi vaikuttaa heikompaan koodin laatuun, toisaalta he myös tarvitsivat enemmän aikaa virheiden havaitsemiseen ja korjaamiseen. 
+Ohjelmalla P2 tulokset olivat tasaisemmat: tutkijat eivät pystyneet kaatamaan nollahypoteesia kehitysmenetelmien vaatiman vaivan yhtäsuuruudesta. Kehittäjien käyttämässä vaivassa tulokset olivat samansuuntaisia kuin ohjelman P1 tapauksessa. CCD-ryhmän ohjelma selvisi paremmin testitapauksien läpäisystä ja koodi oli laadukkaampaa, toisaalta he käyttivät enemmän vaivaa kuin TDD-ryhmä. CCD-ryhmä joutui myös korjaamaan vähemmän virheitä.
+
+Molemmilla ohjelmilla siis havaittiin samankaltaisia tuloksia, tutkijat kuitenkin havaitsivat, että oppilasryhmissä oli eroja: ryhmässä kaksi tehtiin enemmän testausta kuin ryhmässä yksi. Tämä saattaa selittää ohjelmien laatujen eron. 
+
+Oppilaiden palauttaman kyselytutkimus selvitti subjektiivisia näkemyksiä menetelmistä. TDD:n testikattavuutta pidettiin luotettavampana, kun taas CDD:n suunnittelua pidettiin parempana. Tämä oli odotettavaa, koska CDD vaatii enemmän ennakkosuunnittelua. Noin 53\% oppilaista piti parhaimpana menetelmien sekoitusta, jossa tehtiin ensin suunnitelmia ja sitten käytettiin TDD:tä.
+
+Gupta ja Jalote mukaan TDD-menetelmä oli tehokkaampi, se vaati vähemmän vaivaa ja lisäsi hieman kehittäjän tuottavuutta. Toisaalta koodin laatu oli enemmän sidoksissa testaukseen nähtyyn vaivaan ohjelman kehityksen aikana kuin käytettyyn menetelmään.
+
+Wilkerson, Nunamaker ja Mercer mittasivat tuloksia kahdella mittarilla: jäljellä olevien virheiden määrällä ja kustannuksella. Virheiden määrä laskettiin automaattisten testien virheiden perusteella. Kustannuksella tarkoitetaan käytettyjä miestyötunteja. TDD-ryhmällä laskettiin kehittäjän käyttämät tunnit, ja tarkistustusta käyttävissä ryhmissä myös tarkistajian käyttämä aika.
+
+Inspection+TDD ryhmällä havaittiin vähiten virheitä ja pelkkää TDD:tä käyttävällä eniten, enemmän kuin kontrolliryhmällä. Tulokset ovat kuitenkin vääristyneet johtuen esimerkiksi oppilaiden erilaisista lähtötasoista, joten tuloksia tasoitettiin lähtötasotestien ja tarkistusjärjestyksen perusteella. Tämä nosti TDD:n kolmanneksi ohi kontrolliryhmän. TDD:n kustannukset oli matalimmat, n. 11 tuntia verrattuna kontrolliryhmän 12.79 tuntiin. Tarkistusta ja TDD:tä käyttävän ryhmän kustannus oli 31.71 tuntia kun pelkkää tarkistusta käyttävän ryhmän tulos oli 20.88, tutkimuksen tekijät eivät pystyneet selittämään tätä eroa.
+
+Tutkijat toteavat havainneensa koodin tarkistuksen tehokkaammaksi kuin TDD:n virheiden vähentämisessä, mutta se on myös kalliimpaa. TDD:n vähentää kustannuksia verrattuna kontrolliryhmään, mutta merkittävää eroa virheiden määrässä ei löytynyt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --- References ---
+%
+% bibtex is used to generate the bibliography. The babplain style
+% will generate numeric references (e.g. [1]) appropriate for theoretical
+% computer science. If you need alphanumeric references (e.g [Tur90]), use
+%
+% \bibliographystyle{babalpha-lf}
+%
+% instead.
+
+\bibliographystyle{babplain-lf}
+\bibliography{../ref}
+
+
+
+
+% --- Appendices ---
+
+% uncomment the following
+
+% \newpage
+% \appendix
+% 
+% \section{Esimerkkiliite}
+
+\end{document}

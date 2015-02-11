@@ -1,0 +1,49 @@
+\begin{thebibliography}{SMGM13}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{Cri06}]{Crispin06}
+\btxnamefont {\btxlastnamefont {Crispin}, L.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Driving software quality: How test-driven development
+  impacts software quality}{Driving Software Quality: How Test-Driven
+  Development Impacts Software Quality}}.
+\newblock \btxjournalfont {Software, IEEE}, 23(6):70--71,
+  \btxprintmonthyear{.}{Nov}{2006}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
+\bibitem [{Muc08}]{Muccini08}
+\btxnamefont {\btxlastnamefont {Muccini}, Henry}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Software testing: Testing new software paradigms and new
+  artifacts}{Software testing: Testing new software paradigms and new
+  artifacts}}.
+\newblock \btxjournalfont {Wiley Encyclopedia of Computer Science and
+  Engineering}, 2008.
+
+\bibitem [{SMGM13}]{Stoica13}
+\btxnamefont {\btxlastnamefont {Stoica}, Marian}, \btxnamefont
+  {\btxlastnamefont {Mircea}, Marinela}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Ghilic-Micu}, Bogdan}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Software development: Agile vs.
+  traditional}{Software Development: Agile vs. Traditional}}.
+\newblock \btxjournalfont {Informatica Economica}, 17(4):64--76, 2013.
+
+\bibitem [{Whi00}]{Whittaker00}
+\btxnamefont {\btxlastnamefont {Whittaker}, J.A.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {What is software testing? and why is it so
+  hard?}{What is software testing? And why is it so hard?}}
+\newblock \btxjournalfont {Software, IEEE}, 17(1):70--79,
+  \btxprintmonthyear{.}{Jan}{2000}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
+\end{thebibliography}

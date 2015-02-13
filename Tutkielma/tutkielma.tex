@@ -127,53 +127,114 @@
 
 \section{Johdanto}
 
-%Yleistä, miksi testataan
+%***Yleistä, miksi testataan***
 
 Ohjelmistotestauksen tarkoituksena on parantaa ohjelman laatua havaitsemalla ja poistamalla virheitä ohjelmakoodissa. Testauksen avulla ei voida todistaa ohjelman olevan virheetön, mutta sillä voidaan todistaa virheiden olemassaolo. Ohjelmaa testataan erilaisilla syötteillä, jonka jälkeen ohjelman toimintaa verrataan odotettuun oikeaan lopputulokseen. Jos lopputuloksissa on eroa, on testi löytänyt virheen.   \cite{Muccini08}.
 
-%Prosessista on paljon lisätietoa Whittakerin artikkelissa, ehkä sieltä lisää?
+%***Prosessista on paljon lisätietoa Whittakerin artikkelissa, ehkä sieltä lisää?***
 
 Testien kirjoittajan on tunnettava ohjelman rakenne ja toiminta pystyäkseen suunnittelemaan ja kirjoittamaan testejä. Testin kirjoittamiseni on vaikea ja aikaa vievä prosessi, ja se vaatii kehittäjältä hyviä taitoja. \cite{Whittaker00}
 
 Ohjelmiston testaus suoritetaan eri vaiheissa riippuen valitusta ohjelmistokehitysmenetelmästä. Vuonna 1970 Winston W. Roycen määrittelemä \emph{vesiputousmalli} (Waterfall Model) kuvaa ohjelmistokehityksen viisivaiheisena prosessessina: ensin analysoidaan vaatimukset ja suunnitellaan koko ohjelma tarkasti, sitten kirjoitetaan varsinainen ohjelmakoodi ja lopuksi tuotettu ohjelmakoodi testataan. Vaiheittaisissa menetelmissä (Incremental Model) edellinen vesiputousmalli on jaettu useisiin pienempiin palasiin; koko ohjelmaa ei siis tarvitse suunnitella ja toteuttaa kerralla noudattaen vesiputousmallin järjestystä, vaan ohjelman rakentuu pienemmistä osista jotka on suunniteltu ja toteutettu erikseen. \emph{Stoica et al} mukaan testaus on helppoa inkrementaalisissa menetelmissäi, kun taas vesiputousmallissa testauksessa havaittujen virheiden korjaaminen voi olla hankaa. Ketterät (Agile Model) ohjelmistokehityksen menetelmät perustuvat inkrementaaliseen malliin. \cite{Stoica13}. Yksi erityisesti testaamiseen keskittyvät toimintapa on ketteriin malleihin perustuva \emph{Test Driven Development}. \cite{Crispin06}
 
+Testaaminen on aika ikävää, se jää usein tekemättä, siksi kantsii kokeilla TDD:tä! \textbf{\textit{Tähän joku lähde ja muutenkin mieti miten ilmaista!!!!!}}
+
 Aion tutkielmassani tarkastella TDD:n toimivuutta kahdella mittarilla: laadulla ja tehokkuudella. Nämä mittari ovat erittäin epämääräisiä, joten ensin on tutkittava mitä ne oikeastaan tarkoittavat.
 
 
-\section{Ohjelmistotestauksen mittareita}
+\section{Laadun käsitteestä}
 
-\subsection{Laatu}
+Arkikielessä laadulla usein ajatellaan virheettömyyttä ja tehokkuudella tarvittavan ajan ja työpanoksen määrää verrattuna tehtävään. 
 
-\subsection{Tehokkuus}
+%***Seuraa paljon väitteitä jotka on otettu Coten et al artikkelista, onko tämä jo liian referaattimainen juttu?***
+
+Côté,  Suryn, ja Georgiadoun artikkelin \emph{In search for a widely applicable and accepted software quality model for software quality engineering}  mukaan tietojenkäsittelytieteessä ei olla päästy yksimielisyyteen laadun tarkasta merkityksestä, vaan sillä on tarkoitettu useita eri asioita. Standardointijärjestö ISO:n mukaan laatu viittaa siihen, kuinka hyvin tuotteen ominaisuudet vastaavat annettuihin vaatimuksiin. Jim Highsmith laskee laaduksi asiakkaalle tuotetun lisäarvon %***MIETI TÄTÄ, tarkoittaako se mitä ajattelen?***
+ ja virheiden määrän. Nämä kuvaukset eivät kuitenkaan ole saavuttaneet konsensusta, ehkä koska ne eivät tunnista Kitchenhamin ja Pfleegerin esittämiä perspektiivejä laatuun; metafyysinen, käyttäjän, teollisuuden, tuotteen ja lopullisen perspektiivin. Metafyysinen tai transdentti perspektiivi viittaa pyrkimykseen täydelliseen laatuun jota ei ehkä ikinä saavuteta. Käyttäjän perspektiivi kysyy onko tuote sopiva käyttötarkoitukseen, johon sitä tarvitaan. Teollinen perspektiivi esittää laadun annettujen vaatimuksien toteuttamisena. Tuotteen perspektiivi mittaa laatua tutkimalla tuotetta, sen ominaisuuksia tutkitaan ja niistä rakennetaan arvio lopullisesta laadusta. Lopullinen perspektiivi perustuu arvoihin, erilaiset osapuolet saattavat nähdä laadun perspektiivit eri tärkeysjärjestyksessä. \cite{Cote07}
+
+
+%*** niin sekavaa tekstiä ettei meinaa tajuta.***
+
+
+Laadun käsitettä on ehkä käsitelty liikaa teollisuuden näkökulmasta, kun standardien noudattamisesta on tehty markkinointityökalu ja sopimuspykälä. 1960-luvulla IBM:n and Yhdysvaltain puolustusministeriön näkemyksen mukaan tiukka ohjelmistotuotantoprosessin noudattaminen johtaa laadukkaaseen tuotteeseen, tämä näkemys on kuitenkin useiden tutkijoiden mukaan väärä. Geoff Dromeyn mukaan liika keskittyminen prosessiin tapahtuu muiden laatumallien kustannuksella ja Kitchenhamin pa Pfleegerin mukaan prosessi varmistaa ainoastaan lopputuloksen samankaltaisuuden. Myös Agile-projektit ovat näyttäneet korkean laadun olevan mahdollinen ilman tiukkaa prosessia. Toistaalta eräät tutkimukset ovat havainneet hyvän prosessin paljastavan virheet koodissa aiemmin. Teolliseen perspektiiviin perustuvat menettelytavat eivät myöskään sovellu pienille projekteille tai pienille kehittäjäryhmille.  Tavoite onkin löytää laatumalli joka ottaisi kaikki perspektiivit huomioon.
+
+Cote et al listaavat artikkelissaan vaatimukset laatumallille: sen pitää ottaa huomioon Kitchenhamin ja Pfleegerin perspektit, sille pitää pystyä antamaan vaatimuksia (top to bottom) ja sitä pitää pystyä mittamaan (bottom to top) IEEE:n standarin mukaisesti. Artikkelissa on tarkasteltu neljää erilaista laatumallia.
+
+McCallin, Richardsin ja Waltersin laatumalli on esitellyistä laatumalleista vanhin ja Pfleegerin mukaan yksi ensimmäisistä julkaistuista. Malli koostuu laatuun vaikuttavia tekijöistä, joita ei voi suoraan mitata. Mallin mittarit ovat mitattavia asioita, joiden avulla laatutekijöitä voidaan arvioida. Ongelmana on kuitenkin se, että mitattavat asiat ovat usein subjektiivisia eivätkä siten sovellu tarkkojen laatuvaatimusten asettamiseen.
+
+Boehmin malli on McCallinin mallista kehitelty, mutta laadun tärkeimmäksi tekijäksi on nostettu "yleinen hyödyllisyys" (general utility), jonka mukaan ohjelman on oltava hyödyllinen ollakseen laadukas. Hyödyllisyys koostuu ohjelman käyttön helppoudesta ja tehokkuudesta, ylläpidosta ja siirrettävyydestä. Boehm on myös järjestänyt laatutekijät sen mukaan, mitkä kiinnostavat enemmän teknisiä osapuolia ja mitkä loppukäyttäjää. Cote et al mukaan mallin tekijät ovat kuitenkin yhä liian teknisiä ja mittarit yleisen hyödyllisyyden mittarit liian geneerisiä.
+
+Dromeyn malli keskittyy laatuun tuotteen perspektiivistä. Ohjelman komponentteja tutkitaan konkreettisten laatuominaisuuksien perusteella. Esimerkiksi muuttujat, funktiot ja ehtolausekkeet ovat mallissa komponentteja. Dromeyn komponenttien ominaisuudet voidaan jakaa neljään ryhmään: korrekti (correctness), sisäinen, kontekstinen ja kuvaava. Korrektius mittaa, onko perusperiaatteita rikottu. Sisäinen liittyy siihen, onko komponenttia käytetty sopivalla tavalla sen tarkoitusta varten.
+%***kamala lause...***
+ Kontekstinen käsittelee ulkoisia vaikutuksia komponenttiin. Kuvaava viittaa esimerkiksi komponentin nimeen ja muihin samankaltaisiin koodin lukemista helpottaviin tekijöihin
+%***Onko varmasti näin, ehkä ei...?***
+Dromeyn hypoteesi on, että korkean tason laatua kuvaavat tekijät tulevat esille jos ohjelman matalan tason muuttujat jne. ovat laadukkaita. Artikkelin kirjoittat pitävät hypoteesia vääränä, Dromey keskittyy liikaa konkreettisiin pieniin yksityiskohtiin: loppukäyttäjää ei kiinnosta muuttujien nimeämisen kaltaiset tekniset yksityiskohdat.
+
+Lopuksi artikkeli esittelee ISO/IEC 9126 laatumallin. Vuonna 1991 julkaistu malli saavutti nopeasti mainetta parhaana tapana mitata laatua, mutta Pfleegerin mukaan siitä löytyi muutamia merkittäviä ongelmia. ISO/IEC julkaisikin mallista uusia versioita, jotka pyrkivät vastaamaan löydettyihin ongelmiin. Malli määrittelee kolme laadun osa-aluetta. Käyttölaatu (quality in use) mittaa käyttäjän tyytyväisyyttä ohjelmaan, kun sitä käytetään tietyssä järjestelmässä tiettyyn tarkoitukseen. Itse ohjelmaa ei mitata, vaan tavoitteita jotka sen käyttäjä saavuttaa. Ulkoinen laatu on ohjelman toiminta ajettaessa, käytännössä testaamisen avulla löydettyjen virheiden määrä. Sisäinen laatu käsittelee ohjelman sisäistä rakennetta, ja sitä voidaan parantaa katselmoinnilla ja testaamisella. Mallin on saanut alalla huomiota, ja monet tahot ovat siirtyneet käyttämään sitä. Cote et al toteavat ISO/IEC9126 mallin olevan ainoa heidän esittelemistää malleista, jotka toteuttavat niille annetut vaatimukset. \cite{Cote07}
+
+Artikkelin perusteella olemme siis löytäneet mallin mitata laatua. Voidaksemme käsitellä TDD:n vaikutusta laatuun, pitää laatuun vaikuttavia mittareita tarkastella tarkemmin.
+
+
+
+
+
+
+
+Gyimothysta jutskaa tähän:
+\cite{Gyimothy05}
+
+\subsection{Laadun mittareita}
+
+Laadulla on tälläisiä mittareita käytetty
+
+
+\subsection{Tehokkuuden mittareita}
+
+babab
 
 \section{Test Driven Development}
 
 %Mikä se on, kuka keksi, miksi keksi? Paljonko käytetään?
 
+babab
+
 \subsection{Mitä se on? Miten eroaa muista?}
+
+babab
 
 
 \subsection{Tutkimuksia}
+
+babab
 
 %Tähän erilaisia tutkimuksia, mitä mittareita niissä on käytetty, millaiset tutkimusryhmät, mitä tuloksia
 
 
 
 \subsection{Tuloksia}
+
+babab
+
 %Toimiiko vai ei?
 \subsubsection{Laatu}
+
+babab
+
 \subsubsection{Tehokkuus}
+
+babab
 
 
 \subsection{Meta-analyysit}
 
 %Millaisia näkemyksiä meta-analyyseilla aiheesta
 
+babab
+
 \section{Käyttö yritysmaailmassa}
 
 %Käyttääkö tätä joku, ehkä jotain yritysten papruja aiheesta
 
-
+babab
 
 
 

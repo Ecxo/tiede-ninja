@@ -22,6 +22,30 @@
   \btxprintmonthyear{.}{Nov}{2006}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
 
+\bibitem [{CSG07}]{Cote07}
+\btxnamefont {\btxlastnamefont {Côté}, Marc\btxfnamespacelong Alexis},
+  \btxnamefont {\btxlastnamefont {Suryn}, Witold}\btxandcomma {} \btxandlong
+  {}\ \btxnamefont {\btxlastnamefont {Georgiadou}, Elli}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {In search for a widely applicable and
+  accepted software quality model for software quality engineering}{In search
+  for a widely applicable and accepted software quality model for software
+  quality engineering}}.
+\newblock \btxjournalfont {Software Quality Journal}, 15(4):401--416,
+  2007\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {0963-9314}}}.
+\newblock {\latintext
+  \btxurlfont{http://dx.doi.org/10.1007/s11219-007-9029-0}}.
+
+\bibitem [{GFS05}]{Gyimothy05}
+\btxnamefont {\btxlastnamefont {Gyimothy}, T.}, \btxnamefont {\btxlastnamefont
+  {Ferenc}, R.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Siket}, I.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Empirical
+  validation of object-oriented metrics on open source software for fault
+  prediction}{Empirical validation of object-oriented metrics on open source
+  software for fault prediction}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  31(10):897--910, \btxprintmonthyear{.}{Oct}{2005}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+
 \bibitem [{Muc08}]{Muccini08}
 \btxnamefont {\btxlastnamefont {Muccini}, Henry}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {Software testing: Testing new software paradigms and new

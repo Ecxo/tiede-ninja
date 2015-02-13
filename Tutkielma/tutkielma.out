@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Johdanto}{}% 1
-\BOOKMARK [1][-]{section.2}{Ohjelmistotestauksen mittareita}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Laatu}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Tehokkuus}{section.2}% 4
+\BOOKMARK [1][-]{section.2}{Laadun k\344sitteest\344}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Laadun mittareita}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Tehokkuuden mittareita}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Test Driven Development}{}% 5
 \BOOKMARK [2][-]{subsection.3.1}{Mit\344 se on? Miten eroaa muista?}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.2}{Tutkimuksia}{section.3}% 7

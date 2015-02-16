@@ -144,9 +144,10 @@ Aion tutkielmassani tarkastella TDD:n toimivuutta kahdella mittarilla: laadulla 
 
 \section{Laadun käsitteestä}
 
-Arkikielessä laadulla usein ajatellaan virheettömyyttä ja tehokkuudella tarvittavan ajan ja työpanoksen määrää verrattuna tehtävään. 
+%Saa paljon paremmaksi kun käy läpi artikkelin viitteet ja ottaa niistä kuvaukset
 
 %***Seuraa paljon väitteitä jotka on otettu Coten et al artikkelista, onko tämä jo liian referaattimainen juttu?***
+
 
 Côté,  Suryn, ja Georgiadoun artikkelin \emph{In search for a widely applicable and accepted software quality model for software quality engineering}  mukaan tietojenkäsittelytieteessä ei olla päästy yksimielisyyteen laadun tarkasta merkityksestä, vaan sillä on tarkoitettu useita eri asioita. Standardointijärjestö ISO:n mukaan laatu viittaa siihen, kuinka hyvin tuotteen ominaisuudet vastaavat annettuihin vaatimuksiin. Jim Highsmith laskee laaduksi asiakkaalle tuotetun lisäarvon %***MIETI TÄTÄ, tarkoittaako se mitä ajattelen?***
  ja virheiden määrän. Nämä kuvaukset eivät kuitenkaan ole saavuttaneet konsensusta, ehkä koska ne eivät tunnista Kitchenhamin ja Pfleegerin esittämiä perspektiivejä laatuun; metafyysinen, käyttäjän, teollisuuden, tuotteen ja lopullisen perspektiivin. Metafyysinen tai transdentti perspektiivi viittaa pyrkimykseen täydelliseen laatuun jota ei ehkä ikinä saavuteta. Käyttäjän perspektiivi kysyy onko tuote sopiva käyttötarkoitukseen, johon sitä tarvitaan. Teollinen perspektiivi esittää laadun annettujen vaatimuksien toteuttamisena. Tuotteen perspektiivi mittaa laatua tutkimalla tuotetta, sen ominaisuuksia tutkitaan ja niistä rakennetaan arvio lopullisesta laadusta. Lopullinen perspektiivi perustuu arvoihin, erilaiset osapuolet saattavat nähdä laadun perspektiivit eri tärkeysjärjestyksessä. \cite{Cote07}
@@ -157,17 +158,17 @@ Côté,  Suryn, ja Georgiadoun artikkelin \emph{In search for a widely applicabl
 
 Laadun käsitettä on ehkä käsitelty liikaa teollisuuden näkökulmasta, kun standardien noudattamisesta on tehty markkinointityökalu ja sopimuspykälä. 1960-luvulla IBM:n and Yhdysvaltain puolustusministeriön näkemyksen mukaan tiukka ohjelmistotuotantoprosessin noudattaminen johtaa laadukkaaseen tuotteeseen, tämä näkemys on kuitenkin useiden tutkijoiden mukaan väärä. Geoff Dromeyn mukaan liika keskittyminen prosessiin tapahtuu muiden laatumallien kustannuksella ja Kitchenhamin pa Pfleegerin mukaan prosessi varmistaa ainoastaan lopputuloksen samankaltaisuuden. Myös Agile-projektit ovat näyttäneet korkean laadun olevan mahdollinen ilman tiukkaa prosessia. Toistaalta eräät tutkimukset ovat havainneet hyvän prosessin paljastavan virheet koodissa aiemmin. Teolliseen perspektiiviin perustuvat menettelytavat eivät myöskään sovellu pienille projekteille tai pienille kehittäjäryhmille.  Tavoite onkin löytää laatumalli joka ottaisi kaikki perspektiivit huomioon.
 
-Cote et al listaavat artikkelissaan vaatimukset laatumallille: sen pitää ottaa huomioon Kitchenhamin ja Pfleegerin perspektit, sille pitää pystyä antamaan vaatimuksia (top to bottom) ja sitä pitää pystyä mittamaan (bottom to top) IEEE:n standarin mukaisesti. Artikkelissa on tarkasteltu neljää erilaista laatumallia.
+Cote et al listaavat artikkelissaan vaatimukset laatumallille: sen pitää ottaa huomioon Kitchenhamin ja Pfleegerin perspektit, sille pitää pystyä antamaan vaatimuksia (top to bottom) ja sitä pitää pystyä mittamaan (bottom to top) IEEE:n standarin mukaisesti. Artikkelissa on tarkasteltu neljää erilaista laatumallia. \cite{Cote07}
 
-McCallin, Richardsin ja Waltersin laatumalli on esitellyistä laatumalleista vanhin ja Pfleegerin mukaan yksi ensimmäisistä julkaistuista. Malli koostuu laatuun vaikuttavia tekijöistä, joita ei voi suoraan mitata. Mallin mittarit ovat mitattavia asioita, joiden avulla laatutekijöitä voidaan arvioida. Ongelmana on kuitenkin se, että mitattavat asiat ovat usein subjektiivisia eivätkä siten sovellu tarkkojen laatuvaatimusten asettamiseen.
+McCallin, Richardsin ja Waltersin laatumalli on esitellyistä laatumalleista vanhin ja Pfleegerin mukaan yksi ensimmäisistä julkaistuista. Malli koostuu laatuun vaikuttavia tekijöistä, joita ei voi suoraan mitata. Mallin mittarit ovat mitattavia asioita, joiden avulla laatutekijöitä voidaan arvioida. Ongelmana on kuitenkin se, että mitattavat asiat ovat usein subjektiivisia eivätkä siten sovellu tarkkojen laatuvaatimusten asettamiseen. \cite{Cote07}
 
-Boehmin malli on McCallinin mallista kehitelty, mutta laadun tärkeimmäksi tekijäksi on nostettu "yleinen hyödyllisyys" (general utility), jonka mukaan ohjelman on oltava hyödyllinen ollakseen laadukas. Hyödyllisyys koostuu ohjelman käyttön helppoudesta ja tehokkuudesta, ylläpidosta ja siirrettävyydestä. Boehm on myös järjestänyt laatutekijät sen mukaan, mitkä kiinnostavat enemmän teknisiä osapuolia ja mitkä loppukäyttäjää. Cote et al mukaan mallin tekijät ovat kuitenkin yhä liian teknisiä ja mittarit yleisen hyödyllisyyden mittarit liian geneerisiä.
+Boehmin malli on McCallinin mallista kehitelty, mutta laadun tärkeimmäksi tekijäksi on nostettu "yleinen hyödyllisyys" (general utility), jonka mukaan ohjelman on oltava hyödyllinen ollakseen laadukas. Hyödyllisyys koostuu ohjelman käyttön helppoudesta ja tehokkuudesta, ylläpidosta ja siirrettävyydestä. Boehm on myös järjestänyt laatutekijät sen mukaan, mitkä kiinnostavat enemmän teknisiä osapuolia ja mitkä loppukäyttäjää. Cote et al mukaan mallin tekijät ovat kuitenkin yhä liian teknisiä ja mittarit yleisen hyödyllisyyden mittarit liian geneerisiä. \cite{Cote07}
 
 Dromeyn malli keskittyy laatuun tuotteen perspektiivistä. Ohjelman komponentteja tutkitaan konkreettisten laatuominaisuuksien perusteella. Esimerkiksi muuttujat, funktiot ja ehtolausekkeet ovat mallissa komponentteja. Dromeyn komponenttien ominaisuudet voidaan jakaa neljään ryhmään: korrekti (correctness), sisäinen, kontekstinen ja kuvaava. Korrektius mittaa, onko perusperiaatteita rikottu. Sisäinen liittyy siihen, onko komponenttia käytetty sopivalla tavalla sen tarkoitusta varten.
 %***kamala lause...***
  Kontekstinen käsittelee ulkoisia vaikutuksia komponenttiin. Kuvaava viittaa esimerkiksi komponentin nimeen ja muihin samankaltaisiin koodin lukemista helpottaviin tekijöihin
 %***Onko varmasti näin, ehkä ei...?***
-Dromeyn hypoteesi on, että korkean tason laatua kuvaavat tekijät tulevat esille jos ohjelman matalan tason muuttujat jne. ovat laadukkaita. Artikkelin kirjoittat pitävät hypoteesia vääränä, Dromey keskittyy liikaa konkreettisiin pieniin yksityiskohtiin: loppukäyttäjää ei kiinnosta muuttujien nimeämisen kaltaiset tekniset yksityiskohdat.
+Dromeyn hypoteesi on, että korkean tason laatua kuvaavat tekijät tulevat esille jos ohjelman matalan tason muuttujat jne. ovat laadukkaita. Artikkelin kirjoittat pitävät hypoteesia vääränä, Dromey keskittyy liikaa konkreettisiin pieniin yksityiskohtiin: loppukäyttäjää ei kiinnosta muuttujien nimeämisen kaltaiset tekniset yksityiskohdat. \cite{Cote07}
 
 Lopuksi artikkeli esittelee ISO/IEC 9126 laatumallin. Vuonna 1991 julkaistu malli saavutti nopeasti mainetta parhaana tapana mitata laatua, mutta Pfleegerin mukaan siitä löytyi muutamia merkittäviä ongelmia. ISO/IEC julkaisikin mallista uusia versioita, jotka pyrkivät vastaamaan löydettyihin ongelmiin. Malli määrittelee kolme laadun osa-aluetta. Käyttölaatu (quality in use) mittaa käyttäjän tyytyväisyyttä ohjelmaan, kun sitä käytetään tietyssä järjestelmässä tiettyyn tarkoitukseen. Itse ohjelmaa ei mitata, vaan tavoitteita jotka sen käyttäjä saavuttaa. Ulkoinen laatu on ohjelman toiminta ajettaessa, käytännössä testaamisen avulla löydettyjen virheiden määrä. Sisäinen laatu käsittelee ohjelman sisäistä rakennetta, ja sitä voidaan parantaa katselmoinnilla ja testaamisella. Mallin on saanut alalla huomiota, ja monet tahot ovat siirtyneet käyttämään sitä. Cote et al toteavat ISO/IEC9126 mallin olevan ainoa heidän esittelemistää malleista, jotka toteuttavat niille annetut vaatimukset. \cite{Cote07}
 
@@ -176,15 +177,42 @@ Artikkelin perusteella olemme siis löytäneet mallin mitata laatua. Voidaksemme
 
 
 
-
-
-
-Gyimothysta jutskaa tähän:
-\cite{Gyimothy05}
-
 \subsection{Laadun mittareita}
 
-Laadulla on tälläisiä mittareita käytetty
+Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julkaisuissa. Shyam R. Chidamber ja Chris F. Kemerer esittelivät vuonna 1994 olio-ohjelmoinnin arviointiin kehittelemänsä kuusi mittaria.\cite{Chidamber94}. Tibor Gyimóthy, Rudolf Ferenc, ja István Siket ovat puolestaan arvioineet näiden mittareiden toimivuutta avoimen lähdekoodin Mozilla-ohjelmistopaketin virheiden ennustamiseen. \cite{Gyimothy05}
+
+%kokeillaas tätä listaa
+%Mittarin esittelyihin lisätään vielä Gyimothyn näkemys onko mittari toimiva
+
+\begin{itemize}
+
+  \item \textbf{Metodeita per luokka} (Weighted Methods Per Class). Mittaa metodien määrää luokassa. Metodien määrä ja monimutkaisuus vaikuttaa luokan ylläpidon hankaluuteen ja suuren määrän metodeita sisältävä luokka on hankalampi käyttää uudelleen \cite{Chidamber94}. Gyimóthy et al havaitsivat luokan jolla määrä on korkea olevan virhealttiimpi kuin luokan jolla määrä on matala. \cite{Gyimothy05}
+
+  \item \textbf{Perintäpuun syvyys} (Depth of Inheritance Tree). Kuinka monta ylempää luokkaa luokalla on. Mitä syvemmällä perintäpuussa luokka on, sen enemmän se perii metodeita. Syvät puut ovat monimutkaisempia ja alttiimpia virheille \cite{Chidamber94}. Perintäpuussa syvällä oleva luokka on virhealttiimpi, mutta se ei ole yhtä hyvä mittari kuin jotkut muista tutkituista. \cite{Gyimothy05}
+
+  \item \textbf{Lasten määrä} (Number of Children). Kuinka monta alaluokkaa luokalla on. Luokka jolla on paljon lapsia, vaatii paljon testausta. Luokka jolla on paljon aliluokkia on koodin uudelleenkäyttöä, toisaalta jos aliluokkia on paljon voi kyseessä olla aliluokkien väärinkäyttö \cite{Chidamber94}. Lasten suuren määrän ei havaittu olevan merkittävä mittari virheiden ennustamiseen. \cite{Gyimothy05}
+%***Mieti tätä selkeämmäksi***
+
+  \item \textbf{Luokkien väliset kytkennät} (Coupling Between Object Classes). Luokat ovat kytketty, jos ne käyttävät toistensa metodeja tai muuttujia. Liiallinen kytkentä heikentää modulaarista suunnittelua ja vaikeuttaa uudelleenkäyttöä. Moneen luokkaan kytkettyä luokkaa pitää testata enemmän \cite{Chidamber94}. Kytkentöjen vähäinen määrä oli merkittävä, Gyimothy et al tutkimuksessa merkittävin ja paras, mittari \cite{Gyimothy05}.
+
+  \item \textbf{Vastausten määrä} (Response For a Class). Kuinka monta metodia ajetaan vastauksena luokalle tulleeseen viestiin. Virheiden korjaus on hankalaa, jos ajettavia metodeita on paljon ja luokka on monimutkainen \cite{Chidamber94}. Suuren määrän vastauksia sisältävä luokka oli merkittävästi virhealttiimpi. \cite{Gyimothy05}
+
+  \item \textbf{Metodien välisen koheesion puute} (Lack of Cohesion on Method). Mittaa luokasta löytyviä metodeita joilla ei ole yhteisiä muuttujia. Tavoite on siis se, että saman luokan metodit käsittelevät samoja muuttujia. Jos mittari havaitsee heikon koheesion, olisi kannattavaa pilkkoa luokka pienemmiksi osiksi \cite{Chidamber94}. Matalan koheesion luokat havaittiin virhealttiimmiksi. \cite{Gyimothy05}
+
+  \item \textbf{Rivien määrä} (Lines of Code). Luokan koodirivien määrä.  Luokka jossa on suuri määrä koodirivejä on virhealttiimpi. Mittari oli toisiksi paras Gyimothy et al tutkimista mittareista, paljon koodirivejä sisältävissä luokissa oli enemmän virheitä. \cite{Gyimothy05}
+
+
+
+
+
+
+
+
+\end{itemize}
+
+\textbf{Lisää muiden näkemyksiä, guimothyssa listastattu paljon erimielisyyksiä! \cite{Gyimothy05}}
+
+
 
 
 \subsection{Tehokkuuden mittareita}
@@ -197,7 +225,7 @@ babab
 
 babab
 
-\subsection{Mitä se on? Miten eroaa muista?}
+\subsection{Mitä se on? Miten eroaa muista? Miksi käyttää sitä?}
 
 babab
 

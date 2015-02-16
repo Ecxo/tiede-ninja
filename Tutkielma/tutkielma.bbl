@@ -13,6 +13,15 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{CK94}]{Chidamber94}
+\btxnamefont {\btxlastnamefont {Chidamber}, S.R.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Kemerer}, C.F.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A metrics suite for object oriented design}{A metrics
+  suite for object oriented design}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  20(6):476--493, \btxprintmonthyear{.}{Jun}{1994}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+
 \bibitem [{Cri06}]{Crispin06}
 \btxnamefont {\btxlastnamefont {Crispin}, L.}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {Driving software quality: How test-driven development

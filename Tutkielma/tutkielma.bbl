@@ -55,6 +55,15 @@
   31(10):897--910, \btxprintmonthyear{.}{Oct}{2005}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
+\bibitem [{KP96}]{Kitchenham96}
+\btxnamefont {\btxlastnamefont {Kitchenham}, B.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Pfleeger}, S.L.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Software quality: the elusive target [special issues
+  section]}{Software quality: the elusive target [special issues section]}}.
+\newblock \btxjournalfont {Software, IEEE}, 13(1):12--21,
+  \btxprintmonthyear{.}{Jan}{1996}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
 \bibitem [{Muc08}]{Muccini08}
 \btxnamefont {\btxlastnamefont {Muccini}, Henry}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {Software testing: Testing new software paradigms and new

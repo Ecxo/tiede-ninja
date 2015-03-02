@@ -129,26 +129,48 @@
 
 %***Yleistä, miksi testataan***
 
-Ohjelmistotestauksen tarkoituksena on parantaa ohjelman laatua havaitsemalla ja poistamalla virheitä ohjelmakoodissa. Testauksen avulla ei voida todistaa ohjelman olevan virheetön, mutta sillä voidaan todistaa virheiden olemassaolo. Ohjelmaa testataan erilaisilla syötteillä, jonka jälkeen ohjelman toimintaa verrataan odotettuun oikeaan lopputulokseen. Jos lopputuloksissa on eroa, on testi löytänyt virheen.   \cite{Muccini08}.
+Ohjelmistotestauksen tarkoituksena on parantaa ohjelman laatua havaitsemalla ja poistamalla virheitä ohjelmakoodissa. Testauksen avulla ei voida todistaa ohjelman olevan virheetön, mutta sillä voidaan todistaa virheiden olemassaolo. Ohjelmaa testataan erilaisilla syötteillä, jonka jälkeen ohjelman toimintaa verrataan odotettuun oikeaan lopputulokseen. Jos lopputuloksissa on eroa, on testi löytänyt virheen \cite{Muccini08}.
 
 %***Prosessista on paljon lisätietoa Whittakerin artikkelissa, ehkä sieltä lisää?***
 
-Testien kirjoittajan on tunnettava ohjelman rakenne ja toiminta pystyäkseen suunnittelemaan ja kirjoittamaan testejä. Testin kirjoittamiseni on vaikea ja aikaa vievä prosessi, ja se vaatii kehittäjältä hyviä taitoja. \cite{Whittaker00}
+Testien kirjoittajan on tunnettava ohjelman rakenne ja toiminta pystyäkseen suunnittelemaan ja kirjoittamaan testejä. Testin kirjoittamiseni on vaikea ja aikaa vievä prosessi, ja se vaatii kehittäjältä hyviä taitoja \cite{Whittaker00}.
 
 Ohjelmiston testaus suoritetaan eri vaiheissa riippuen valitusta ohjelmistokehitysmenetelmästä. Vuonna 1970 Winston W. Roycen määrittelemä \emph{vesiputousmalli} (Waterfall Model) kuvaa ohjelmistokehityksen viisivaiheisena prosessessina: ensin analysoidaan vaatimukset ja suunnitellaan koko ohjelma tarkasti, sitten kirjoitetaan varsinainen ohjelmakoodi ja lopuksi tuotettu ohjelmakoodi testataan. Vaiheittaisissa menetelmissä (Incremental Model) edellinen vesiputousmalli on jaettu useisiin pienempiin palasiin; koko ohjelmaa ei siis tarvitse suunnitella ja toteuttaa kerralla noudattaen vesiputousmallin järjestystä, vaan ohjelman rakentuu pienemmistä osista jotka on suunniteltu ja toteutettu erikseen. \emph{Stoica et al} mukaan testaus on helppoa inkrementaalisissa menetelmissäi, kun taas vesiputousmallissa testauksessa havaittujen virheiden korjaaminen voi olla hankaa. Ketterät (Agile Model) ohjelmistokehityksen menetelmät perustuvat inkrementaaliseen malliin. \cite{Stoica13}. Yksi erityisesti testaamiseen keskittyvät toimintapa on ketteriin malleihin perustuva \emph{Test Driven Development}. \cite{Crispin06}
-
-Testaaminen on aika ikävää, se jää usein tekemättä, siksi kantsii kokeilla TDD:tä! \textbf{\textit{Tähän joku lähde ja muutenkin mieti miten ilmaista!!!!!}}
 
 Aion tutkielmassani tarkastella TDD:n toimivuutta kahdella mittarilla: laadulla ja tehokkuudella. Nämä mittari ovat erittäin epämääräisiä, joten ensin on tutkittava mitä ne oikeastaan tarkoittavat.
 
 
 \section{Laadun käsitteestä}
 
-%Saa paljon paremmaksi kun käy läpi artikkelin viitteet ja ottaa niistä kuvaukset
+Näkymys ohjelmiston laadusta riippuu siitä, keneltä sitä kysytään. Ohjelman loppukäyttäjä saattaa olla aivan eri mieltä tietyn ohjelman laadusta verrattuna ohjelmojaan. Tavallista kuluttajaa tuskin kiinnostaa esimerkiksi ohjelmakoodin luettavuus, mutta toisaalta se on muille ohjelmoijille tärkeä laatuominaisuus. Ohjelmistokehityksen laadun käsitettä määrittäessä tärkeää on myös tiedostaa erilaiset näkökulmat.
 
+Barbara Kitchenham ja Shari Lawrence Pfleeger esittelivät vuonna 1996 viisi laatunäkökulmaa: transendentin, käyttäjän, teollisuuden, tuotteen ja arvon näkökulman \cite{Kitchenham96}. Näkökulmat perustuvat David Garvinin näkemyksiin laadun käsitteestä muilla aloilla, esimerkiksi filosofiassa.
+
+Transendentti näkökulma (Transcendental View) pitää laatua mahdottomana määrittää tarkasti, mutta kuitenkin havaittavana ominasuutena \cite{Kitchenham96}. Tämän näkökulman perusteella laatua on vaikea mitata, vaan se on lähinnä filosofinen käsite jota voidaan arvioda vain subjektiivisten kokemusten perusteella
+
+Käyttäjän näkökulma (User View) näkee tuotteen sen käyttäjän perspektiivistä. Laadukas tuote toteuttaa käyttäjän sille asettamat vaatimukset ja on vaivattomasti käytettävä \cite{Kitchenham96}. Näkökulma vastaa parhaiten tavallista loppukäyttäjää, ohjelman toimivuus ja soveltuvuus tilanteeseen on tärkeintä. TDD:n käsittely tästä näkökulmasta on hankalaa, jos ohjelma on toimiva ei loppukäyttäjälle ole merkistystä millaista toimintatapaa ohjelmoija on käyttänyt.
+
+Teollinen näkökulma (Manufacturing View) käsittelee tuotteen kehitysprosessia. Standardeja käyttävä ja vaatimukset huomioiva ohjelmistotuotantoprosessi johtaa laadukkaaseen tuotteeseen \cite{Kitchenham96}. Perspektiivi nostaa ohjelman kehittäjien noudattamat työtavat tärkeään asemaan, mutta Kitchenhamin ja Pfleegerin mukaan näkökulma on ongelmallinen: liiallinen standardien noudattaminen voi johtaa huonoihin tuloksiin. TDD:n käyttö edellyttää menetelmän määrittämiä toimintatapoja, joten tämän näkökulman huomiointi on perusteltua.
+
+Tuotteen näkökulma (Product View) tutkii ohjelmaa itseään. Näkökulman mukaan ohjelmakoodin sisäiset laatuominaisuudet vaikuttavat suoraan ohjelman ulkoiseen laatuun. Näkökulman puolestapuhujien mukaan näkökulmaa on helpoin mitata, koska koodin ominaisuuksia voidaan mitata objektiivisesti \cite{Kitchenham96}. Näkökulma on mielestäni järkevin valinta TDD:n tutkimiseen.
+
+Arvon näkökulma (Value-based View) huomio tuotteen arvon olevan riippuvainen sitä käyttävän ryhmään näkökulmasta. Ryhmillä on erilaiset käsitykset laadusta, joten voi olla vaikeaa tasapainottaa esimerkiksi käyttäjän ja teollisuuden näkökulmaa. Eri näkökulmia tasapainottamalla pyritään tuotteeseen, josta asiakas suostuu maksamaan mahdollisimman paljon valmiista ohjelmasta \cite{Kitchenham96}. En usko TDD:n käytön vaikuttavan asiakkaan näkemään tuotteen arvoon, vaikka teoriassa menetelmän käyttö saattaisi sitä hieman lisätä.
+
+
+
+
+
+
+%Saa paljon paremmaksi kun käy läpi artikkelin viitteet ja ottaa niistä kuvaukset
 %***Seuraa paljon väitteitä jotka on otettu Coten et al artikkelista, onko tämä jo liian referaattimainen juttu?***
 
 
+
+
+
+
+
+\textbf{Vanha versio, onkohan tämä uusi nyt parempi...}
 Côté,  Suryn, ja Georgiadoun artikkelin \emph{In search for a widely applicable and accepted software quality model for software quality engineering}  mukaan tietojenkäsittelytieteessä ei olla päästy yksimielisyyteen laadun tarkasta merkityksestä, vaan sillä on tarkoitettu useita eri asioita. Standardointijärjestö ISO:n mukaan laatu viittaa siihen, kuinka hyvin tuotteen ominaisuudet vastaavat annettuihin vaatimuksiin. Jim Highsmith laskee laaduksi asiakkaalle tuotetun lisäarvon %***MIETI TÄTÄ, tarkoittaako se mitä ajattelen?***
  ja virheiden määrän. Nämä kuvaukset eivät kuitenkaan ole saavuttaneet konsensusta, ehkä koska ne eivät tunnista Kitchenhamin ja Pfleegerin esittämiä perspektiivejä laatuun; metafyysinen, käyttäjän, teollisuuden, tuotteen ja lopullisen perspektiivin. Metafyysinen tai transdentti perspektiivi viittaa pyrkimykseen täydelliseen laatuun jota ei ehkä ikinä saavuteta. Käyttäjän perspektiivi kysyy onko tuote sopiva käyttötarkoitukseen, johon sitä tarvitaan. Teollinen perspektiivi esittää laadun annettujen vaatimuksien toteuttamisena. Tuotteen perspektiivi mittaa laatua tutkimalla tuotetta, sen ominaisuuksia tutkitaan ja niistä rakennetaan arvio lopullisesta laadusta. Lopullinen perspektiivi perustuu arvoihin, erilaiset osapuolet saattavat nähdä laadun perspektiivit eri tärkeysjärjestyksessä. \cite{Cote07}
 

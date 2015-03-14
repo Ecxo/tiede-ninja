@@ -148,13 +148,42 @@ Barbara Kitchenham ja Shari Lawrence Pfleeger esittelivät vuonna 1996 viisi laa
 
 Transendentti näkökulma (Transcendental View) pitää laatua mahdottomana määrittää tarkasti, mutta kuitenkin havaittavana ominasuutena \cite{Kitchenham96}. Tämän näkökulman perusteella laatua on vaikea mitata, vaan se on lähinnä filosofinen käsite jota voidaan arvioda vain subjektiivisten kokemusten perusteella
 
-Käyttäjän näkökulma (User View) näkee tuotteen sen käyttäjän perspektiivistä. Laadukas tuote toteuttaa käyttäjän sille asettamat vaatimukset ja on vaivattomasti käytettävä \cite{Kitchenham96}. Näkökulma vastaa parhaiten tavallista loppukäyttäjää, ohjelman toimivuus ja soveltuvuus tilanteeseen on tärkeintä. TDD:n käsittely tästä näkökulmasta on hankalaa, jos ohjelma on toimiva ei loppukäyttäjälle ole merkistystä millaista toimintatapaa ohjelmoija on käyttänyt.
+Käyttäjän näkökulma (User View) näkee tuotteen sen käyttäjän perspektiivistä. Laadukas tuote toteuttaa käyttäjän sille asettamat vaatimukset ja on vaivattomasti käytettävä \cite{Kitchenham96}. Näkökulma vastaa parhaiten tavallista loppukäyttäjää, ohjelman toimivuus ja soveltuvuus tilanteeseen on tärkeintä. TDD:n käsittely tästä näkökulmasta on hankalaa: jos ohjelma on toimiva ei loppukäyttäjälle ole merkitystä millaista toimintatapaa ohjelmoija on käyttänyt.
 
-Teollinen näkökulma (Manufacturing View) käsittelee tuotteen kehitysprosessia. Standardeja käyttävä ja vaatimukset huomioiva ohjelmistotuotantoprosessi johtaa laadukkaaseen tuotteeseen \cite{Kitchenham96}. Perspektiivi nostaa ohjelman kehittäjien noudattamat työtavat tärkeään asemaan, mutta Kitchenhamin ja Pfleegerin mukaan näkökulma on ongelmallinen: liiallinen standardien noudattaminen voi johtaa huonoihin tuloksiin. TDD:n käyttö edellyttää menetelmän määrittämiä toimintatapoja, joten tämän näkökulman huomiointi on perusteltua.
+Teollinen näkökulma (Manufacturing View) käsittelee tuotteen kehitysprosessia. Standardeja käyttävä ja vaatimukset huomioiva ohjelmistotuotantoprosessi johtaa laadukkaaseen tuotteeseen \cite{Kitchenham96}. Perspektiivi nostaa ohjelman kehittäjien noudattamat työtavat tärkeään asemaan, mutta Kitchenhamin ja Pfleegerin mukaan näkökulma on ongelmallinen: liiallinen standardien noudattaminen voi johtaa huonoihin tuloksiin. Standardien noudattemista käytetään usein myyntivalttina, joten teollisesta näkökulmasta on tullut merkittävin perpektiivi ohjelmistokehityksessä \cite{Cote07}. TDD:n käyttö edellyttää menetelmän määrittämiä toimintatapoja, joten tämän näkökulman huomiointi on perusteltua. 
 
 Tuotteen näkökulma (Product View) tutkii ohjelmaa itseään. Näkökulman mukaan ohjelmakoodin sisäiset laatuominaisuudet vaikuttavat suoraan ohjelman ulkoiseen laatuun. Näkökulman puolestapuhujien mukaan näkökulmaa on helpoin mitata, koska koodin ominaisuuksia voidaan mitata objektiivisesti \cite{Kitchenham96}. Näkökulma on mielestäni järkevin valinta TDD:n tutkimiseen.
 
-Arvon näkökulma (Value-based View) huomio tuotteen arvon olevan riippuvainen sitä käyttävän ryhmään näkökulmasta. Ryhmillä on erilaiset käsitykset laadusta, joten voi olla vaikeaa tasapainottaa esimerkiksi käyttäjän ja teollisuuden näkökulmaa. Eri näkökulmia tasapainottamalla pyritään tuotteeseen, josta asiakas suostuu maksamaan mahdollisimman paljon valmiista ohjelmasta \cite{Kitchenham96}. En usko TDD:n käytön vaikuttavan asiakkaan näkemään tuotteen arvoon, vaikka teoriassa menetelmän käyttö saattaisi sitä hieman lisätä.
+Arvon näkökulma (Value-based View) huomio tuotteen arvon olevan riippuvainen sitä käyttävän ryhmään näkökulmasta. Ryhmillä on erilaiset käsitykset laadusta, joten voi olla vaikeaa tasapainottaa esimerkiksi käyttäjän ja teollisuuden näkökulmaa. Eri näkökulmia tasapainottamalla pyritään tuotteeseen, josta asiakas suostuu maksamaan mahdollisimman paljon valmiista ohjelmasta \cite{Kitchenham96}.  
+
+\subsection{ISO 9126}
+
+International Organization for Standardization eli ISO julkaisi vuonna 1991 ISO/IEC9126 ohjelmistokehitystä käsittelevän laatumallin (quality model). \cite{ISO9126}  ISO/IEC9126 malli toteuttaa Kitchenhamin ja Pfleegerin perspektiivit \cite{Cote07}  ja se on yksi suosituimmista laatustandardeista \cite{Botella04}. ISO9126:n perustuu myös uudempi ISO25010-standardi joka tunnetaan myös nimellä SQuaRE. \cite{ISO2011}
+
+ ISO9216 jakaa ohjelman laatuominaisuudet luokkiin joilla on alaluokkia. Alaluokkiin sisältyy erilaisia ominaisuuksia, joita voidaan mitata metriikoilla. Luokkien, alaluokkien ja ominaisuuksien kokonaisuus muodostaa monikerroksisen hierarkian.\cite{Miguel14} Nämä ominaisuudet on jaettu kolmeen osaan, sisäiseen laatuun, ulkoiseen laatuun ja laatuun käytössä. Standarin mukaan osat muodostavat kokonaisuuden, jossa eri osissa tehdyt ratkaisut vaikuttavat ja riippuvat muiden osien laatuun, esimerkiksi ulkoinen laatu on riippuvainen sisäisestä laadusta.
+
+\subsubsection{Sisäinen ja ulkoinen laatu}
+
+%Tästä saa paljon täytettä kun selittää alaluokkia paremmin... nyt ihan hirveän kankeaa.
+
+Sisäisellä laadulla tarkoitetaan koodin laadullisia ominaisuuksi, esimerkiksi rakennetta ja luettavuutta. Ulkoinen koodi viittaa ohjelman toimintaan sitä ajettaessa, esimerkiksi virheiden määrään. ISO9216 jakaa sisäisen ja ulkoisen laadun osien luokiksi toimivuuden, luotettavuuden, käytettävyyden, tehokkuuden, ylläpidettävyyden ja siirrettävyyden. Kaikkiin luokkiin sisältyy useita alaluokkia.
+
+Toimivuus (Functionality): ohjelman kyky vastata sille asetettuihin vaatimuksiin.  Luokan alaluokkia ovat soveltuvuus tehtävään, ohjelman antamien tuloksien oikeellisuus, toiminta muiden ohjelmien kanssa, turvallisuus sekä standardien, kuten lakien, noudattaminen.
+
+Luotettavuus (Reliability): kuinka ohjelmisto säilyttää suoritustason erilaisissa tilanteissa. Kypsyys, eli virheistä johtuvien häiriöiden välttäminen, virheiden sietäminen, virheistä palautuminen sekä luotettavuuteen liittyvien standardien noudattaminen.
+
+ Käytettävyys (Usability): ohjelman helppokäyttöisyys ja miellyttävyys. Ymmärrettävyys, ohjelman opittavuus, käytettävyys, viehättävyys ja käytettävyysstandardien noudattaminen.
+
+Tehokkuus (Efficiency): kuinka hyvin ohjelma toimii erilaisilla resursseilla. Luokan alaluokkia ovat ajankäyttö, eli kuinka ohjelman vasteaika muuttuu erilaisissa ympäristöissä, resurssien hyödyntämisen tehokkuus sekä tehokkuusstandardien noudattaminen.
+
+Ylläpidettävyys (Maintainability): mahdollisuudet muuttaa ohjelmaa. Alaluokkina analysoitavuus, muutettavuus, stabiilisuus, testattavuus ja ylläpidettävyysstandardien noudatus.
+
+Siirrettävyys (Portability): ohjelman siirrettävyys alustalta toiselle, esimerkiksi eri käyttöjärjestelmälle. Sopeutuvuus, eli kuinka helposti ohjelmaa voidaan muuttaa toiselle alustalle sopivaksi, asennettavuus, rinnakkaiselo muiden ohjelmien kanssa, korvattavuus, eli toiminta jonkun toisen ohjelman tilalla, sekä siirrettävyysstandardien noudatus.
+
+
+\subsubsection{Laatu käytössä}
+
+
 
 
 
@@ -170,7 +199,9 @@ Arvon näkökulma (Value-based View) huomio tuotteen arvon olevan riippuvainen s
 
 
 
-\textbf{Vanha versio, onkohan tämä uusi nyt parempi...}
+\textbf{***********Vanha versio, onkohan tämä uusi nyt parempi...**********}
+
+
 Côté,  Suryn, ja Georgiadoun artikkelin \emph{In search for a widely applicable and accepted software quality model for software quality engineering}  mukaan tietojenkäsittelytieteessä ei olla päästy yksimielisyyteen laadun tarkasta merkityksestä, vaan sillä on tarkoitettu useita eri asioita. Standardointijärjestö ISO:n mukaan laatu viittaa siihen, kuinka hyvin tuotteen ominaisuudet vastaavat annettuihin vaatimuksiin. Jim Highsmith laskee laaduksi asiakkaalle tuotetun lisäarvon %***MIETI TÄTÄ, tarkoittaako se mitä ajattelen?***
  ja virheiden määrän. Nämä kuvaukset eivät kuitenkaan ole saavuttaneet konsensusta, ehkä koska ne eivät tunnista Kitchenhamin ja Pfleegerin esittämiä perspektiivejä laatuun; metafyysinen, käyttäjän, teollisuuden, tuotteen ja lopullisen perspektiivin. Metafyysinen tai transdentti perspektiivi viittaa pyrkimykseen täydelliseen laatuun jota ei ehkä ikinä saavuteta. Käyttäjän perspektiivi kysyy onko tuote sopiva käyttötarkoitukseen, johon sitä tarvitaan. Teollinen perspektiivi esittää laadun annettujen vaatimuksien toteuttamisena. Tuotteen perspektiivi mittaa laatua tutkimalla tuotetta, sen ominaisuuksia tutkitaan ja niistä rakennetaan arvio lopullisesta laadusta. Lopullinen perspektiivi perustuu arvoihin, erilaiset osapuolet saattavat nähdä laadun perspektiivit eri tärkeysjärjestyksessä. \cite{Cote07}
 

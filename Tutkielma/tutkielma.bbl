@@ -1,3 +1,4 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{SMGM13}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
@@ -13,6 +14,17 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{BBC{\etalchar{+}}04}]{Botella04}
+\btxnamefont {\btxlastnamefont {Botella}, P}, \btxnamefont {\btxlastnamefont
+  {Burgu{\'e}s}, X}, \btxnamefont {\btxlastnamefont {Carvallo}, JP},
+  \btxnamefont {\btxlastnamefont {Franch}, X}, \btxnamefont {\btxlastnamefont
+  {Grau}, G}, \btxnamefont {\btxlastnamefont {Marco}, J}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Quer}, C}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Iso/iec 9126 in practice: what do we need to
+  know?}{ISO/IEC 9126 in practice: what do we need to know?}}
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 1st Software
+  Measurement European Forum}, 2004.
+
 \bibitem [{CK94}]{Chidamber94}
 \btxnamefont {\btxlastnamefont {Chidamber}, S.R.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Kemerer}, C.F.}\btxauthorcolon\ \btxjtitlefont
@@ -55,6 +67,21 @@
   31(10):897--910, \btxprintmonthyear{.}{Oct}{2005}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
+\bibitem [{ISO01}]{ISO9126}
+\btxnamefont {\btxlastnamefont {ISO/IEC}}\btxauthorcolon\ \btxtitlefont
+  {ISO/IEC 9126. Software engineering -- Product quality}.
+\newblock \btxpublisherfont {ISO/IEC}, 2001.
+
+\bibitem [{ISO11}]{ISO2011}
+\btxnamefont {\btxlastnamefont {ISO}, ISO}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Iec 25010: 2011: Systems and software engineering--systems
+  and software quality requirements and evaluation (square)--system and
+  software quality models}{IEC 25010: 2011: Systems and software
+  engineering--Systems and software Quality Requirements and Evaluation
+  (SQuaRE)--System and software quality models}}.
+\newblock \btxjournalfont {International Organization for Standardization},
+  2011.
+
 \bibitem [{KP96}]{Kitchenham96}
 \btxnamefont {\btxlastnamefont {Kitchenham}, B.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Pfleeger}, S.L.}\btxauthorcolon\ \btxjtitlefont
@@ -63,6 +90,15 @@
 \newblock \btxjournalfont {Software, IEEE}, 13(1):12--21,
   \btxprintmonthyear{.}{Jan}{1996}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
+\bibitem [{MMR14}]{Miguel14}
+\btxnamefont {\btxlastnamefont {Miguel}, Jose\btxfnamespacelong P},
+  \btxnamefont {\btxlastnamefont {Mauricio}, David}\btxandcomma {} \btxandlong
+  {}\ \btxnamefont {\btxlastnamefont {Rodr{\'\i}guez}, Glen}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {A review of software quality models for the
+  evaluation of software products}{A Review of Software Quality Models for the
+  Evaluation of Software Products}}.
+\newblock \btxjournalfont {arXiv preprint arXiv:1412.2977}, 2014.
 
 \bibitem [{Muc08}]{Muccini08}
 \btxnamefont {\btxlastnamefont {Muccini}, Henry}\btxauthorcolon\ \btxjtitlefont

@@ -1,17 +1,20 @@
 \select@language {finnish}
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
 \contentsline {section}{\numberline {2}Laadun k\IeC {\"a}sitteest\IeC {\"a}}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Laadun mittareita}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Tehokkuuden mittareita}{5}{subsection.2.2}
-\contentsline {section}{\numberline {3}Test Driven Development}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Mit\IeC {\"a} se on? Miten eroaa muista? Miksi k\IeC {\"a}ytt\IeC {\"a}\IeC {\"a} sit\IeC {\"a}?}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Tutkimuksia}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Tuloksia}{6}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Laatu}{6}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Tehokkuus}{6}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Meta-analyysit}{6}{subsection.3.4}
-\contentsline {section}{\numberline {4}K\IeC {\"a}ytt\IeC {\"o} yritysmaailmassa}{6}{section.4}
-\contentsline {section}{L\IeC {\"a}hteet}{6}{section*.2}
+\contentsline {subsection}{\numberline {2.1}ISO 9126}{2}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Sis\IeC {\"a}inen ja ulkoinen laatu}{3}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Laatu k\IeC {\"a}yt\IeC {\"o}ss\IeC {\"a}}{3}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Laadun mittareita}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Tehokkuuden mittareita}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}Test Driven Development}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Mit\IeC {\"a} se on? Miten eroaa muista? Miksi k\IeC {\"a}ytt\IeC {\"a}\IeC {\"a} sit\IeC {\"a}?}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Tutkimuksia}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Tuloksia}{7}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Laatu}{7}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Tehokkuus}{7}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Meta-analyysit}{7}{subsection.3.4}
+\contentsline {section}{\numberline {4}K\IeC {\"a}ytt\IeC {\"o} yritysmaailmassa}{7}{section.4}
+\contentsline {section}{L\IeC {\"a}hteet}{7}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}

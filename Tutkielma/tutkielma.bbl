@@ -25,6 +25,11 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 1st Software
   Measurement European Forum}, 2004.
 
+\bibitem [{Bec03}]{Beck03}
+\btxnamefont {\btxlastnamefont {Beck}, Kent}\btxauthorcolon\ \btxtitlefont
+  {Test-driven development: by example}.
+\newblock \btxpublisherfont {Addison-Wesley Professional}, 2003.
+
 \bibitem [{CK94}]{Chidamber94}
 \btxnamefont {\btxlastnamefont {Chidamber}, S.R.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Kemerer}, C.F.}\btxauthorcolon\ \btxjtitlefont

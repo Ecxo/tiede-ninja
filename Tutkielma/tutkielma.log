@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.28)  15 MAR 2015 19:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.28)  16 MAR 2015 21:54
 entering extended mode
 **D:/GoogleDrive/Kandi/tiede-ninja/Tutkielma/tutkielma.tex
 (D:/GoogleDrive/Kandi/tiede-ninja/Tutkielma/tutkielma.tex
@@ -926,33 +926,38 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 220.
  [4]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 235.
+(babel)             in language  on input line 229.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 242.
+(babel)             in language  on input line 245.
 
-Overfull \hbox (2.03667pt too wide) in paragraph at lines 246--247
+Overfull \hbox (2.03667pt too wide) in paragraph at lines 249--250
 \T1/lmr/m/n/10.95 (-20) Test Dri-ven De-ve-lop-ment on Kent Bec-kin "löy-tä-mä"
 ohjelmistokehitystekniikka
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 250.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 273.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 250.
 [5]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 270.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 278.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 283.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 287.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 292.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 298.
  (tutkielma.bbl
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 2.
+ [6]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 2.
 
@@ -976,30 +981,30 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 74.
- [6])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
+(babel)             in language  on input line 113.
+ [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 333.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 328.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
+(babel)             in language  on input line 333.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
  (tutkielma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
 Package rerunfilecheck Info: File `tutkielma.out' has not changed.
 (rerunfilecheck)             Checksum: 962C20F98EADFB50EB8835BD2AF042E0;793.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
  ) 
 Here is how much of TeX's memory you used:
- 9829 strings out of 493698
- 145240 string characters out of 3144412
- 279585 words of memory out of 3000000
- 12826 multiletter control sequences out of 15000+200000
- 50472 words of font info for 96 fonts, out of 3000000 for 9000
+ 9844 strings out of 493698
+ 145413 string characters out of 3144412
+ 279697 words of memory out of 3000000
+ 12829 multiletter control sequences out of 15000+200000
+ 50945 words of font info for 100 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  31i,8n,35p,1238b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -1012,9 +1017,9 @@ lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on tutkielma.pdf (10 pages, 245823 bytes).
+Output written on tutkielma.pdf (11 pages, 252530 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
  14441 words of extra memory for PDF output out of 17280 (max. 10000000)
 

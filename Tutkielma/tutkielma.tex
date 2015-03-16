@@ -165,7 +165,7 @@ International Organization for Standardization eli ISO julkaisi vuonna 1991 ISO/
 
 %Tästä saa paljon täytettä kun selittää alaluokkia paremmin... nyt ihan hirveän kankeaa.
 
-Sisäisellä laadulla tarkoitetaan koodin laadullisia ominaisuuksi, esimerkiksi rakennetta ja luettavuutta. Ulkoinen koodi viittaa ohjelman toimintaan sitä ajettaessa, esimerkiksi virheiden määrään. ISO9216 jakaa sisäisen ja ulkoisen laadun osien luokiksi toimivuuden, luotettavuuden, käytettävyyden, tehokkuuden, ylläpidettävyyden ja siirrettävyyden. Kaikkiin luokkiin sisältyy useita alaluokkia.
+Sisäisellä laadulla tarkoitetaan koodin laatuominaisuuksia, esimerkiksi rakennetta ja luettavuutta. Ulkoinen koodi viittaa ohjelman toimintaan sitä ajettaessa, esimerkiksi virheiden määrään. ISO9216 jakaa sisäisen ja ulkoisen laadun osien luokiksi toimivuuden, luotettavuuden, käytettävyyden, tehokkuuden, ylläpidettävyyden ja siirrettävyyden. Kaikkiin luokkiin sisältyy useita alaluokkia.
 
 Toimivuus (Functionality): ohjelman kyky vastata sille asetettuihin vaatimuksiin.  Luokan alaluokkia ovat soveltuvuus tehtävään, ohjelman antamien tuloksien oikeellisuus, toiminta muiden ohjelmien kanssa, turvallisuus sekä standardien, kuten lakien, noudattaminen.
 
@@ -219,12 +219,6 @@ Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julk
   \item \textbf{Rivien määrä} (Lines of Code). Luokan koodirivien määrä.  Luokka jossa on suuri määrä koodirivejä on virhealttiimpi. Mittari oli toisiksi paras Gyimothyn ja kumppanien tutkimista mittareista, paljon koodirivejä sisältävissä luokissa oli enemmän virheitä. \cite{Gyimothy05}
 
 
-
-
-
-
-
-
 \end{itemize}
 
 \textbf{Lisää muiden näkemyksiä, guimothyssa listastattu paljon erimielisyyksiä! \cite{Gyimothy05}}
@@ -234,7 +228,16 @@ Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julk
 
 \subsection{Tehokkuuden mittareita}
 
-Tarkastelen tehokkuutta ohjelmistotestauksen näkökulmasta. Valtaosa tarkastelemistani tutkimuksista on käsittänyt tehokkuuden käytetyn vaivan ja ajan suhteena testauksen kattavuuteen ja tarkkuuteen. 
+Aion tarkastella tehokkuutta testien perusteella, tehokas testimenetelmä löytää mahdollisimman suuren osan ohjelman virheistä pienimmällä mahdollisella vaivalla. Useissa ohjelmistokehitystä ja testausta käsittelevissä artikkeleissa on kuitenkin käytetty kahta eri termiä, effectiveness ja efficiency.  Effectiveness viittaa kykyyn saavuttaa lopputulos, efficiency taasen lopputuloksen saavuttamiseen vaadittuun aikaan ja vaivaan. Aionkin erotella nämä kaksi merkitystä tehokkuudeksi ja taloudellisuudeksi. Tehokkuudella tarkoitan esimerkiksi testien kattavuutta ja taloudellisuudella testien kattavuutta verrattuna aikaan ja vaivaan. Suurin osa testauksesta tehdyistä tutkimuksista määrittelee termit samalla tavalla kuin edellä. \cite{Juristo06}
+
+Rothermel ja Harrold määrittelevät taloudellisuuden regressiotestaustatekniikoita käsittelevässä artikkelissaan \cite{Rothermel96} laskentatehon kulutukseksi. Tälläinen määritelmä on testivetoista kehitystä käsittelevässä tutkielmassa mielestänyt melko merkityksetön: jos testien ajaminen ylipäätään onnistuu on sen nopeudella vähäinen merkitys. Eldh ja kumppanit laajentavat Rothermelin ja Harroldin termin käsittämään myös testitapauksen ymmärtämisen ja luomiseen kuluvan ajan \cite{Eldh06}.
+
+Rothermel ja Harrold käyttävät myös termejä sisältyvyys (inclusiveness), tarkkuus ja yleisyys. Sisältyvyydellä  tarkoitetaan kuinka hyvin käytetty ohjelmointestaustekniikka valitsee virheiden löytämiseen sopivat testi. Tarkkuus mittaa kuinka paljon tekniikka pystyy välttämään turhien, virheitä löytämättömien, testien kirjoittamista. Yleisyys viittaa tekniikan kykyyn toimia erilaisissa tilanteissa, esimerkiksi käyttäessä monimutkaisia rakenteita.\cite{Rothermel96}
+
+Eldhin ja kumppanien näkemys tehokkuudesta on tekniikan löytämien virheiden määrä \cite{Eldh06}, mutta mutta
+
+Yleisesti ottaen termit tehokkuus ja taloudellisuus tuntuvat välillä tarkoittavan eria asioita eri artikkeleissa. Lukemissani TDD:tä käsittelevissä tutkimuksissa kuitenkin tehokkuudella on useimmiten tarkoitettu vertailua kulutetun ajan ja testien kattavuuden suhteesta.
+
 
 
 
@@ -255,6 +258,8 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
  \item Testit ajetaan uudestaan. Jos testi yhä epäonnistuu, palataan kohtaan kolme ja koodi parannellaan. Jos testi läpäistään, siirrytään seuraavaan kohtaan.
 
  \item Kirjoitettu koodi refaktoroidaan. Koodista esimerkiksi poistetaan turha toisto ja mahdollisesti ylipitkiksi kasvaneet metodit pilkotaan. Tämän jälkeen palataan ensimmäiseen kohtaan ja prosessi aloitetaan alusta uudella testillä.
+
+
 
 
 \end{enumerate}

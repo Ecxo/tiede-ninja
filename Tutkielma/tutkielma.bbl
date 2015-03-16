@@ -61,6 +61,19 @@
 \newblock {\latintext
   \btxurlfont{http://dx.doi.org/10.1007/s11219-007-9029-0}}.
 
+\bibitem [{EHP{\etalchar{+}}06}]{Eldh06}
+\btxnamefont {\btxlastnamefont {Eldh}, Sigrid}, \btxnamefont {\btxlastnamefont
+  {Hansson}, Hans}, \btxnamefont {\btxlastnamefont {Punnekkat}, Sasikumar},
+  \btxnamefont {\btxlastnamefont {Pettersson}, Anders}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Sundmark},
+  Daniel}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A framework for
+  comparing efficiency, effectiveness and applicability of software testing
+  techniques}{A framework for comparing efficiency, effectiveness and
+  applicability of software testing techniques}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Testing: Academic and Industrial
+  Conference-Practice And Research Techniques, 2006. TAIC PART 2006.
+  Proceedings}, \btxpageslong {}\ 159--170. IEEE, 2006.
+
 \bibitem [{GFS05}]{Gyimothy05}
 \btxnamefont {\btxlastnamefont {Gyimothy}, T.}, \btxnamefont {\btxlastnamefont
   {Ferenc}, R.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
@@ -87,6 +100,17 @@
 \newblock \btxjournalfont {International Organization for Standardization},
   2011.
 
+\bibitem [{JMVS06}]{Juristo06}
+\btxnamefont {\btxlastnamefont {Juristo}, N.}, \btxnamefont {\btxlastnamefont
+  {Moreno}, A.M.}, \btxnamefont {\btxlastnamefont {Vegas}, S.}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Solari}, M.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {In search of what we experimentally know
+  about unit testing}{In Search of What We Experimentally Know about Unit
+  Testing}}.
+\newblock \btxjournalfont {Software, IEEE}, 23(6):72--80,
+  \btxprintmonthyear{.}{Nov}{2006}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
 \bibitem [{KP96}]{Kitchenham96}
 \btxnamefont {\btxlastnamefont {Kitchenham}, B.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Pfleeger}, S.L.}\btxauthorcolon\ \btxjtitlefont
@@ -112,6 +136,14 @@
   artifacts}}.
 \newblock \btxjournalfont {Wiley Encyclopedia of Computer Science and
   Engineering}, 2008.
+
+\bibitem [{RH96}]{Rothermel96}
+\btxnamefont {\btxlastnamefont {Rothermel}, Gregg} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Harrold}, Mary\btxfnamespacelong Jean}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Analyzing regression test selection
+  techniques}{Analyzing regression test selection techniques}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  22(8):529--551, 1996.
 
 \bibitem [{SMGM13}]{Stoica13}
 \btxnamefont {\btxlastnamefont {Stoica}, Marian}, \btxnamefont

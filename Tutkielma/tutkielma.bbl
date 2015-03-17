@@ -74,6 +74,16 @@
   Conference-Practice And Research Techniques, 2006. TAIC PART 2006.
   Proceedings}, \btxpageslong {}\ 159--170. IEEE, 2006.
 
+\bibitem [{FHH00}]{Frokjaer00}
+\btxnamefont {\btxlastnamefont {Fr{\o}kj{\ae}r}, Erik}, \btxnamefont
+  {\btxlastnamefont {Hertzum}, Morten}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Hornb{\ae}k}, Kasper}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Measuring usability: are effectiveness,
+  efficiency, and satisfaction really correlated?}{Measuring usability: are
+  effectiveness, efficiency, and satisfaction really correlated?}}
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the SIGCHI conference on
+  Human Factors in Computing Systems}, \btxpageslong {}\ 345--352. ACM, 2000.
+
 \bibitem [{GFS05}]{Gyimothy05}
 \btxnamefont {\btxlastnamefont {Gyimothy}, T.}, \btxnamefont {\btxlastnamefont
   {Ferenc}, R.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
@@ -119,6 +129,17 @@
 \newblock \btxjournalfont {Software, IEEE}, 13(1):12--21,
   \btxprintmonthyear{.}{Jan}{1996}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
+\bibitem [{MBS02}]{Michael02}
+\btxnamefont {\btxlastnamefont {Michael}, James\btxfnamespacelong Bret},
+  \btxnamefont {\btxlastnamefont {Bossuyt}, Bernard\btxfnamespacelong
+  J}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Snyder},
+  Byron\btxfnamespacelong B}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Metrics for measuring the effectiveness of software-testing tools}{Metrics
+  for measuring the effectiveness of software-testing tools}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Software Reliability Engineering, 2002.
+  ISSRE 2003. Proceedings. 13th International Symposium on}, \btxpageslong {}\
+  117--128. IEEE, 2002.
 
 \bibitem [{MMR14}]{Miguel14}
 \btxnamefont {\btxlastnamefont {Miguel}, Jose\btxfnamespacelong P},

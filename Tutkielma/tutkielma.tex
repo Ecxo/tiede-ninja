@@ -196,7 +196,7 @@ Käyttölaatu (Quality in use) viittaa ISO:n standardissa valmiin tuotteen käyt
 
 \subsection{Laadun mittareita}
 
-Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julkaisuissa. Shyam R. Chidamber ja Chris F. Kemerer esittelivät vuonna 1994 olio-ohjelmoinnin arviointiin kehittelemänsä kuusi mittaria.\cite{Chidamber94}. Tibor Gyimóthy, Rudolf Ferenc, ja István Siket ovat puolestaan arvioineet näiden mittareiden toimivuutta avoimen lähdekoodin Mozilla-ohjelmistopaketin virheiden ennustamiseen. \cite{Gyimothy05}
+Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julkaisuissa. Shyam R. Chidamber ja Chris F. Kemerer esittelivät vuonna 1994 olio-ohjelmoinnin arviointiin kehittelemänsä kuusi mittaria.\cite{Chidamber94}. Tibor Gyimóthy, Rudolf Ferenc, ja István Siket ovat puolestaan arvioineet näiden mittareiden toimivuutta avoimen lähdekoodin Mozilla-ohjelmistopaketin virheiden ennustamiseen \cite{Gyimothy05}. Michaelin ja kumppanien mukaan Chidamberin ja Kemenerin mittarit ovat yleisimmin viitatut olio-ohjelmoinnin mittarit \cite{Michael02}.
 
 %kokeillaas tätä listaa
 %Mittarin esittelyihin lisätään vielä Gyimothyn näkemys onko mittari toimiva
@@ -223,20 +223,26 @@ Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julk
 
 \textbf{Lisää muiden näkemyksiä, guimothyssa listastattu paljon erimielisyyksiä! \cite{Gyimothy05}}
 
+Muitakin on, kirjoita niitä tähän lisää.
 
 
 
-\subsection{Tehokkuuden mittareita}
+
+
+
+\subsection{Tehokkuuden arviointi}
 
 Aion tarkastella tehokkuutta testien perusteella, tehokas testimenetelmä löytää mahdollisimman suuren osan ohjelman virheistä pienimmällä mahdollisella vaivalla. Useissa ohjelmistokehitystä ja testausta käsittelevissä artikkeleissa on kuitenkin käytetty kahta eri termiä, effectiveness ja efficiency.  Effectiveness viittaa kykyyn saavuttaa lopputulos, efficiency taasen lopputuloksen saavuttamiseen vaadittuun aikaan ja vaivaan. Aionkin erotella nämä kaksi merkitystä tehokkuudeksi ja taloudellisuudeksi. Tehokkuudella tarkoitan esimerkiksi testien kattavuutta ja taloudellisuudella testien kattavuutta verrattuna aikaan ja vaivaan. Suurin osa testauksesta tehdyistä tutkimuksista määrittelee termit samalla tavalla kuin edellä. \cite{Juristo06}
 
-Rothermel ja Harrold määrittelevät taloudellisuuden regressiotestaustatekniikoita käsittelevässä artikkelissaan \cite{Rothermel96} laskentatehon kulutukseksi. Tälläinen määritelmä on testivetoista kehitystä käsittelevässä tutkielmassa mielestänyt melko merkityksetön: jos testien ajaminen ylipäätään onnistuu on sen nopeudella vähäinen merkitys. Eldh ja kumppanit laajentavat Rothermelin ja Harroldin termin käsittämään myös testitapauksen ymmärtämisen ja luomiseen kuluvan ajan \cite{Eldh06}.
+Rothermel ja Harrold määrittelevät taloudellisuuden regressiotestaustatekniikoita käsittelevässä artikkelissaan \cite{Rothermel96} laskentatehon kulutukseksi. Tälläinen määritelmä on testivetoista kehitystä käsittelevässä tutkielmassa mielestäni melko merkityksetön: jos testien ajaminen ylipäätään onnistuu on sen nopeudella vähäinen merkitys. Eldh ja kumppanit laajentavat Rothermelin ja Harroldin termin käsittämään myös testitapauksen ymmärtämisen ja luomiseen kuluvan ajan \cite{Eldh06}.
 
 Rothermel ja Harrold käyttävät myös termejä sisältyvyys (inclusiveness), tarkkuus ja yleisyys. Sisältyvyydellä  tarkoitetaan kuinka hyvin käytetty ohjelmointestaustekniikka valitsee virheiden löytämiseen sopivat testi. Tarkkuus mittaa kuinka paljon tekniikka pystyy välttämään turhien, virheitä löytämättömien, testien kirjoittamista. Yleisyys viittaa tekniikan kykyyn toimia erilaisissa tilanteissa, esimerkiksi käyttäessä monimutkaisia rakenteita.\cite{Rothermel96}
 
-Eldhin ja kumppanien näkemys tehokkuudesta on tekniikan löytämien virheiden määrä \cite{Eldh06}, mutta mutta
+Frøkjær ja kumppanit määrittelevät tehokkuuden käyttäjän ohjelmalla saavuttamien tavoitteiden tarkkuudeksi ja täydellisyydeksi \cite{Frokjaer00}, heidän artikkelinsa tosin käsittelee termejä käytettävyyden perspektiivistä. Eldhin ja kumppanien näkemys tehokkuudesta testauksen näkökulmasta on yksinkertaisesti tekniikan löytämien virheiden määrä \cite{Eldh06}.
 
-Yleisesti ottaen termit tehokkuus ja taloudellisuus tuntuvat välillä tarkoittavan eria asioita eri artikkeleissa. Lukemissani TDD:tä käsittelevissä tutkimuksissa kuitenkin tehokkuudella on useimmiten tarkoitettu vertailua kulutetun ajan ja testien kattavuuden suhteesta.
+
+
+Yleisesti ottaen termit tehokkuus ja taloudellisuus tuntuvat välillä tarkoittavan eria asioita eri artikkeleissa. Lukemissani TDD:tä käsittelevissä tutkimuksissa kuitenkin tehokkuudella on useimmiten tarkoitettu vertailua kulutetun ajan ja testien kattavuuden suhteesta. 
 
 
 
@@ -258,6 +264,8 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
  \item Testit ajetaan uudestaan. Jos testi yhä epäonnistuu, palataan kohtaan kolme ja koodi parannellaan. Jos testi läpäistään, siirrytään seuraavaan kohtaan.
 
  \item Kirjoitettu koodi refaktoroidaan. Koodista esimerkiksi poistetaan turha toisto ja mahdollisesti ylipitkiksi kasvaneet metodit pilkotaan. Tämän jälkeen palataan ensimmäiseen kohtaan ja prosessi aloitetaan alusta uudella testillä.
+
+
 
 
 

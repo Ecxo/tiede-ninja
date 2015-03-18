@@ -121,6 +121,14 @@
   \btxprintmonthyear{.}{Nov}{2006}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
 
+\bibitem [{JS05}]{Janzen05}
+\btxnamefont {\btxlastnamefont {Janzen}, David} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Saiedian}, Hossein}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Test-driven development: Concepts, taxonomy, and future
+  direction}{Test-driven development: Concepts, taxonomy, and future
+  direction}}.
+\newblock \btxjournalfont {Computer}, (9):43--50, 2005.
+
 \bibitem [{KP96}]{Kitchenham96}
 \btxnamefont {\btxlastnamefont {Kitchenham}, B.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Pfleeger}, S.L.}\btxauthorcolon\ \btxjtitlefont

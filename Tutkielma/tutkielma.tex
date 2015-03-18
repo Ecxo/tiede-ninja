@@ -223,7 +223,6 @@ Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julk
 
 \textbf{Lisää muiden näkemyksiä, guimothyssa listastattu paljon erimielisyyksiä! \cite{Gyimothy05}}
 
-Muitakin on, kirjoita niitä tähän lisää.
 
 
 
@@ -252,7 +251,7 @@ Yleisesti ottaen termit tehokkuus ja taloudellisuus tuntuvat välillä tarkoitta
 
 %Mikä se on, kuka keksi, miksi keksi? Paljonko käytetään?
 
-Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \cite{Beck03}. Menetelmän perusideana on luoda ensin ohjelmalle testitapaus, ja sen jälkeen luoda testitapauksen läpäisevä osa ohjelmaa. Menetelmä on osa ketteriä menetelmiä, ryhmää ohjelmointitekniikoita joissa kehitys tehdään lyhyissä osissa. Tekniikan kulku on seuraava:
+Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \cite{Beck03}. Menetelmästä käytetään myös termiä Test First Development \cite{Crispin06}. Suomenkieliseksi vastineeksi TDD:lle on muodostunut testivetoinen kehitys, mutta myös termiä testilähtöinen kehitys käytetään. Menetelmän perusideana on luoda ensin ohjelmalle testitapaus, ja sen jälkeen luoda testitapauksen läpäisevä osa ohjelmaa. Menetelmä on osa ketteriä menetelmiä, ryhmää ohjelmointitekniikoita joissa kehitys tehdään lyhyissä osissa. Tekniikan kulku Beckin menetelmässä on seuraava:
 
 \begin{enumerate}
   \item Kehittäjä tutkii esimerkiksi vaatimusmäärittelyn käyttötapauksia, ja kirjoittaa niiden perusteella testin.
@@ -265,12 +264,19 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
 
  \item Kirjoitettu koodi refaktoroidaan. Koodista esimerkiksi poistetaan turha toisto ja mahdollisesti ylipitkiksi kasvaneet metodit pilkotaan. Tämän jälkeen palataan ensimmäiseen kohtaan ja prosessi aloitetaan alusta uudella testillä.
 
-
-
-
-
-
 \end{enumerate}
+
+Testivetoisen kehityksen testit kirjoitetaan tutkimaan ohjelman pienimpiä mahdollisia yksikköjä, eli ohjelman osia joita voidaan testata \cite{Crispin06}. Crispinin mukaan pienimmän mahdollisen yksikön määritelmä on kiistanalainen, mutta olio-ohjelmoinnissa sitä on yleisesti pidetty metodina. Testien kirjoittaminen vasta varsinaisen koodin jälkeen voi kestää minuuteista kuukausiin, kun taas test driven developmentia käyttäessä testit ovat käytettävissä välittömästi. \cite{Janzen05}. 
+
+Testivetoisen kehitys siis perustuu testaukseen, mutta se viekkaasti myös vaikuttaa suunnitteluun. Koska testit kirjoitetaan ensin, ohjelmoija joutuu miettimään miten toteuttaa koodi siten, että se on myös testattava. 
+
+ 
+
+
+
+
+
+
 
 
 

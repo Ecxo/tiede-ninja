@@ -5,9 +5,9 @@
 \contentsline {subsection}{\numberline {2.2}Laadun mittareita}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Tehokkuuden arviointi}{5}{subsection.2.3}
 \contentsline {section}{\numberline {3}Test Driven Development}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Tutkimuksia}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Tuloksia}{6}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Laatu}{6}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.1}Tutkimuksia}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Tuloksia}{7}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Laatu}{7}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Tehokkuus}{7}{subsubsection.3.2.2}
 \contentsline {subsection}{\numberline {3.3}Meta-analyysit}{7}{subsection.3.3}
 \contentsline {section}{\numberline {4}K\IeC {\"a}ytt\IeC {\"o} yritysmaailmassa}{7}{section.4}

@@ -288,23 +288,50 @@ Testivetoinen kehitys on siis tutkimusten määrästä päätellen kiinnostanut 
 
 \subsection{Laatu}
 
-Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella.
+Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle.
 
 \subsubsection{Toimivuus}
 
 \subsubsection{Luotettavuus}
 
+Luotettavuus vaikuttaa olevan suosituin laadun osa testivetoista kehitystä käsittelevissä artikkeleissa. Useat testit ovat esimerkiksi mitanneet TDD:llä tuotetun ohjelmiston laatua testien läpäisyn perusteella, jota pidän lähinnä luotettavuuteen liittyvänä mittarina.
+
+Georgen ja Williamsin \cite{George04} tutkimuksessa havaittiin TDD:tä käyttäneiden parien tuottamien ohjelmien läpäisevän 18\% enemmän tutkijoiden rakentamia testitapauksia kuin kontrolliryhmien. Tutkimuksessa oli kuitenkin ongelmia joiden takia pidän tulosta kyseenalaisena: Georgen ja Williamsin tutkimuksessa ohjelmat olivat erittäin lyhyitä, pituudeltaan n. 200 riviä, ja suurin osa kontrolliryhmistä ei ollut tehnyt minkäänlaisia testejä ennen ohjelman palautusta tutkijoille.
+
+Wilkersonin ja kumppanit \cite{Wilkerson12} vertailevat TDD:tä Code Inspection-menetelmään, jossa erillinen ryhmä katselmoi koodia. Tutkijoiden mukaan menetelmillä on selvä ero, katselmointi poistaa ohjelmasta löytyviä virheitä, mutta TDD käsittelee ne joi kehitysvaiheessa. Tutkimuksen tulosten mukaan katselmointia ja TDD:tä yhdistävän ryhmän ohjelmassa oli vähiten virheitä kun taas pelkkää TDD:tä käyttäneellä ryhmällä tulos ei ollut perinteisiä menetelmiä parempi. Tulos on mielestäni yllättävä, Wilkersonin ja kumppanien mukaan se saattaa selittyä TDD-menetelmän liian epämääräisellä määrittelyllä.
+
+
+
 \subsubsection{Käytettävyys}
+
+Testivetoinen kehitys tuskin vaikuttaa loppukäyttäjän kokemukseen ohjelman laadusta, mutta ehkäpä itse menetelmän käytettävyyttä voitaisin pitää laatutekijänä? 
+
+Latorren \cite{Latorre14} tutkimuksessa mittauksien mukaan menetelmä oli helppo oppia, varsinkin kehittyneet ja keskitason ohjelmoijat oppivat sen tehokkaasti.
 
 \subsubsection{Tehokkuus}
 
 \subsubsection{Ylläpidettävyys}
 
+Testivetoisen kehityksen vaikutus ohjelman rakenteeseen vaikuttaa luultavasti myös sen ylläpidettävyyteen. Ohjelman rakenteen mittaaminen tehokkasti vaikuttaa tutkimusten perusteella vaikeammalta kuin esimerkiksi luotettavuuden mittaaminen; virheitä on helpompi laskea kuin arvioida rakenteeseen liittyviä ominaisuuksia.
+
+Siniaalto ja Abrahamsson \cite{Siniaalto07}
 
 
-\subsection{Tehokkuus}
+
+\subsection{Taloudellisuus}
+
+Vaikka koodin laatu olisi parempaa, omien kokemuksieni perusteella varsinainen ohjelman koodaus TDD:tä käyttäessä on kuitenkin erittäin hidasta. Uskonkin testivetoisen kehityksen hyötyjen olevan pienempiä kuin sen käyttämisessä kuluva aika, ja epäilen menetelmän taloudellista tehokkuutta.
+
+George ja Williams \cite{George04} havaitsivat TDD:tä käyttäneiden pariohjelmoijien käyttäneen 16\% enemmän aikaa tehtävän suorittamiseen kuin tavanomaista vesiputousmalli noudattanut kontrolliryhmä. Toisaalta suurin osa kontrolliryhmistä oli jättänyt testitapaukset tekemättä, joten mielestäni tulosta ei voi pitää vertailukelpoisena.
 
 
+\subsection{Käyttäjien mielipiteitä menetelmästä}
+
+Eräissä artikkeleissa on tehty myös kvalitatiivista tutkimusta, esimerkiksi selvittämällä testihenkilöiden henkilökohtaisia näkemyksiä testivetoisen kehityksen toimivuudesta.
+
+Georgen ja Williamsin \cite{George04} tutkimuksen osaanottajat pitivät menelmää erityisen hyvänä koodin laadun ja ohjelmoijan tuottavuuden kannalta, mutta oikeaan "mielenlaatuun" pääsemistä oli pidetty vaikeana.
+
+Latorren \cite{Latorre14} tutkimuksessa testivetoisen kehityksen oppimisen vaativuudesta 24 vastaaja 25:stä piti menetelmää helppona oppia, ja tutkijan mittausten perusteella he myös käyttivät sitä oikein.
 
 
 \subsection{Meta-analyysit}

@@ -95,6 +95,18 @@
   31(10):897--910, \btxprintmonthyear{.}{Oct}{2005}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
+\bibitem [{GW04}]{George04}
+\btxnamefont {\btxlastnamefont {George}, Boby} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Williams}, Laurie}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A structured experiment of test-driven development}{A
+  structured experiment of test-driven development}}.
+\newblock \btxjournalfont {Information and Software Technology}, 46(5):337 --
+  342, 2004\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {0950-5849}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.sciencedirect.com/science/article/pii/S0950584903002040}},
+  Special Issue on Software Engineering, Applications, Practices and Tools from
+  the \{ACM\} Symposium on Applied Computing 2003.
+
 \bibitem [{ISO01}]{ISO9126}
 \btxnamefont {\btxlastnamefont {ISO/IEC}}\btxauthorcolon\ \btxtitlefont
   {ISO/IEC 9126. Software engineering -- Product quality}.
@@ -137,6 +149,15 @@
 \newblock \btxjournalfont {Software, IEEE}, 13(1):12--21,
   \btxprintmonthyear{.}{Jan}{1996}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
+\bibitem [{Lat14}]{Latorre14}
+\btxnamefont {\btxlastnamefont {Latorre}, R.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Effects of developer experience on learning and applying
+  unit test-driven development}{Effects of Developer Experience on Learning and
+  Applying Unit Test-Driven Development}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  40(4):381--395, \btxprintmonthyear{.}{April}{2014}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
 \bibitem [{MBS02}]{Michael02}
 \btxnamefont {\btxlastnamefont {Michael}, James\btxfnamespacelong Bret},
@@ -184,6 +205,16 @@
   39(6):835--856, \btxprintmonthyear{.}{June}{2013}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
+\bibitem [{SA07}]{Siniaalto07}
+\btxnamefont {\btxlastnamefont {Siniaalto}, M.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Abrahamsson}, P.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A comparative case study on the impact of test-driven
+  development on program design and test coverage}{A Comparative Case Study on
+  the Impact of Test-Driven Development on Program Design and Test Coverage}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Empirical Software Engineering and
+  Measurement, 2007. ESEM 2007. First International Symposium on},
+  \btxpageslong {}\ 275--284, \btxprintmonthyear{.}{Sept}{2007}{long}.
+
 \bibitem [{SMGM13}]{Stoica13}
 \btxnamefont {\btxlastnamefont {Stoica}, Marian}, \btxnamefont
   {\btxlastnamefont {Mircea}, Marinela}\btxandcomma {} \btxandlong {}\
@@ -209,5 +240,16 @@
 \newblock \btxjournalfont {Software, IEEE}, 17(1):70--79,
   \btxprintmonthyear{.}{Jan}{2000}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
+
+\bibitem [{WNM12}]{Wilkerson12}
+\btxnamefont {\btxlastnamefont {Wilkerson}, J.W.}, \btxnamefont
+  {\btxlastnamefont {Nunamaker},~J.F., Jr.}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Mercer}, R.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Comparing the defect reduction benefits of code inspection
+  and test-driven development}{Comparing the Defect Reduction Benefits of Code
+  Inspection and Test-Driven Development}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  38(3):547--560, \btxprintmonthyear{.}{May}{2012}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
 \end{thebibliography}

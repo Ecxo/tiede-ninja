@@ -1,3 +1,14 @@
+
+
 http://www.sciencedirect.com.libproxy.helsinki.fi/science/article/pii/S0950584903002040
 A structured experiment of test-driven development
+-they passed 18% more functional black-box test cases. However, the TDD programmers took 16% more time.
+-Shortcomings!!!
 
+http://ieeexplore.ieee.org.libproxy.helsinki.fi/xpl/articleDetails.jsp?tp=&arnumber=6690135
+-Our results suggest that skilled developers are able to quickly learn the UTDD 
+
+http://ieeexplore.ieee.org.libproxy.helsinki.fi/xpl/abstractCitations.jsp?tp=&arnumber=4343755
+-Proceedings
+- the effect of TDD on program design was not as evident as expected, but the test coverage was significantly superior to iterative test-last development.
+-Classification of TDD studies

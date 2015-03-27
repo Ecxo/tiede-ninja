@@ -174,6 +174,16 @@
 \newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
   22(8):529--551, 1996.
 
+\bibitem [{RM13}]{Rafique13}
+\btxnamefont {\btxlastnamefont {Rafique}, Y.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Misic}, V.B.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The effects of test-driven development on external quality
+  and productivity: A meta-analysis}{The Effects of Test-Driven Development on
+  External Quality and Productivity: A Meta-Analysis}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  39(6):835--856, \btxprintmonthyear{.}{June}{2013}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+
 \bibitem [{SMGM13}]{Stoica13}
 \btxnamefont {\btxlastnamefont {Stoica}, Marian}, \btxnamefont
   {\btxlastnamefont {Mircea}, Marinela}\btxandcomma {} \btxandlong {}\
@@ -181,6 +191,16 @@
   \btxjtitlefont {\btxifchangecase {Software development: Agile vs.
   traditional}{Software Development: Agile vs. Traditional}}.
 \newblock \btxjournalfont {Informatica Economica}, 17(4):64--76, 2013.
+
+\bibitem [{TLD{\etalchar{+}}10}]{Turhan10}
+\btxnamefont {\btxlastnamefont {Turhan}, Burak}, \btxnamefont {\btxlastnamefont
+  {Layman}, Lucas}, \btxnamefont {\btxlastnamefont {Diep}, Madeline},
+  \btxnamefont {\btxlastnamefont {Erdogmus}, Hakan}\btxandcomma {} \btxandlong
+  {}\ \btxnamefont {\btxlastnamefont {Shull}, Forrest}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {How effective is test-driven
+  development}{How effective is test-driven development}}.
+\newblock \btxjournalfont {Making Software: What Really Works, and Why We
+  Believe It}, \btxpageslong {}\ 207--217, 2010.
 
 \bibitem [{Whi00}]{Whittaker00}
 \btxnamefont {\btxlastnamefont {Whittaker}, J.A.}\btxauthorcolon\

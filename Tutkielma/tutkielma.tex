@@ -167,28 +167,22 @@ International Organization for Standardization eli ISO julkaisi vuonna 1991 ISO/
 
 Sisäisellä laadulla tarkoitetaan koodin laatuominaisuuksia, esimerkiksi rakennetta ja luettavuutta. Ulkoinen koodi viittaa ohjelman toimintaan sitä ajettaessa, esimerkiksi virheiden määrään. ISO9216 jakaa sisäisen ja ulkoisen laadun osien luokiksi toimivuuden, luotettavuuden, käytettävyyden, tehokkuuden, ylläpidettävyyden ja siirrettävyyden. Kaikkiin luokkiin sisältyy useita alaluokkia.
 
-Toimivuus (Functionality): ohjelman kyky vastata sille asetettuihin vaatimuksiin.  Luokan alaluokkia ovat soveltuvuus tehtävään, ohjelman antamien tuloksien oikeellisuus, toiminta muiden ohjelmien kanssa, turvallisuus sekä standardien, kuten lakien, noudattaminen.
+Toimivuus (Functionality): ohjelman kyky vastata sille asetettuihin vaatimuksiin.  Luokan alaluokkia ovat soveltuvuus tehtävään, ohjelman antamien tuloksien oikeellisuus, toiminta muiden ohjelmien kanssa, turvallisuus sekä standardien, kuten lakien, noudattaminen. Testivetoinen kehitys vaikuttaa myös ohjelman rakenteeseen, joten uskoisin menetelmän vaikuttavan positiivisesti tähän tekijään.
 
-Luotettavuus (Reliability): kuinka ohjelmisto säilyttää suoritustason erilaisissa tilanteissa. Kypsyys, eli virheistä johtuvien häiriöiden välttäminen, virheiden sietäminen, virheistä palautuminen sekä luotettavuuteen liittyvien standardien noudattaminen.
+Luotettavuus (Reliability): kuinka ohjelmisto säilyttää suoritustason erilaisissa tilanteissa. Kypsyys, eli virheistä johtuvien häiriöiden välttäminen, virheiden sietäminen, virheistä palautuminen sekä luotettavuuteen liittyvien standardien noudattaminen. Yksi TDD:n tärkeimmistä esitetyistä ominaisuuksista on testien laajuus ja kattavuus, joten uskon tekniikan tuomien hyötyjen vaikuttavan erityisesti tähän kategoriaan.
 
- Käytettävyys (Usability): ohjelman helppokäyttöisyys ja miellyttävyys. Ymmärrettävyys, ohjelman opittavuus, käytettävyys, viehättävyys ja käytettävyysstandardien noudattaminen.
+ Käytettävyys (Usability): ohjelman helppokäyttöisyys ja miellyttävyys. Ymmärrettävyys, ohjelman opittavuus, käytettävyys, viehättävyys ja käytettävyysstandardien noudattaminen. Testivetoinen kehitys ei ota kantaa käyttöliittymän käytettävyyskysymyksiin, joten epäilen TDD:n vaikuttavan mitenkään käytettävyyteen.
 
-Tehokkuus (Efficiency): kuinka hyvin ohjelma toimii erilaisilla resursseilla. Luokan alaluokkia ovat ajankäyttö, eli kuinka ohjelman vasteaika muuttuu erilaisissa ympäristöissä, resurssien hyödyntämisen tehokkuus sekä tehokkuusstandardien noudattaminen.
+Tehokkuus (Efficiency): kuinka hyvin ohjelma toimii erilaisilla resursseilla. Luokan alaluokkia ovat ajankäyttö, eli kuinka ohjelman vasteaika muuttuu erilaisissa ympäristöissä, resurssien hyödyntämisen tehokkuus sekä tehokkuusstandardien noudattaminen. TDD:n käyttö parantaa todennäköisesti ohjelman rakennetta, joka saattaa vaikuttaa hieman myös tehokkuuteen.
 
-Ylläpidettävyys (Maintainability): mahdollisuudet muuttaa ohjelmaa. Alaluokkina analysoitavuus, muutettavuus, stabiilisuus, testattavuus ja ylläpidettävyysstandardien noudatus.
+Ylläpidettävyys (Maintainability): mahdollisuudet muuttaa ohjelmaa. Alaluokkina analysoitavuus, muutettavuus, stabiilisuus, testattavuus ja ylläpidettävyysstandardien noudatus. Testivetoinen kehitys pakottaa kehittäjän suunnittelemaan metodeita pieninä osina välttäen liiallista toiminnallisuutta ja refaktoroimaan koodia, tämä luultavasti parantaa myös ylläpidettävyyttä.
 
-Siirrettävyys (Portability): ohjelman siirrettävyys alustalta toiselle, esimerkiksi eri käyttöjärjestelmälle. Sopeutuvuus, eli kuinka helposti ohjelmaa voidaan muuttaa toiselle alustalle sopivaksi, asennettavuus, rinnakkaiselo muiden ohjelmien kanssa, korvattavuus, eli toiminta jonkun toisen ohjelman tilalla, sekä siirrettävyysstandardien noudatus.
+Siirrettävyys (Portability): ohjelman siirrettävyys alustalta toiselle, esimerkiksi eri käyttöjärjestelmälle. Sopeutuvuus, eli kuinka helposti ohjelmaa voidaan muuttaa toiselle alustalle sopivaksi, asennettavuus, rinnakkaiselo muiden ohjelmien kanssa, korvattavuus, eli toiminta jonkun toisen ohjelman tilalla, sekä siirrettävyysstandardien noudatus. Mielestäni testivetoisen kehityksen menetelmä ei vaikuta tähän ominaisuuteen käytännössä mitenkään.
 
 
 Käyttölaatu (Quality in use) viittaa ISO:n standardissa valmiin tuotteen käyttöön. Tuotteen loppukäyttäjän kokemusta mitataan tehokkuudella, tuottavuudella, turvallisuudella ja tyytyväisyydellä.
 
 %Saa paljon paremmaksi kun käy läpi artikkelin viitteet ja ottaa niistä kuvaukset
-%***Seuraa paljon väitteitä jotka on otettu Coten ja artikkelista, onko tämä jo liian referaattimainen juttu?***
-
-
-
-
-
 
 
 
@@ -268,7 +262,10 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
 
 Testivetoisen kehityksen testit kirjoitetaan tutkimaan ohjelman pienimpiä mahdollisia yksikköjä, eli ohjelman osia joita voidaan testata \cite{Crispin06}. Crispinin mukaan pienimmän mahdollisen yksikön määritelmä on kiistanalainen, mutta olio-ohjelmoinnissa sitä on yleisesti pidetty metodina. Testien kirjoittaminen vasta varsinaisen koodin jälkeen voi kestää minuuteista kuukausiin, kun taas test driven developmentia käyttäessä testit ovat käytettävissä välittömästi. \cite{Janzen05}. 
 
-Testivetoisen kehitys siis perustuu testaukseen, mutta se viekkaasti myös vaikuttaa suunnitteluun. Koska testit kirjoitetaan ensin, ohjelmoija joutuu miettimään miten toteuttaa koodi siten, että se on myös testattava. 
+Testivetoisen kehitys siis perustuu testaukseen, mutta se viekkaasti myös vaikuttaa suunnitteluun. Koska testit kirjoitetaan ensin, ohjelmoija joutuu miettimään miten toteuttaa koodi siten, että se on myös testattava. Menetelmä myös  kehottaa refaktoroimaan koodia säännöllisesti jokaisen kierroksen lopussa.
+
+TDD:llä on myös muutamia samankaltaisia sukulaisia, esimerkiksi 
+Acceptance Test Driven Development, Behavior-Driven Development ja Story-Test-Driven Development \cite{Turhan10}.
 
  
 
@@ -278,42 +275,48 @@ Testivetoisen kehitys siis perustuu testaukseen, mutta se viekkaasti myös vaiku
 
 
 
+\section{Tutkimuksia}
 
+Test Driven Development-menetelmästä on tehty useita tutkimuksia. Esimerkiksi Rafique ja kumppanit ovat tutkineet 27 empiiristä ennen helmikuuta 2011 julkaistua tutkimusta aiheesta \cite{Rafique13}. Turhan ja kumppanit löysivät peräti 325 artikkelia, joista he siivilöivät 22 tarkoituksenmukaista tutkimusta \cite{Turhan10}. 
 
-
-\subsection{Tutkimuksia}
-
-babab
+Testivetoinen kehitys on siis tutkimusten määrästä päätellen kiinnostanut myös akateemisia tahoja.
 
 %Tähän erilaisia tutkimuksia, mitä mittareita niissä on käytetty, millaiset tutkimusryhmät, mitä tuloksia
 
 
-
-\subsection{Tuloksia}
-
-babab
-
 %Toimiiko vai ei?
-\subsubsection{Laatu}
 
-babab
+\subsection{Laatu}
+
+Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella.
+
+\subsubsection{Toimivuus}
+
+\subsubsection{Luotettavuus}
+
+\subsubsection{Käytettävyys}
 
 \subsubsection{Tehokkuus}
 
-babab
+\subsubsection{Ylläpidettävyys}
+
+
+
+\subsection{Tehokkuus}
+
+
 
 
 \subsection{Meta-analyysit}
 
 %Millaisia näkemyksiä meta-analyyseilla aiheesta
 
-babab
+
 
 \section{Käyttö yritysmaailmassa}
 
 %Käyttääkö tätä joku, ehkä jotain yritysten papruja aiheesta
 
-babab
 
 
 

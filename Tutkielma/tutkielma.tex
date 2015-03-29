@@ -215,10 +215,6 @@ Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julk
 
 \end{itemize}
 
-\textbf{Lisää muiden näkemyksiä, guimothyssa listastattu paljon erimielisyyksiä! \cite{Gyimothy05}}
-
-
-
 
 
 
@@ -267,13 +263,6 @@ Testivetoisen kehitys siis perustuu testaukseen, mutta se viekkaasti myös vaiku
 TDD:llä on myös muutamia samankaltaisia sukulaisia, esimerkiksi 
 Acceptance Test Driven Development, Behavior-Driven Development ja Story-Test-Driven Development \cite{Turhan10}.
 
- 
-
-
-
-
-
-
 
 \section{Tutkimuksia}
 
@@ -288,13 +277,15 @@ Testivetoinen kehitys on siis tutkimusten määrästä päätellen kiinnostanut 
 
 \subsection{Laatu}
 
-Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle.
+Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle. 
 
 \subsubsection{Toimivuus}
 
 \subsubsection{Luotettavuus}
 
 Luotettavuus vaikuttaa olevan suosituin laadun osa testivetoista kehitystä käsittelevissä artikkeleissa. Useat testit ovat esimerkiksi mitanneet TDD:llä tuotetun ohjelmiston laatua testien läpäisyn perusteella, jota pidän lähinnä luotettavuuteen liittyvänä mittarina.
+
+
 
 Georgen ja Williamsin \cite{George04} tutkimuksessa havaittiin TDD:tä käyttäneiden parien tuottamien ohjelmien läpäisevän 18\% enemmän tutkijoiden rakentamia testitapauksia kuin kontrolliryhmien. Tutkimuksessa oli kuitenkin ongelmia joiden takia pidän tulosta kyseenalaisena: Georgen ja Williamsin tutkimuksessa ohjelmat olivat erittäin lyhyitä, pituudeltaan n. 200 riviä, ja suurin osa kontrolliryhmistä ei ollut tehnyt minkäänlaisia testejä ennen ohjelman palautusta tutkijoille.
 
@@ -304,17 +295,24 @@ Wilkersonin ja kumppanit \cite{Wilkerson12} vertailevat TDD:tä Code Inspection-
 
 \subsubsection{Käytettävyys}
 
-Testivetoinen kehitys tuskin vaikuttaa loppukäyttäjän kokemukseen ohjelman laadusta, mutta ehkäpä itse menetelmän käytettävyyttä voitaisin pitää laatutekijänä? 
+Testivetoinen kehitys tuskin vaikuttaa loppukäyttäjän kokemukseen ohjelman laadusta. TDD ei varsinaisesti ota kantaa käytettävyyteen, eikä menetelmä sovellu graafisten käyttöliittymien suunnitteluun. Hellman ja kumppanit \cite{Hellman10} pitävät GUI:n kehitystä TDD:llä niin vaikeana, että ovat artikkelissaan pyrkineet kehittämään TDD:stä paremmin tehtävään sopivaa muunnosta.
 
-Latorren \cite{Latorre14} tutkimuksessa mittauksien mukaan menetelmä oli helppo oppia, varsinkin kehittyneet ja keskitason ohjelmoijat oppivat sen tehokkaasti.
+En ole löytänyt tutkimuksia testivetoisen kehityksen vaikutuksesta käytettävyyteen, joten vertailenkin tässä osiossa itse menetelmän käytettävyyttä. TDD:n prosessi on yksinkertainen, joten uskon aloittelevankin ohjelmoijan ymmärtävän sen toimintatavat nopeasti.
+
+Latorren \cite{Latorre14} tutkimuksessa mittauksien mukaan menetelmä oli helppo oppia, varsinkin kehittyneet ja keskitason ohjelmoijat oppivat sen nopeasti.
 
 \subsubsection{Tehokkuus}
 
 \subsubsection{Ylläpidettävyys}
 
-Testivetoisen kehityksen vaikutus ohjelman rakenteeseen vaikuttaa luultavasti myös sen ylläpidettävyyteen. Ohjelman rakenteen mittaaminen tehokkasti vaikuttaa tutkimusten perusteella vaikeammalta kuin esimerkiksi luotettavuuden mittaaminen; virheitä on helpompi laskea kuin arvioida rakenteeseen liittyviä ominaisuuksia.
+Testivetoisen kehityksen vaikutus ohjelman rakenteeseen vaikuttaa ehkä myös sen ylläpidettävyyteen. Ohjelman rakenteen mittaaminen tehokkasti vaikuttaa tutkimusten perusteella vaikeammalta kuin esimerkiksi luotettavuuden mittaaminen; virheitä on helpompi laskea kuin arvioida rakenteeseen liittyviä ominaisuuksia.
 
-Siniaalto ja Abrahamsson \cite{Siniaalto07}
+Siniaalto ja Abrahamsson \cite{Siniaalto07} tutkivat TDD:n vaikutusta ohjelmiston laatuun. Tutkijat käyttivät mittareina tässäkin artikkelissa esiteltyjä laadun mittareita, poislukien rivien määrä. Siniaalto ja Abrahamsson vertasi TDD:llä tehtyä ohjelmaa kahteen ohjelmaan, joissa testaus oli tehty vasta koodin jälkeen. Ohjelmien tulokset olivat samankaltaisia, mutta TDD:n oli luokkien metodien välisen koheesion metriikassa selvästi muita huonompi. Tulos poikkeaa suuresti muista näkemistäni testivetoista kehitystä käsittelevistä artikkelista, joissa TDD:n yhdeksi tärkeimmäksi vahvuudeksi on nostettu juuri parempi rakenne. Epäilen Siniaallon ja Abrahamssonin tuloksen olevan poikkeustapaus.
+
+\subsubsection{Siirrettävyys}
+
+En ole löytänyt artikkeleja joissa oltaisiin tutkittu TDD:n vaikutusta ohjelmiston siirrettävyyteen. Testivetoisen kehityksen prosessi ei mielestäni millään tavalla sivua siirettävyyteen vaikuttavia tekijöitä, joten tutkimuksen vähäisyys oli odotettavissa.
+Samaan tapaan kuin käytettävyyttä tutkiessa, onkin ehkä järkevämpää tutkia miten itse TDD:n tekniikka soveltuu eri alustoilla. Tästäkään aiheesta en ole löytänyt tutkimuksia, mutta luultavasti TDD toimii kaikilla alustoilla ja ohjelmointikielillä joissa voi kirjoittaa testejä. Tämä kriteeri on niin löysä, että TDD:tä voi melestäni käyttää lähes missä tahansa ohjelmontitilanteessa. Graafisten käyttöliittymien suunnitteluun TDD:tä pidetään huonosti sopivana \cite{Hellman10}.
 
 
 
@@ -323,6 +321,8 @@ Siniaalto ja Abrahamsson \cite{Siniaalto07}
 Vaikka koodin laatu olisi parempaa, omien kokemuksieni perusteella varsinainen ohjelman koodaus TDD:tä käyttäessä on kuitenkin erittäin hidasta. Uskonkin testivetoisen kehityksen hyötyjen olevan pienempiä kuin sen käyttämisessä kuluva aika, ja epäilen menetelmän taloudellista tehokkuutta.
 
 George ja Williams \cite{George04} havaitsivat TDD:tä käyttäneiden pariohjelmoijien käyttäneen 16\% enemmän aikaa tehtävän suorittamiseen kuin tavanomaista vesiputousmalli noudattanut kontrolliryhmä. Toisaalta suurin osa kontrolliryhmistä oli jättänyt testitapaukset tekemättä, joten mielestäni tulosta ei voi pitää vertailukelpoisena.
+
+Ohjelman rakenteeseen keskittyneessä tutkimuksessaan Siniaalto ja Abrahamsson \cite{Siniaalto07} havaitsivat TDD:n tuottavan korkean testikattavuuden ilman tehokkuuden kärsimistä.
 
 
 \subsection{Käyttäjien mielipiteitä menetelmästä}

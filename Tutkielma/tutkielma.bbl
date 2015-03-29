@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{SMGM13}
+\begin{thebibliography}{HHKM10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -106,6 +106,17 @@
   \btxurlfont{http://www.sciencedirect.com/science/article/pii/S0950584903002040}},
   Special Issue on Software Engineering, Applications, Practices and Tools from
   the \{ACM\} Symposium on Applied Computing 2003.
+
+\bibitem [{HHKM10}]{Hellman10}
+\btxnamefont {\btxlastnamefont {Hellmann}, T.D.}, \btxnamefont
+  {\btxlastnamefont {Hosseini-Khayat}, A.}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Maurer}, F.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Supporting test-driven development of graphical user
+  interfaces using agile interaction design}{Supporting Test-Driven Development
+  of Graphical User Interfaces Using Agile Interaction Design}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Software Testing, Verification, and
+  Validation Workshops (ICSTW), 2010 Third International Conference on},
+  \btxpageslong {}\ 444--447, \btxprintmonthyear{.}{April}{2010}{long}.
 
 \bibitem [{ISO01}]{ISO9126}
 \btxnamefont {\btxlastnamefont {ISO/IEC}}\btxauthorcolon\ \btxtitlefont

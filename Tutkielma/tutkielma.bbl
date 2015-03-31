@@ -30,6 +30,21 @@
   {Test-driven development: by example}.
 \newblock \btxpublisherfont {Addison-Wesley Professional}, 2003.
 
+\bibitem [{CCG{\etalchar{+}}06}]{Canfora06}
+\btxnamefont {\btxlastnamefont {Canfora}, Gerardo}, \btxnamefont
+  {\btxlastnamefont {Cimitile}, Aniello}, \btxnamefont {\btxlastnamefont
+  {Garcia}, Felix}, \btxnamefont {\btxlastnamefont {Piattini},
+  Mario}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Visaggio}, Corrado\btxfnamespacelong Aaron}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Evaluating advantages of test driven development: A
+  controlled experiment with professionals}{Evaluating Advantages of Test
+  Driven Development: A Controlled Experiment with Professionals}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 2006 ACM/IEEE
+  International Symposium on Empirical Software Engineering}, ISESE '06,
+  \btxpageslong {}\ 364--371, New York, NY, USA, 2006. \btxpublisherfont
+  {ACM}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {1-59593-218-6}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1159733.1159788}}.
+
 \bibitem [{CK94}]{Chidamber94}
 \btxnamefont {\btxlastnamefont {Chidamber}, S.R.} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Kemerer}, C.F.}\btxauthorcolon\ \btxjtitlefont
@@ -61,6 +76,17 @@
 \newblock {\latintext
   \btxurlfont{http://dx.doi.org/10.1007/s11219-007-9029-0}}.
 
+\bibitem [{CSP12}]{Causevic12}
+\btxnamefont {\btxlastnamefont {Causevic}, A.}, \btxnamefont {\btxlastnamefont
+  {Sundmark}, D.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Punnekkat}, S.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Test case
+  quality in test driven development: A study design and a pilot
+  experiment}{Test case quality in test driven development: A study design and
+  a pilot experiment}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Evaluation Assessment in Software
+  Engineering (EASE 2012), 16th International Conference on}, \btxpageslong {}\
+  223--227, \btxprintmonthyear{.}{May}{2012}{long}.
+
 \bibitem [{EHP{\etalchar{+}}06}]{Eldh06}
 \btxnamefont {\btxlastnamefont {Eldh}, Sigrid}, \btxnamefont {\btxlastnamefont
   {Hansson}, Hans}, \btxnamefont {\btxlastnamefont {Punnekkat}, Sasikumar},
@@ -73,6 +99,17 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Testing: Academic and Industrial
   Conference-Practice And Research Techniques, 2006. TAIC PART 2006.
   Proceedings}, \btxpageslong {}\ 159--170. IEEE, 2006.
+
+\bibitem [{EMT05}]{Erdogmus05}
+\btxnamefont {\btxlastnamefont {Erdogmus}, H.}, \btxnamefont {\btxlastnamefont
+  {Morisio}, Maurizio}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Torchiano}, Marco}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {On the effectiveness of the test-first approach to
+  programming}{On the effectiveness of the test-first approach to
+  programming}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  31(3):226--237, \btxprintmonthyear{.}{March}{2005}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
 \bibitem [{FHH00}]{Frokjaer00}
 \btxnamefont {\btxlastnamefont {Fr{\o}kj{\ae}r}, Erik}, \btxnamefont

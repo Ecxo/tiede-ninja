@@ -12,3 +12,16 @@ http://ieeexplore.ieee.org.libproxy.helsinki.fi/xpl/abstractCitations.jsp?tp=&ar
 -Proceedings
 - the effect of TDD on program design was not as evident as expected, but the test coverage was significantly superior to iterative test-last development.
 -Classification of TDD studies!!
+
+http://link.springer.com.libproxy.helsinki.fi/chapter/10.1007/11767718_32
+-kiinnostavia mittareita
+- This paper discusses an experiment carried out within a Spanish software company with the aim of comparing productivity in TDD and TAC.
+
+http://ieeexplore.ieee.org.libproxy.helsinki.fi/xpl/abstractCitations.jsp?tp=&arnumber=1423994
+-We found that test-first students on average wrote more tests and, in turn, students who wrote more tests tended to be more productive.
+-Why did more testing by Test-First subjects not result in a
+proportional increase in quality?
+
+http://ieeexplore.ieee.org.libproxy.helsinki.fi/xpl/articleDetails.jsp?tp=&arnumber=6272518
+-“test cases created by test-first developers were as good as (or as bad as) test cases created by test-last developers”. 
+-test-first developers had, on average, 27% less failing assertions 

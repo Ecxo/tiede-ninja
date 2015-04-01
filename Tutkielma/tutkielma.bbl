@@ -235,6 +235,13 @@
 \newblock \btxjournalfont {Wiley Encyclopedia of Computer Science and
   Engineering}, 2008.
 
+\bibitem [{RC{\etalchar{+}}69}]{Randell69}
+\btxnamefont {\btxlastnamefont {Randell}, Brian}, \btxnamefont
+  {\btxlastnamefont {Committee}, NATO\btxfnamespacelong Science}\btxandcomma {}
+  \btxetalfont {\btxetalshort {.}}\btxauthorcolon\ \btxtitlefont {Software
+  Engineering Techniques: Report on a Conference Sponsored}.
+\newblock \btxpublisherfont {Scientific Affairs Division, NATO}, 1969.
+
 \bibitem [{RH96}]{Rothermel96}
 \btxnamefont {\btxlastnamefont {Rothermel}, Gregg} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Harrold}, Mary\btxfnamespacelong Jean}\btxauthorcolon\

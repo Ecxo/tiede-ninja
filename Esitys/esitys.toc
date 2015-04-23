@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{TDD}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Menetelm\IeC {\"a}}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Hyv\IeC {\"a}\IeC {\"a} ja huonoa}{4}{0}{1}
+\beamer@sectionintoc {2}{Laatu}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{ISO-standardi}{6}{0}{2}
+\beamer@sectionintoc {3}{Taloudellisuus}{8}{0}{3}
+\beamer@sectionintoc {4}{Tutkimuksia}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Keilailukata}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Rafique}{13}{0}{4}
+\beamer@sectionintoc {5}{Yhteenveto}{14}{0}{5}

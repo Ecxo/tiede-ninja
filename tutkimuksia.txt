@@ -25,3 +25,9 @@ proportional increase in quality?
 http://ieeexplore.ieee.org.libproxy.helsinki.fi/xpl/articleDetails.jsp?tp=&arnumber=6272518
 -“test cases created by test-first developers were as good as (or as bad as) test cases created by test-last developers”. 
 -test-first developers had, on average, 27% less failing assertions 
+
+http://ac.els-cdn.com.libproxy.helsinki.fi/S0950584911000346/1-s2.0-S0950584911000346-main.pdf?_tid=5af21436-ea79-11e4-bc9c-00000aab0f26&acdnat=1429876946_7b51fb76be014d32fa22664fa2127ee2
+- small and thus in practice relatively unimportant, although effects are positive.
+
+ISOn mittareita
+https://courses.cs.ut.ee/MTAT.03.243/2014_spring/uploads/Main/ISO9126AppC.pdf

@@ -135,7 +135,7 @@ Ohjelmistotestauksen tarkoituksena on parantaa ohjelman laatua havaitsemalla ja 
 
 Testien kirjoittajan on tunnettava ohjelman rakenne ja toiminta pystyäkseen suunnittelemaan ja kirjoittamaan testejä. Testin kirjoittamiseni on vaikea ja aikaa vievä prosessi, ja se vaatii kehittäjältä hyviä taitoja \cite{Whittaker00}.
 
-Ohjelmiston testaus suoritetaan eri vaiheissa riippuen valitusta ohjelmistokehitysmenetelmästä. Vuonna 1970 Winston W. Roycen määrittelemä \emph{vesiputousmalli} (Waterfall Model) kuvaa ohjelmistokehityksen viisivaiheisena prosessina: ensin analysoidaan vaatimukset ja suunnitellaan koko ohjelma tarkasti, sitten kirjoitetaan varsinainen ohjelmakoodi ja lopuksi tuotettu ohjelmakoodi testataan. Vaiheittaisissa menetelmissä (Incremental Model) edellinen vesiputousmalli on jaettu useisiin pienempiin palasiin; koko ohjelmaa ei siis tarvitse suunnitella ja toteuttaa kerralla noudattaen vesiputousmallin järjestystä, vaan ohjelman rakentuu pienemmistä osista jotka on suunniteltu ja toteutettu erikseen. Stoican ja kumppanien mukaan testaus on helppoa inkrementaalisissa menetelmissä, kun taas vesiputousmallissa testauksessa havaittujen virheiden korjaaminen voi olla hankaa. Ketterät (Agile Model) ohjelmistokehityksen menetelmät perustuvat inkrementaaliseen malliin. \cite{Stoica13}. Yksi erityisesti testaamiseen keskittyvät toimintapa on ketteriin malleihin perustuva \emph{Test Driven Development}. \cite{Crispin06}
+Ohjelmiston testaus suoritetaan eri vaiheissa riippuen valitusta ohjelmistokehitysmenetelmästä. Vuonna 1970 Winston W. Roycen määrittelemä \emph{vesiputousmalli} (Waterfall Model) kuvaa ohjelmistokehityksen vaiheisiin eroteltuna prosessina: ensin analysoidaan vaatimukset ja suunnitellaan koko ohjelma tarkasti, sitten kirjoitetaan varsinainen ohjelmakoodi ja lopuksi tuotettu ohjelmakoodi testataan. Vaiheittaisissa menetelmissä (Incremental Model) edellinen vesiputousmalli on jaettu useisiin pienempiin palasiin; koko ohjelmaa ei siis tarvitse suunnitella ja toteuttaa kerralla noudattaen vesiputousmallin järjestystä, vaan ohjelman rakentuu pienemmistä osista jotka on suunniteltu ja toteutettu erikseen. Stoican ja kumppanien mukaan testaus on helppoa inkrementaalisissa menetelmissä, kun taas vesiputousmallissa testauksessa havaittujen virheiden korjaaminen voi olla hankaa. Ketterät (Agile Model) ohjelmistokehityksen menetelmät perustuvat inkrementaaliseen malliin. \cite{Stoica13}. Yksi erityisesti testaamiseen keskittyvät toimintapa on ketteriin malleihin perustuva \emph{Test Driven Development}. \cite{Crispin06}
 
 Aion tutkielmassani tarkastella TDD:n toimivuutta kahdella mittarilla: laadulla ja tehokkuudella. Nämä mittari ovat erittäin epämääräisiä, joten ensin on tutkittava mitä ne oikeastaan tarkoittavat.
 
@@ -277,15 +277,15 @@ Testivetoinen kehitys on siis tutkimusten määrästä päätellen kiinnostanut 
 
 \subsection{Laatu}
 
-Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle. 
+Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle: onko esimerkiksi virheiden määrä ohjelmassa luotettavuuteen vai toimivuuteen littyvä termi? 
 
 \subsubsection{Toimivuus}
 
-En ole vielä löytänyt TDD:llä tuotettujen ohjelmistojen toimivuuteen liittyviä tutkimuksia. Yksi ongelma on englanninkielinen termi  functionality, jolla usein TDD:tä käsittelevissä artikkeleissa viitataan ohjelman osien, kuten metodien, toimintaan. ISO:n laatustandardi kuitenkin määrittelee toimivuuden ohjelman toimivuudeksi, joten mielestäni tutkimusten tapa käyttää termiä ei sovellu tähän luokkaan. TDD:n väitetyt parannukset ohjelman rakenteen laatuun saattavat vaikuttaa toimivuuteen, mutta mielestäni tutkimukset aiheesta asettuvat loogisemmin muihin laatukategorioihin.
+En ole vielä löytänyt TDD:llä tuotettujen ohjelmistojen toimivuuteen liittyviä tutkimuksia. Yksi ongelma on englanninkielinen termi  functionality, jolla usein TDD:tä käsittelevissä artikkeleissa viitataan ohjelman osien, kuten metodien, toimintaan. ISO:n laatustandardi kuitenkin määrittelee toimivuuden ohjelman toimivuudeksi, joten tutkimusten tapa käyttää termiä ei sovellu selkeästi tähän luokkaan. TDD:n väitetyt parannukset ohjelman rakenteen laatuun saattavat vaikuttaa toimivuuteen, mutta mielestäni tutkimukset aiheesta asettuvat loogisemmin muihin laatukategorioihin.
 
 \subsubsection{Luotettavuus}
 
-Luotettavuus vaikuttaa olevan suosituin laadun osa testivetoista kehitystä käsittelevissä artikkeleissa. Useat testit ovat mitanneet TDD:llä tuotetun ohjelmiston laatua testien läpäisyn perusteella, jota pidän lähinnä luotettavuuteen liittyvänä mittarina.
+Luotettavuus vaikuttaa olevan suosituin laadun osa testivetoista kehitystä käsittelevissä artikkeleissa. Useat testit ovat mitanneet TDD:llä tuotetun ohjelmiston laatua testien läpäisyn perusteella, jota pidän lähinnä luotettavuuteen liittyvänä tekijänä. Toisaalta ISO:n laatuluokitusten mukaan luotettavuus voidaan ymmärtää myös tarkoittavan virheistä palautumista, eikä niinkään virheiden vähyyttä. ISO 9126-3 kuitenkin esittää koodikattavuuden ja katselmoidusta koodista havaittujen virheiden määrän luotettavuuden mittareina, joten mielestäni virheiden havaitsemiseen perustuvat tutkimukset ovat tässä osiossa perusteltuja.
 
 Georgen ja Williamsin \cite{George04} tutkimuksessa havaittiin TDD:tä käyttäneiden parien tuottamien ohjelmien läpäisevän 18\% enemmän tutkijoiden rakentamia testitapauksia kuin kontrolliryhmien. Tutkimuksessa oli kuitenkin ongelmia joiden takia pidän tulosta kyseenalaisena: Georgen ja Williamsin tutkimuksessa ohjelmat olivat erittäin lyhyitä, pituudeltaan n. 200 riviä, ja suurin osa kontrolliryhmistä ei ollut tehnyt minkäänlaisia testejä ennen ohjelman palautusta tutkijoille.
 
@@ -293,7 +293,9 @@ Wilkersonin ja kumppanit \cite{Wilkerson12} vertailevat TDD:tä Code Inspection-
 
 Erdogmus, Morisio ja Torchiano \cite{Erdogmus05} tutkivat testivetoista kehitystä verrattuna testien kirjoittamiseen jälkeenpäin (Test-Last). Tutkimuksen osaanottajista TDD:tä käyttäneet olivat kirjoittaneet keskimäärin 28 prosenttia enemmän testejä. Ohjelman laadussa testivetoinen kehitys olikin yllättäen jälkeenpäin testausta huonompi: Test-Last ryhmän mediaani virheiden määrässä käytettäessä tutkijoiden laatimaa testipakettia oli kymmenen prosenttia pienempi. Pidän tutkijoiden ehdottamaa selitystä TDD:n hieman heikomman laadun johtumisesta ohjelman pienuudesta ja koehenkilöiden erilaisista taitotasoista hyvänä. Testihenkilöiden tuottama ohjelma oli keilauksen pistelaskujärjestelmä, joka on mielestäni sen verran yksinkertainen tehtävä, että virheet pystyy helposti löytämään myös ilman yhtäkään automaattista testiä. Causevicin ja kumppanien \cite{Causevic12} tutkimus oli menetelmiltään hyvin samankaltainen kuin Erdogmusin ja kumppanien. Tässäkin tutkimuksessa vertailtiin keilailun pistelaskua suorittavan ohjelman testauksen laatua Test-First ja Test-Last menetelmillä käyttäen testiryhmänä yliopisto-opiskelijoita. Causevicin ja kumppanien tutkimuksessa molempien ryhmien testien laatu oli hyvin samankaltainen, eikä merkittäviä eroja havaittu. Itse ohjelman koodin laadussa oli kuitenkin ero TDD:n hyväksi. Vaikka tutkimukset olivat lähes identtiset,  oli tuloksissa pieni ero. Epäilen ohjelman ja koeryhmien pienuuden vaikuttavan näissä tutkimuksissa tulokseen enemmän kuin ohjelmointimenetelmän.
 
-Kaikissa edellä käsitellyissä artikkeleissa koehenkilöinä on  käytetty opiskelijoita, joten onneksi Canfora ja kumppanit \cite{Canfora06} ovat testanneet menetelmää Espanjalaisen IT-yrityksen ammattilaisilla. Tutkijoiden mukaan TDD:n testit eivät ole tilastollisesti merkittävästi tarkempia vesiputousmallilla tuotettuihin verrattuna. Canfora ja kumppanit kuitenkin toteavat olevansa "vakuuttuneita" TDD:n positiivisesta vaikutuksesta laatuun, mutta heidän tutkimuksensa oli kenties liian lyhyt.
+ Canfora ja kumppanit \cite{Canfora06} ovat testanneet menetelmää Espanjalaisen IT-yrityksen ammattilaisilla. Tutkijoiden mukaan TDD:n testit eivät ole tilastollisesti merkittävästi tarkempia vesiputousmallilla tuotettuihin verrattuna. Canfora ja kumppanit kuitenkin toteavat olevansa "vakuuttuneita" TDD:n positiivisesta vaikutuksesta laatuun, mutta heidän tutkimuksensa oli kenties liian lyhyt.
+
+Pancur ja Ciglaric \cite{Pancur11} havaitsivat TDD:n tuottavan paremman päätöskattavuuden kuin iteratiivinen Test-Last menetelmä. Mutaatiotestauksessa ja hyväksyttyjen testien määrässä ei havaittu eroa.
 
 
 
@@ -309,14 +311,13 @@ Latorren \cite{Latorre14} tutkimuksessa mittauksien mukaan menetelmä oli helppo
 \subsubsection{Tehokkuus}
 
 
-
-
-
 \subsubsection{Ylläpidettävyys}
 
 Testivetoisen kehityksen vaikutus ohjelman rakenteeseen vaikuttanee myös sen ylläpidettävyyteen. Ohjelman rakenteen mittaaminen tehokkaasti vaikuttaa tutkimusten perusteella vaikeammalta kuin esimerkiksi luotettavuuden mittaaminen; virheitä on helpompi laskea kuin arvioida rakenteeseen liittyviä ominaisuuksia. Testien laatu ja luotettavuus ovat myös selkeästi ylläpidettävyyteen ja laajennettavuuteen liittyviä tekijöitä, joten näitä laadu osa-alueita koskevilla tutkimuksilla on yhteys.
 
 Siniaalto ja Abrahamsson \cite{Siniaalto07} tutkivat TDD:n vaikutusta ohjelmiston laatuun. Tutkijat käyttivät mittareina tässäkin tutkielmassa esiteltyjä Chidamberin ja Kemenerin laadun mittareita, poislukien rivien määrä. Siniaalto ja Abrahamsson vertasi TDD:llä tehtyä ohjelmaa kahteen ohjelmaan, joissa testaus oli tehty vasta koodin jälkeen. Ohjelmien tulokset olivat samankaltaisia, mutta TDD:n oli luokkien metodien välisen koheesion metriikassa selvästi muita huonompi. Tulos poikkeaa suuresti muista näkemistäni testivetoista kehitystä käsittelevistä artikkelista, joissa TDD:n yhdeksi tärkeimmäksi vahvuudeksi on nostettu juuri parempi rakenne. Epäilen Siniaallon ja Abrahamssonin tuloksen olevan poikkeustapaus.
+
+Pancurin ja Ciglaricin tutkimuksessa \cite{Pancur11} TDD tuotti paremman syklomaattisen monimutkaisuuden verrattuna testaamiseen jälkeenpäin, mutta vaikutus oli pieni. Syklomaattinen monimutkaisuus on Thomas J. McCaben kehittämä mittari \cite{McCabe76}, joka arvioi ohjelman lähdekoodissa olevien erillisten polkun määrää. Korkea määrä polkuja on merkki rakenteesta, jota on McCaben mukaan vaikea testata ja ylläpitää.
 
 \subsubsection{Siirrettävyys}
 
@@ -338,14 +339,19 @@ Erdogmus ja kumppanit \cite{Erdogmus05} havaitsivat testivetoista kehitystä kä
 
 Canforan ja kumppanit \cite{Canfora06} tilastollisen analyysin mukaan testivetoinen kehitys vaatii enemmän aikaa kuin jälkeenpäin testaaminen, mutta tutkijat uskovat TDD:n paremman laadun parantavan taloudellisuutta.
 
+Pancur ja Ciglaric \cite{Pancur11} olivat tutkimuksessaan verranneet TDD:tä iteratiiviseen Test-Last menetelmään. Test-Last kontrolliryhmälle määrätty toimintapa muistutti hyvin paljon TDD:tä, ainoastaan testien ja koodin järjestystä prosessilla oli muutettu. Tutkijat päättelivät pieniin iteraatiohin perustuvan suunnittelun vaikuttavan merkittävästi tuloksiin, johon heidän kontrolliryhmälleen laatima prosessi kannustaa. Pancurin ja Ciglaricin tutkimusten mukaan vaikutus tehokkuuteen, eli tässä tapauksessa tuotettuihin testeihin per tunti,  oli positiivinen, mutta liian pieni ollakseen tilastollisesti merkittävä.
 
 \subsection{Käyttäjien mielipiteitä menetelmästä}
 
 Eräissä artikkeleissa on tehty myös kvalitatiivista tutkimusta, esimerkiksi selvittämällä testihenkilöiden henkilökohtaisia näkemyksiä testivetoisen kehityksen toimivuudesta.
 
-Georgen ja Williamsin \cite{George04} tutkimuksen osaanottajat pitivät menetelmää erityisen hyvänä koodin laadun ja ohjelmoijan tuottavuuden kannalta, mutta oikeaan "mielenlaatuun" pääsemistä oli pidetty vaikeana.
+Georgen ja Williamsin \cite{George04} tutkimuksen osaanottajat pitivät menetelmää erityisen hyvänä koodin laadun ja ohjelmoijan tuottavuuden kannalta, mutta oikeaan "mielenlaatuun" pääsemistä oli pidetty vaikeana. Tutkimusryhmänä tutkimuskessa oli 24 ammattiohjelmoijaa.
 
-Latorren \cite{Latorre14} tutkimuksessa testivetoisen kehityksen oppimisen vaativuudesta 24 vastaaja 25:stä piti menetelmää helppona oppia, ja tutkijan mittausten perusteella he myös käyttivät sitä oikein.
+Latorren \cite{Latorre14} tutkimuksessa testivetoisen kehityksen oppimisen vaativuudesta 24 ammattilaista 25:stä piti menetelmää helppona oppia, ja tutkijan mittausten perusteella he myös käyttivät sitä oikein.
+
+Ljubljanan yliopistossa tehdyssä Pancurin ja Ciglaricin\cite{Pancur11} tutkimuksessa menetelmää pidettiin vaikeasti opittavana verrattuna testien kirjoittamiseen jälkeenpäin. Koeryhmänä toimineet neljännen vuoden tietojenkäsittelytieteen opiskelijat eivät tutkijoiden mukaan mahdollisesti hallinneet menetelmää tarpeeksi hyvin kymmenen viikon harjoittelun jälkeen.
+
+
 
 
 \subsection{Meta-analyysit}

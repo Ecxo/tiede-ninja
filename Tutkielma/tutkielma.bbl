@@ -218,6 +218,13 @@
   ISSRE 2003. Proceedings. 13th International Symposium on}, \btxpageslong {}\
   117--128. IEEE, 2002.
 
+\bibitem [{McC76}]{McCabe76}
+\btxnamefont {\btxlastnamefont {McCabe}, T.J.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A complexity measure}{A Complexity Measure}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  SE-2(4):308--320, \btxprintmonthyear{.}{Dec}{1976}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+
 \bibitem [{MMR14}]{Miguel14}
 \btxnamefont {\btxlastnamefont {Miguel}, Jose\btxfnamespacelong P},
   \btxnamefont {\btxlastnamefont {Mauricio}, David}\btxandcomma {} \btxandlong
@@ -234,6 +241,19 @@
   artifacts}}.
 \newblock \btxjournalfont {Wiley Encyclopedia of Computer Science and
   Engineering}, 2008.
+
+\bibitem [{PC11}]{Pancur11}
+\btxnamefont {\btxlastnamefont {Pančur}, Matjaž} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Ciglarič}, Mojca}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Impact of test-driven development on productivity, code
+  and tests: A controlled experiment}{Impact of test-driven development on
+  productivity, code and tests: A controlled experiment}}.
+\newblock \btxjournalfont {Information and Software Technology}, 53(6):557 --
+  573, 2011\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {0950-5849}}}.
+\newblock {\latintext
+  \btxurlfont{http://www.sciencedirect.com/science/article/pii/S0950584911000346}},
+  Special Section: Best papers from the \{APSEC\} Best papers from the
+  \{APSEC\}.
 
 \bibitem [{RC{\etalchar{+}}69}]{Randell69}
 \btxnamefont {\btxlastnamefont {Randell}, Brian}, \btxnamefont

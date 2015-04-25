@@ -277,11 +277,11 @@ Testivetoinen kehitys on siis tutkimusten määrästä päätellen kiinnostanut 
 
 \subsection{Laatu}
 
-Oman päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle: onko esimerkiksi virheiden määrä ohjelmassa luotettavuuteen vai toimivuuteen littyvä termi? 
+Päättelyni mukaan testivetoinen kehitys vaikuttaa positiivisesti ohjelmiston laatuun. Testien kirjoittaminen ennen ohjelmakoodia vaikuttaa varmistavan testikattavuuden lisäksi myös tarkemman rakenteen suunnittelun. Aiemmin artikkelissa esitellyistä laatutekijöistä testikattavuus ja parempi rakenne vaikuttavat mielestäni erityisesti ylläpidettävyyteen ja luotettavuuteen. Aion tarkastella TDD:stä kirjoitettujen artikkelien tuloksia ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioiden perusteella, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle: onko esimerkiksi virheiden määrä ohjelmassa luotettavuuteen vai toimivuuteen littyvä termi? 
 
 \subsubsection{Toimivuus}
 
-En ole vielä löytänyt TDD:llä tuotettujen ohjelmistojen toimivuuteen liittyviä tutkimuksia. Yksi ongelma on englanninkielinen termi  functionality, jolla usein TDD:tä käsittelevissä artikkeleissa viitataan ohjelman osien, kuten metodien, toimintaan. ISO:n laatustandardi kuitenkin määrittelee toimivuuden ohjelman toimivuudeksi, joten tutkimusten tapa käyttää termiä ei sovellu selkeästi tähän luokkaan. TDD:n väitetyt parannukset ohjelman rakenteen laatuun saattavat vaikuttaa toimivuuteen, mutta mielestäni tutkimukset aiheesta asettuvat loogisemmin muihin laatukategorioihin.
+En ole vielä löytänyt TDD:llä tuotettujen ohjelmistojen toimivuuteen liittyviä tutkimuksia. Yksi ongelma on englanninkielinen termi functionality, jolla usein TDD:tä käsittelevissä artikkeleissa viitataan ohjelman osien, kuten metodien, toimintaan. ISO:n laatustandardi kuitenkin määrittelee toimivuuden ohjelman toimivuudeksi, joten tutkimusten tapa käyttää termiä ei sovellu selkeästi tähän luokkaan. TDD:n väitetyt parannukset ohjelman rakenteen laatuun saattavat vaikuttaa toimivuuteen, mutta mielestäni tutkimukset aiheesta asettuvat loogisemmin muihin laatukategorioihin.
 
 \subsubsection{Luotettavuus}
 
@@ -295,21 +295,21 @@ Erdogmus, Morisio ja Torchiano \cite{Erdogmus05} tutkivat testivetoista kehityst
 
  Canfora ja kumppanit \cite{Canfora06} ovat testanneet menetelmää Espanjalaisen IT-yrityksen ammattilaisilla. Tutkijoiden mukaan TDD:n testit eivät ole tilastollisesti merkittävästi tarkempia vesiputousmallilla tuotettuihin verrattuna. Canfora ja kumppanit kuitenkin toteavat olevansa "vakuuttuneita" TDD:n positiivisesta vaikutuksesta laatuun, mutta heidän tutkimuksensa oli kenties liian lyhyt.
 
-Pancur ja Ciglaric \cite{Pancur11} havaitsivat TDD:n tuottavan paremman päätöskattavuuden kuin iteratiivinen Test-Last menetelmä. Mutaatiotestauksessa ja hyväksyttyjen testien määrässä ei havaittu eroa.
-
-
-
+Pancur ja Ciglaric \cite{Pancur11} havaitsivat TDD:n tuottavan paremman päätöskattavuuden kuin iteratiivinen Test-Last menetelmä. Mutaatiotestauksessa ja hyväksyttyjen testien määrässä ei havaittu eroa. Myös Munirin ja kumppanien \cite{Munir14} tutkimuksessa päätöskattavuus oli parantanut, mutta tulos ei ollut tilastollisesti merkittävä johtuen liian pienestä koeryhmästä.
 
 \subsubsection{Käytettävyys}
 
 Testivetoinen kehitys tuskin vaikuttaa loppukäyttäjän kokemukseen ohjelman laadusta. TDD ei varsinaisesti ota kantaa käytettävyyteen, eikä menetelmä sovellu graafisten käyttöliittymien suunnitteluun. Hellman ja kumppanit \cite{Hellman10} pitävät GUI:n kehitystä TDD:llä niin vaikeana, että ovat artikkelissaan pyrkineet kehittämään TDD:stä paremmin tehtävään sopivaa muunnosta.
 
-En ole löytänyt tutkimuksia testivetoisen kehityksen vaikutuksesta käytettävyyteen, joten vertailenkin tässä osiossa itse menetelmän käytettävyyttä. TDD:n prosessi on yksinkertainen, joten uskon aloittelevankin ohjelmoijan ymmärtävän sen toimintatavat nopeasti.
+En ole löytänyt tutkimuksia testivetoisen kehityksen vaikutuksesta käytettävyyteen, joten vertailenkin tässä osiossa itse menetelmän käytettävyyttä. TDD:n prosessi on yksinkertainen, joten uskon aloittelevankin ohjelmoijan ymmärtävän sen toimintatavat nopeasti. Olen hyväksynyt tähän osioon ainoastaan sellaisia tutkimuksia. Useissa tutkimuksissa käyttäjien omia näkemyksiä menetelmästä on selvitetty, mutta tähän osioon olen hyväksynyt vain tutkimuksen jossa TDD:n käytön oikeellisuutta on mitattu muutenkin kuin käyttäjien mielipiteiden perusteella.
 
 Latorren \cite{Latorre14} tutkimuksessa mittauksien mukaan menetelmä oli helppo oppia, varsinkin kehittyneet ja keskitason ohjelmoijat oppivat sen nopeasti.
 
+Oulun yliopiston Fucci, Turhan ja Oivo \cite{Fucci14} tutkivat TDD:n prosessin noudattamisen tarkkuuden vaikutusta laatuun. Fuccin ja kumppaneiden mukaan TDD:tä koskevissa tutkimuksissa menetelmän seuraamisen arviointi ei ole tehty tarpeeksi, vaikka se saattaa oleellisesti vaikuttaa tuloksiin. Tutkimuksen TDD:tä käyttäneiden opiskelijoiden tuottama laatu ei ollut ollut sidoksissa siihen, kuinka hyvin he noudattivat menetelmää. Tutkijat havaitsivat opiskelijoiden usein keskittyvän vain testien kirjoittamiseen ja jättävän refaktorointivaiheen kokonaan pois. Fucci ja kumppanit kyseenalaistavat TDD:n opettelun ja noudattamisen hyödyn, mutta pitävät mahdollisena hyötyjen tulevan esiin pidemmissä tutkimuksissa.
+
 \subsubsection{Tehokkuus}
 
+ISO 9126 mittaa tehokkuutta mittareilla kuten vasteaika ja muistinkäyttö. Tutkimus testivetoisen kehityksen vaikutuksesta ohjelmistojen tehokkuuten ei selvästi ole ollut kovin suosittu tutkimuskohde. Tutkimusta itse menetelmän tehokkuudesta olen löytänyt runsaasti, mutta se asettuu paremmin omaan osioonsa TDD:n taloudellisuudesta. TDD:n toimintavat eivät mielestäni suoranaisesti vaikuta ohjelman sellaiseen suunnitteluun, joka parantaisi ohjelman resurssienkäyttöä, vaan siihen tarvittaisiin tarkempia rakenteen suunnittelun ohjeita. TDD:n etuna esitetty selkeämpi ja modulaarinen rakenne tuskin suoraan vaikuta ISO-standardissa esiteltyjen tehokkuuden mittareiden tuloksiin.
 
 \subsubsection{Ylläpidettävyys}
 
@@ -317,7 +317,7 @@ Testivetoisen kehityksen vaikutus ohjelman rakenteeseen vaikuttanee myös sen yl
 
 Siniaalto ja Abrahamsson \cite{Siniaalto07} tutkivat TDD:n vaikutusta ohjelmiston laatuun. Tutkijat käyttivät mittareina tässäkin tutkielmassa esiteltyjä Chidamberin ja Kemenerin laadun mittareita, poislukien rivien määrä. Siniaalto ja Abrahamsson vertasi TDD:llä tehtyä ohjelmaa kahteen ohjelmaan, joissa testaus oli tehty vasta koodin jälkeen. Ohjelmien tulokset olivat samankaltaisia, mutta TDD:n oli luokkien metodien välisen koheesion metriikassa selvästi muita huonompi. Tulos poikkeaa suuresti muista näkemistäni testivetoista kehitystä käsittelevistä artikkelista, joissa TDD:n yhdeksi tärkeimmäksi vahvuudeksi on nostettu juuri parempi rakenne. Epäilen Siniaallon ja Abrahamssonin tuloksen olevan poikkeustapaus.
 
-Pancurin ja Ciglaricin tutkimuksessa \cite{Pancur11} TDD tuotti paremman syklomaattisen monimutkaisuuden verrattuna testaamiseen jälkeenpäin, mutta vaikutus oli pieni. Syklomaattinen monimutkaisuus on Thomas J. McCaben kehittämä mittari \cite{McCabe76}, joka arvioi ohjelman lähdekoodissa olevien erillisten polkun määrää. Korkea määrä polkuja on merkki rakenteesta, jota on McCaben mukaan vaikea testata ja ylläpitää.
+Pancurin ja Ciglaricin tutkimuksessa \cite{Pancur11} TDD tuotti paremman syklomaattisen monimutkaisuuden verrattuna testaamiseen jälkeenpäin, mutta vaikutus oli liian pieni ollakseen tilastollisesti merkittävä. Syklomaattinen monimutkaisuus on Thomas J. McCaben kehittämä mittari \cite{McCabe76}, joka arvioi ohjelman lähdekoodissa olevien erillisten polkun määrää. Korkea määrä polkuja on merkki rakenteesta, jota on McCaben mukaan vaikea testata ja ylläpitää. Munirin ja kumppanit \cite{Munir14} tarkastelivat myös McCaben mittaria, eikä ero verrattuna Test-Lastiin ollut tilastollisesti merkittävä.
 
 \subsubsection{Siirrettävyys}
 
@@ -350,6 +350,8 @@ Georgen ja Williamsin \cite{George04} tutkimuksen osaanottajat pitivät menetelm
 Latorren \cite{Latorre14} tutkimuksessa testivetoisen kehityksen oppimisen vaativuudesta 24 ammattilaista 25:stä piti menetelmää helppona oppia, ja tutkijan mittausten perusteella he myös käyttivät sitä oikein.
 
 Ljubljanan yliopistossa tehdyssä Pancurin ja Ciglaricin\cite{Pancur11} tutkimuksessa menetelmää pidettiin vaikeasti opittavana verrattuna testien kirjoittamiseen jälkeenpäin. Koeryhmänä toimineet neljännen vuoden tietojenkäsittelytieteen opiskelijat eivät tutkijoiden mukaan mahdollisesti hallinneet menetelmää tarpeeksi hyvin kymmenen viikon harjoittelun jälkeen.
+
+Munirin ja kumppanien \cite{Munir14} tutkimuksessa ammattilaiset eivät pitäneet TDD:stä. Kyselytutkimuksessa menetelmää pidettiin vaikeana oppia sekä vaativan enemmän aikaa ja itsekuria. Suurin osa 15:sta TDD:tä tutkimuksessa käyttäneestä koehenkilöistä ei ollut ennen käyttänyt menetelmää. Ammattilaiset pitivät testien kirjoittamista ensin ongelmallisena, koska kehittäjän ja asiakkaan näkökulmasta varsinainen ohjelman toiminnallisuus nähdään arvokkaampana kuin testit. Munirin ja kumppanien mukaan TDD:n tehokas käyttö vaatii harjoittelua ja hyvää testienkirjoitustaitoa.
 
 
 

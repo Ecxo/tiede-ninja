@@ -31,3 +31,10 @@ http://ac.els-cdn.com.libproxy.helsinki.fi/S0950584911000346/1-s2.0-S09505849110
 
 ISOn mittareita
 https://courses.cs.ut.ee/MTAT.03.243/2014_spring/uploads/Main/ISO9126AppC.pdf
+
+http://dl.acm.org.libproxy.helsinki.fi/citation.cfm?id=2601248.2601267&coll=DL
+-developers in the experiment prefer TLD over TDD
+-statistically insignificant
+
+http://delivery.acm.org.libproxy.helsinki.fi/10.1145/2660000/2652526/a10-fucci.pdf?ip=128.214.2.138&id=2652526&acc=ACTIVE%20SERVICE&key=74A0E95D84AAE420%2ECFCAB708F0B7DA8F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&CFID=505799947&CFTOKEN=53922194&__acm__=1429969196_35abd9a02f8709b0c2ed70579b986465
+-we raise concerns about how TDD is interpreted. 

@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{HHKM10}
+\begin{thebibliography}{MWPM14}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -121,6 +121,20 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the SIGCHI conference on
   Human Factors in Computing Systems}, \btxpageslong {}\ 345--352. ACM, 2000.
 
+\bibitem [{FTO14}]{Fucci14}
+\btxnamefont {\btxlastnamefont {Fucci}, Davide}, \btxnamefont {\btxlastnamefont
+  {Turhan}, Burak}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Oivo}, Markku}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Impact of process conformance on the effects of
+  test-driven development}{Impact of Process Conformance on the Effects of
+  Test-driven Development}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 8th ACM/IEEE
+  International Symposium on Empirical Software Engineering and Measurement},
+  ESEM '14, \btxpageslong {}\ 10:1--10:10, New York, NY, USA, 2014.
+  \btxpublisherfont {ACM}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-1-4503-2774-9}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/2652524.2652526}}.
+
 \bibitem [{GFS05}]{Gyimothy05}
 \btxnamefont {\btxlastnamefont {Gyimothy}, T.}, \btxnamefont {\btxlastnamefont
   {Ferenc}, R.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
@@ -241,6 +255,20 @@
   artifacts}}.
 \newblock \btxjournalfont {Wiley Encyclopedia of Computer Science and
   Engineering}, 2008.
+
+\bibitem [{MWPM14}]{Munir14}
+\btxnamefont {\btxlastnamefont {Munir}, Hussan}, \btxnamefont {\btxlastnamefont
+  {Wnuk}, Krzysztof}, \btxnamefont {\btxlastnamefont {Petersen},
+  Kai}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Moayyed},
+  Misagh}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {An experimental
+  evaluation of test driven development vs. test-last development with industry
+  professionals}{An Experimental Evaluation of Test Driven Development vs.
+  Test-last Development with Industry Professionals}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 18th International
+  Conference on Evaluation and Assessment in Software Engineering}, EASE '14,
+  \btxpageslong {}\ 50:1--50:10, New York, NY, USA, 2014. \btxpublisherfont
+  {ACM}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-1-4503-2476-2}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/2601248.2601267}}.
 
 \bibitem [{PC11}]{Pancur11}
 \btxnamefont {\btxlastnamefont {Pančur}, Matjaž} \btxandlong {}\ \btxnamefont

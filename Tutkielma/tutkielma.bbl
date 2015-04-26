@@ -248,6 +248,24 @@
   Evaluation of Software Products}}.
 \newblock \btxjournalfont {arXiv preprint arXiv:1412.2977}, 2014.
 
+\bibitem [{MS07}]{Madeyski07}
+\btxnamefont {\btxlastnamefont {Madeyski}, Lech} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Szała}, Łukasz}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {The impact of test-driven development on software
+  development productivity — an empirical study}{The Impact of Test-Driven
+  Development on Software Development Productivity — An Empirical Study}}.
+\newblock \Btxinlong {}\ \btxnamefont {\btxlastnamefont {Abrahamsson}, Pekka},
+  \btxnamefont {\btxlastnamefont {Baddoo}, Nathan}, \btxnamefont
+  {\btxlastnamefont {Margaria}, Tiziana}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Messnarz}, Richard}\ (\btxeditorslong {}):
+  \btxtitlefont {Software Process Improvement}, \btxvolumelong {}\
+  \btxvolumefont {4764} \btxofserieslong {}\ \btxtitlefont {Lecture Notes in
+  Computer Science}, \btxpageslong {}\ 200--211. \btxpublisherfont {Springer
+  Berlin Heidelberg}, 2007\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-3-540-74765-9}}}.
+\newblock {\latintext
+  \btxurlfont{http://dx.doi.org/10.1007/978-3-540-75381-0_18}}.
+
 \bibitem [{Muc08}]{Muccini08}
 \btxnamefont {\btxlastnamefont {Muccini}, Henry}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {Software testing: Testing new software paradigms and new
@@ -269,6 +287,20 @@
   \btxpageslong {}\ 50:1--50:10, New York, NY, USA, 2014. \btxpublisherfont
   {ACM}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-1-4503-2476-2}}}.
 \newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/2601248.2601267}}.
+
+\bibitem [{NMBW08}]{Nagappan08}
+\btxnamefont {\btxlastnamefont {Nagappan}, Nachiappan}, \btxnamefont
+  {\btxlastnamefont {Maximilien}, E.Michael}, \btxnamefont {\btxlastnamefont
+  {Bhat}, Thirumalesh}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Williams}, Laurie}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Realizing quality improvement through test driven
+  development: results and experiences of four industrial teams}{Realizing
+  quality improvement through test driven development: results and experiences
+  of four industrial teams}}.
+\newblock \btxjournalfont {Empirical Software Engineering}, 13(3):289--302,
+  2008\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {1382-3256}}}.
+\newblock {\latintext
+  \btxurlfont{http://dx.doi.org/10.1007/s10664-008-9062-z}}.
 
 \bibitem [{PC11}]{Pancur11}
 \btxnamefont {\btxlastnamefont {Pančur}, Matjaž} \btxandlong {}\ \btxnamefont

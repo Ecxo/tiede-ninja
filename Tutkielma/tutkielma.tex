@@ -297,6 +297,8 @@ Erdogmus, Morisio ja Torchiano \cite{Erdogmus05} tutkivat testivetoista kehityst
 
 Pancur ja Ciglaric \cite{Pancur11} havaitsivat TDD:n tuottavan paremman päätöskattavuuden kuin iteratiivinen Test-Last menetelmä. Mutaatiotestauksessa ja hyväksyttyjen testien määrässä ei havaittu eroa. Myös Munirin ja kumppanien \cite{Munir14} tutkimuksessa päätöskattavuus oli parantanut, mutta tulos ei ollut tilastollisesti merkittävä johtuen liian pienestä koeryhmästä.
 
+Nagappan ja kumppanit \cite{Nagappan08} tutkivat TDD:n vaikutusta laatuun ja tehokkuuteen IBM:n ja Microsoftin ohjelmistotuotannossa. Tutkijat määrittelivät laadun koodin virhetiheydeksi, ja virheiden määrä verrattuna samankaltaisiin projekteihin joissa TDD:tä ei oltu käytetty oli selvästi matalampi. IBM:n projekteissa vähennys oli 40\% ja Microsoftin projekteissa 60-90\%. Mielestäni tulokset ovat epäilyttävän hyviä, muissa tutkimuksissa en ole nähnyt näin radikaaleja muutoksia virhetiheydessä. Tutkijoiden mukaan tulos saattaa selittyä esimerkiksi projektien vaikeustasossa: TDD ryhmille on saattanut osua helpompia tutkimuksia.
+
 \subsubsection{Käytettävyys}
 
 Testivetoinen kehitys tuskin vaikuttaa loppukäyttäjän kokemukseen ohjelman laadusta. TDD ei varsinaisesti ota kantaa käytettävyyteen, eikä menetelmä sovellu graafisten käyttöliittymien suunnitteluun. Hellman ja kumppanit \cite{Hellman10} pitävät GUI:n kehitystä TDD:llä niin vaikeana, että ovat artikkelissaan pyrkineet kehittämään TDD:stä paremmin tehtävään sopivaa muunnosta.
@@ -333,13 +335,19 @@ Vaikka koodin laatu olisi parempaa, omien kokemuksieni perusteella varsinainen o
 
 George ja Williams \cite{George04} havaitsivat TDD:tä käyttäneiden pariohjelmoijien käyttäneen 16\% enemmän aikaa tehtävän suorittamiseen kuin tavanomaista vesiputousmalli noudattanut kontrolliryhmä. Toisaalta suurin osa kontrolliryhmistä oli jättänyt testitapaukset tekemättä, joten mielestäni tulosta ei voi pitää vertailukelpoisena.
 
-Ohjelman rakenteeseen keskittyneessä tutkimuksessaan Siniaalto ja Abrahamsson \cite{Siniaalto07} havaitsivat TDD:n tuottavan korkean testikattavuuden ilman tehokkuuden kärsimistä.
+Ohjelman rakenteeseen keskittyneessä tutkimuksessaan Siniaalto ja Abrahamsson \cite{Siniaalto07} toteavat TDD:n tuottavan korkean testikattavuuden ilman tehokkuuden kärsimistä.
 
 Erdogmus ja kumppanit \cite{Erdogmus05} havaitsivat testivetoista kehitystä käyttäneiden oppilaiden olleen tehokkaampia kuin jälkeenpäin testit rakentaneet oppilaat. Tehokkuuden kasvussa oli vaihtelua riippuen ohjelmoijan taidoista: positiivinen vaikutus tehokkuuteen oli suurin taitavilla ohjelmoijilla. Erdogmus ja kumppanit määrittelivät tehokkuuden hyväksyttävästi läpäistyjen käyttötapausten määränä verrattuna aikaan. Tutkimuksessa kuitenkin havaittiin myös pieni negatiivinen vaikutus ohjelman laatuun TDD:tä käyttäessä, joten mielestäni tutkijoiden käyttämä laadun määritelmä on huono ja myös laatua olisi pitänyt arvioida osana tehokkuutta. 
 
 Canforan ja kumppanit \cite{Canfora06} tilastollisen analyysin mukaan testivetoinen kehitys vaatii enemmän aikaa kuin jälkeenpäin testaaminen, mutta tutkijat uskovat TDD:n paremman laadun parantavan taloudellisuutta.
 
 Pancur ja Ciglaric \cite{Pancur11} olivat tutkimuksessaan verranneet TDD:tä iteratiiviseen Test-Last menetelmään. Test-Last kontrolliryhmälle määrätty toimintapa muistutti hyvin paljon TDD:tä, ainoastaan testien ja koodin järjestystä prosessilla oli muutettu. Tutkijat päättelivät pieniin iteraatiohin perustuvan suunnittelun vaikuttavan merkittävästi tuloksiin, johon heidän kontrolliryhmälleen laatima prosessi kannustaa. Pancurin ja Ciglaricin tutkimusten mukaan vaikutus tehokkuuteen, eli tässä tapauksessa tuotettuihin testeihin per tunti,  oli positiivinen, mutta liian pieni ollakseen tilastollisesti merkittävä.
+
+Madeyski ja Szala \cite{Madeyski07} havaitsivat TTD:tä käyttävän ohjelmoijan olevan tehokkaampi kuin käyttäessä Test-Last menetelmää. Kiinnostavaa tässä tutkimuksessa on se, että koehenkilönä oli vain yksi kokenut ohjelmoija, joka toteutti ohjelmaa vaihdellen menetelmiä. Tutkimuksessa oli useita mielenkiintoisia piirteitä: yhden ohjelmoijan tehokkuuden mittaus pitkällä aikavälillä, tässä ohjelman toteutus kesti 122 tuntia, on kiinnostava näkökulma. Tutkijat myös mittasivat kuinka pitkän ajan käyttötapauksen kehityksestä ohjelmoija oli passiivinen eikä kirjoittanut koodia, eli kuinka pitkään hän luki koodia tai etsi bugeja. Yhden hengen koeryhmää ei mielestäni voi pitää mitenkään tieteellisesti uskottavana, joten haluaisin nähdä saman tutkimuksen isommalla koeryhmällä.
+
+Nagappan ja kumppanit \cite{Nagappan08} tutkivat TDD:tä yrityskäytössä. TDD:tä käyttäneet ryhmät käyttivät 15\%-35\% enemmän aikaa projektin tuottamiseen, mutta laatu oli selkeästi parempaa. Tutkijoiden mukaan suuri parannus laadussa oli merkittävämpi kuin lasku tuotannon nopeudessa, joten menetelmä on taloudellisempi. Myös yrityksen ohjelmointiryhmät olivat samaa mieltä TDD:n paremmasta taloudellisuudesta.
+
+
 
 \subsection{Käyttäjien mielipiteitä menetelmästä}
 
@@ -360,11 +368,6 @@ Munirin ja kumppanien \cite{Munir14} tutkimuksessa ammattilaiset eivät pitänee
 
 %Millaisia näkemyksiä meta-analyyseilla aiheesta
 
-
-
-\section{Käyttö yritysmaailmassa}
-
-%Käyttääkö tätä joku, ehkä jotain yritysten papruja aiheesta
 
 
 

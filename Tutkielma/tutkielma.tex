@@ -31,6 +31,9 @@
 \usepackage{microtype}
 \usepackage{amsfonts,amsmath,amssymb,amsthm,booktabs,color,enumitem,graphicx}
 \usepackage[pdftex,hidelinks]{hyperref}
+\usepackage{graphicx}
+
+
 
 % Automatically set the PDF metadata fields
 \makeatletter
@@ -202,7 +205,6 @@ Erilaisia tapoja mitata laatua esiintyy kymmeniä erilaisia tieteellisissä julk
   \item \textbf{Perintäpuun syvyys} (Depth of Inheritance Tree). Kuinka monta ylempää luokkaa luokalla on. Mitä syvemmällä perintäpuussa luokka on, sen enemmän se perii metodeita. Syvät puut ovat monimutkaisempia ja alttiimpia virheille \cite{Chidamber94}. Perintäpuussa syvällä oleva luokka on virhealttiimpi, mutta se ei ole yhtä hyvä mittari kuin jotkut muista tutkituista. \cite{Gyimothy05}
 
   \item \textbf{Lasten määrä} (Number of Children). Kuinka monta alaluokkaa luokalla on. Luokka jolla on paljon lapsia, vaatii paljon testausta. Luokka jolla on paljon aliluokkia on koodin uudelleenkäyttöä, toisaalta jos aliluokkia on paljon voi kyseessä olla aliluokkien väärinkäyttö \cite{Chidamber94}. Lasten suuren määrän ei havaittu olevan merkittävä mittari virheiden ennustamiseen. \cite{Gyimothy05}
-%***Mieti tätä selkeämmäksi***
 
   \item \textbf{Luokkien väliset kytkennät} (Coupling Between Object Classes). Luokat ovat kytketty, jos ne käyttävät toistensa metodeja tai muuttujia. Liiallinen kytkentä heikentää modulaarista suunnittelua ja vaikeuttaa uudelleenkäyttöä. Moneen luokkaan kytkettyä luokkaa pitää testata enemmän \cite{Chidamber94}. Kytkentöjen vähäinen määrä oli merkittävä, Gyimothyn ja kumppanien tutkimuksessa merkittävin ja paras, mittari \cite{Gyimothy05}.
 
@@ -243,6 +245,10 @@ Yleisesti ottaen termit tehokkuus ja taloudellisuus tuntuvat tarkoittavan eri as
 
 Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \cite{Beck03}. Menetelmästä käytetään myös termiä Test First Development \cite{Crispin06}. Suomenkieliseksi vastineeksi TDD:lle on muodostunut testivetoinen kehitys, mutta myös termiä testilähtöinen kehitys käytetään. Menetelmän perusideana on luoda ensin ohjelmalle testitapaus, ja sen jälkeen luoda testitapauksen läpäisevä osa ohjelmaa. Menetelmä on osa ketteriä menetelmiä, ryhmää ohjelmointitekniikoita joissa kehitys tehdään lyhyissä osissa. Tekniikan kulku Beckin menetelmässä on seuraava:
 
+\begin{figure}[ht]
+\includegraphics{tdd}
+\end{figure}
+
 \begin{enumerate}
   \item Kehittäjä tutkii esimerkiksi vaatimusmäärittelyn käyttötapauksia, ja kirjoittaa niiden perusteella testin.
 
@@ -253,6 +259,8 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
  \item Testit ajetaan uudestaan. Jos testi yhä epäonnistuu, palataan kohtaan kolme ja koodi parannellaan. Jos testi läpäistään, siirrytään seuraavaan kohtaan.
 
  \item Kirjoitettu koodi refaktoroidaan. Koodista esimerkiksi poistetaan turha toisto ja mahdollisesti ylipitkiksi kasvaneet metodit pilkotaan. Tämän jälkeen palataan ensimmäiseen kohtaan ja prosessi aloitetaan alusta uudella testillä.
+
+
 
 \end{enumerate}
 
@@ -331,7 +339,7 @@ Samaan tapaan kuin käytettävyyttä tutkiessa, onkin ehkä järkevämpää tutk
 
 \subsection{Taloudellisuus}
 
-Vaikka koodin laatu olisi parempaa, omien kokemuksieni perusteella varsinainen ohjelman koodaus TDD:tä käyttäessä on kuitenkin erittäin hidasta. Uskonkin testivetoisen kehityksen hyötyjen olevan pienempiä kuin sen käyttämisessä kuluva aika, ja epäilen menetelmän taloudellista tehokkuutta.
+Vaikka koodin laatu olisi parempaa, omien kokemuksieni perusteella varsinainen ohjelman koodaus TDD:tä käyttäessä on kuitenkin erittäin hidasta. Uskon testivetoisen kehityksen hyötyjen olevan pienempiä kuin sen käyttämisessä kuluva aika, ja epäilen menetelmän taloudellista tehokkuutta.
 
 George ja Williams \cite{George04} havaitsivat TDD:tä käyttäneiden pariohjelmoijien käyttäneen 16\% enemmän aikaa tehtävän suorittamiseen kuin tavanomaista vesiputousmalli noudattanut kontrolliryhmä. Toisaalta suurin osa kontrolliryhmistä oli jättänyt testitapaukset tekemättä, joten mielestäni tulosta ei voi pitää vertailukelpoisena.
 
@@ -347,8 +355,6 @@ Madeyski ja Szala \cite{Madeyski07} havaitsivat TTD:tä käyttävän ohjelmoijan
 
 Nagappan ja kumppanit \cite{Nagappan08} tutkivat TDD:tä yrityskäytössä. TDD:tä käyttäneet ryhmät käyttivät 15\%-35\% enemmän aikaa projektin tuottamiseen, mutta laatu oli selkeästi parempaa. Tutkijoiden mukaan suuri parannus laadussa oli merkittävämpi kuin lasku tuotannon nopeudessa, joten menetelmä on taloudellisempi. Myös yrityksen ohjelmointiryhmät olivat samaa mieltä TDD:n paremmasta taloudellisuudesta.
 
-
-
 \subsection{Käyttäjien mielipiteitä menetelmästä}
 
 Eräissä artikkeleissa on tehty myös kvalitatiivista tutkimusta, esimerkiksi selvittämällä testihenkilöiden henkilökohtaisia näkemyksiä testivetoisen kehityksen toimivuudesta.
@@ -361,10 +367,31 @@ Ljubljanan yliopistossa tehdyssä Pancurin ja Ciglaricin\cite{Pancur11} tutkimuk
 
 Munirin ja kumppanien \cite{Munir14} tutkimuksessa ammattilaiset eivät pitäneet TDD:stä. Kyselytutkimuksessa menetelmää pidettiin vaikeana oppia sekä vaativan enemmän aikaa ja itsekuria. Suurin osa 15:sta TDD:tä tutkimuksessa käyttäneestä koehenkilöistä ei ollut ennen käyttänyt menetelmää. Ammattilaiset pitivät testien kirjoittamista ensin ongelmallisena, koska kehittäjän ja asiakkaan näkökulmasta varsinainen ohjelman toiminnallisuus nähdään arvokkaampana kuin testit. Munirin ja kumppanien mukaan TDD:n tehokas käyttö vaatii harjoittelua ja hyvää testienkirjoitustaitoa.
 
+\subsection{Yhteenveto}
 
 
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+  Tutkimus & Luotettavuus & Ylläpidettävyys & Taloudellisuus & Mielipide \\ \hline
+\cite{George04} 	& + &  & = & + \\ \hline
+\cite{Wilkerson12} 	& = &  &   &   \\ \hline
+\cite{Erdogmus05} 	& - &  	& + &   \\ \hline
+\cite{Causevic12} 	& = & + &   &   \\ \hline
+\cite{Canfora06} 	& = &  & = &   \\ \hline
+\cite{Pancur11} 	& + & = & = & - \\ \hline
+\cite{Wilkerson12} 	& = &  &   &   \\ \hline
+\cite{Munir14} 	& = & = &   & - \\ \hline
+\cite{Nagappan08} 	& + &  & + &   \\ \hline
+\cite{Siniaalto07} 	& = & - & + &   \\ \hline
+\cite{Madeyski07} 	&   &   & + &   \\ \hline
+\cite{Latorre14}	&   &   & + & + \\ \hline
+\end{tabular}
+  
 
 \subsection{Meta-analyysit}
+
+
+
 
 %Millaisia näkemyksiä meta-analyyseilla aiheesta
 

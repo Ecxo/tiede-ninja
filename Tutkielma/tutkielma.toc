@@ -15,8 +15,8 @@
 \contentsline {subsubsection}{\numberline {4.1.6}Siirrett\IeC {\"a}vyys}{11}{subsubsection.4.1.6}
 \contentsline {subsection}{\numberline {4.2}Taloudellisuus}{11}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}K\IeC {\"a}ytt\IeC {\"a}jien mielipiteit\IeC {\"a} menetelm\IeC {\"a}st\IeC {\"a}}{13}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Yhteenveto}{13}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Meta-analyysit}{13}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.4}Meta-analyysit}{13}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Yhteenveto}{13}{subsection.4.5}
 \contentsline {section}{L\IeC {\"a}hteet}{14}{section*.2}
 \select@language {finnish}
 \select@language {finnish}

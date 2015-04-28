@@ -250,6 +250,7 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
 \end{figure}
 
 \begin{enumerate}
+
   \item Kehittäjä tutkii esimerkiksi vaatimusmäärittelyn käyttötapauksia, ja kirjoittaa niiden perusteella testin.
 
   \item Kehittäjä ajaa testit ja varmistaakseen antaako ohjelma testin vaatiman lopputulokset ilman muutoksia. Testi saattaa myös mennä läpi vaikkei kehittäjä ole mielestään kirjoittanut koodia kyseiselle tapaukselle, tällöin laadittu testi saattaa olla virheellinen antaen aina hyväksytyn tuloksen.
@@ -259,8 +260,6 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
  \item Testit ajetaan uudestaan. Jos testi yhä epäonnistuu, palataan kohtaan kolme ja koodi parannellaan. Jos testi läpäistään, siirrytään seuraavaan kohtaan.
 
  \item Kirjoitettu koodi refaktoroidaan. Koodista esimerkiksi poistetaan turha toisto ja mahdollisesti ylipitkiksi kasvaneet metodit pilkotaan. Tämän jälkeen palataan ensimmäiseen kohtaan ja prosessi aloitetaan alusta uudella testillä.
-
-
 
 \end{enumerate}
 
@@ -367,8 +366,17 @@ Ljubljanan yliopistossa tehdyssä Pancurin ja Ciglaricin\cite{Pancur11} tutkimuk
 
 Munirin ja kumppanien \cite{Munir14} tutkimuksessa ammattilaiset eivät pitäneet TDD:stä. Kyselytutkimuksessa menetelmää pidettiin vaikeana oppia sekä vaativan enemmän aikaa ja itsekuria. Suurin osa 15:sta TDD:tä tutkimuksessa käyttäneestä koehenkilöistä ei ollut ennen käyttänyt menetelmää. Ammattilaiset pitivät testien kirjoittamista ensin ongelmallisena, koska kehittäjän ja asiakkaan näkökulmasta varsinainen ohjelman toiminnallisuus nähdään arvokkaampana kuin testit. Munirin ja kumppanien mukaan TDD:n tehokas käyttö vaatii harjoittelua ja hyvää testienkirjoitustaitoa.
 
+
+\subsection{Meta-analyysit}
+
+
+
 \subsection{Yhteenveto}
 
+
+
+Tutkimuksia-osiossa käsitellyt tutkimukset eivät anna testivetoisesta kehityksestä selvää kuvaa. Tulokset ovat useimmiten neutraaleja tai lievästi positiivisia.
+  Olen koonnut taulukkoon käsittelemieni tutkimusten tuloksia seuraavalla sivulla. Meta-analyysejä en ole tähän taulukkoon lisännyt. Positiiviset tulokset on merkitty plussalla, negatiiviset miinuksella, neutraalit yhtäsuuruusmerkillä ja tyhjällä ne tutkimukset joissa aiheeseen ei otettu kantaa. Olen valikoinut taulukkoon ne laadun osa-alueet joihin lukemani tutkimukset ottivat kantaa, tälläisiksi luokittelin luotettavuuden, ylläpidettävyyden ja taloudellisuuden. Lisäksi pidän käyttäjien mielipidettä menetelmästä kiinnostavana "laatunäkökulmana".
 
 \begin{tabular}{| l | c | c | c | c |}
 \hline
@@ -386,9 +394,30 @@ Munirin ja kumppanien \cite{Munir14} tutkimuksessa ammattilaiset eivät pitänee
 \cite{Madeyski07} 	&   &   & + &   \\ \hline
 \cite{Latorre14}	&   &   & + & + \\ \hline
 \end{tabular}
-  
+\\
+\\
 
-\subsection{Meta-analyysit}
+Parempi luotettavuus on esiintynyt useimmissa TDD:tä käsittelevissä artikkeleissa sen tärkeimpänä ehdotettuna hyötynä. Luotettavuus ei kuitenkaan ole erityisen voimakkaasti tullut esille näissä tutkimuksissa, vaan neutraaleja tuloksia on enemmän kuin positiivisia. Käsittelmäni tutkimukset olivat  kestoltaan ja laajuudeltaan melko lyhyitä, joten menetelmä ei ehkä ollut niissä vahvimmillaan. Useissa tutkimuksissa onkin mainittu syynä heikoille tuloksille tutkimusten pieni koko. 
+
+Ylläpidettävyydessä useat tutkimukset kärsivät liian pienestä tutkimuksesta. Molemmissa neutraaliksi merkityssä tutkimuksessa paremmasta laadusta oli merkkejä, mutta tulos ei tutkijoiden mukaan ollut tilastollisesti merkittävä johtuen pienestä otoksesta. Siniahon ja Abrahamssonin tutkimuksessa ohjelman rakenteessa oli havaittu negatiivinen vaikutus, mutta epäilen kyseessä olevan poikkeustapaus. 
+
+Taloudellisuudessa tulokset ovat yllättävän positiivisia. Olin päätellyt paremman laadun ja pidemmän prosessin johtavan parhaimmillaan neutraaliin vaikutukseen, mutta käsittelemissäni tutkimuksissa vaikutus onkin selkeästi positiivinen. Osassa tutkimuksista kirjoittajat havaitsivat ohjelman valmistuvan hitaammin, mutta arvioivat laatuvaikutuksen olevan suurempi.
+
+Lisäsin mielipiteen taulukkoon, koska uskon menetelmän aiheuttavan muutosvastarintaa kehittäjissä. Vanhat toimintatavat saattavat tuntua paremmilta, koska ohjelmointi "takaperin" pakottaa ohjelmoijan toimimaan uudella tavalla. Jos menetelmä vaikuttaa vastenmieliseltä, väitän sen vaikuttavan myös työnjälkeen. Otos on kuitenkin sen verran pieni, ettei näistä tuloksista voi vetää johtopäätöksiä. 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
 
 
 

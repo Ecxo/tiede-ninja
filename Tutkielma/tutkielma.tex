@@ -32,6 +32,7 @@
 \usepackage{amsfonts,amsmath,amssymb,amsthm,booktabs,color,enumitem,graphicx}
 \usepackage[pdftex,hidelinks]{hyperref}
 \usepackage{graphicx}
+\usepackage{booktabs}
 
 
 
@@ -78,7 +79,7 @@
 \author{Petri Pihlajaniemi}
 \date{\today}
 \level{Kandidaatintutkielma}
-\abstract{Tiivistelmä.}
+\abstract{Test Driven Development on ohjelmistokehitysmenetelmä, jossa testit kirjoitetaan ennen ohjelmakoodia. }
 
 % The following can be used to specify keywords and classification of the paper:
 
@@ -247,6 +248,7 @@ Test Driven Development on Kent Beckin "löytämä" ohjelmistokehitystekniikka \
 
 \begin{figure}[ht]
 \includegraphics{tdd}
+\caption{Yksinkertaistettu versio TDD:stä}
 \end{figure}
 
 \begin{enumerate}
@@ -367,43 +369,61 @@ Ljubljanan yliopistossa tehdyssä Pancurin ja Ciglaricin\cite{Pancur11} tutkimuk
 Munirin ja kumppanien \cite{Munir14} tutkimuksessa ammattilaiset eivät pitäneet TDD:stä. Kyselytutkimuksessa menetelmää pidettiin vaikeana oppia sekä vaativan enemmän aikaa ja itsekuria. Suurin osa 15:sta TDD:tä tutkimuksessa käyttäneestä koehenkilöistä ei ollut ennen käyttänyt menetelmää. Ammattilaiset pitivät testien kirjoittamista ensin ongelmallisena, koska kehittäjän ja asiakkaan näkökulmasta varsinainen ohjelman toiminnallisuus nähdään arvokkaampana kuin testit. Munirin ja kumppanien mukaan TDD:n tehokas käyttö vaatii harjoittelua ja hyvää testienkirjoitustaitoa.
 
 
-\subsection{Meta-analyysit}
+\subsection{Meta-analyysi}
+
+Lyhyessä kandidaatintutkielmassa ei tietenkään voi käsitellä kaikkia maailman tutkimuksia TDD:stä. Onneksi TDD:stä on tehty myös meta-analyysia, jota tutkimalla saamme paremman kuvan menetelmän vaikutuksista.
+
+Rafiquen ja Misic \cite{Rafique13} ovat analysoineet testivetoisen kehityksen vaikutusta laatuun ja tehokkuuteen. Tutkimuksessa laatu on määritelty virheiden määränä verrattuna koodin määrään ja tehokkuus tuotettuna koodina verrattuna aikaan, tutkimukset joissa on tutkittu TDD:tä muilla mittareilla on jätetty pois analyysista. Ohjelman rakenteen laatu on jätetty pois tutkitumuksesta, koska tutkijoiden mukaan suuunnittelun laatua on erittäin vaikea arvioida.  Rafique ja Misic ovat tarkoituksella valikoineet ainoastaan tutkimuksia joissa TDD:tä on verrattu tavanomaisiin kehitysmenetelmiin, kuten vesiputousmalliin ja iteratiiviseen Test-Last menetelmään. Myös tutkimukset joissa TDD:n prosessia ei ole noudatettu tarkasti on jätetty pois analyysista. Tutkimukset oli tehty opiskelija- ja ammattilaisryhmillä.
+
+Rafique ja Misic toteavat analyysin tuloksien osoittavan TDD:n tuottavan pienen parannuksen laatuun, mutta tehokkuudessa tulos ei ole ratkaiseva. Teollisessa kontekstissa positiivinen vaikutus laatuun oli selvästi suurempi kuin akatemisessa, mutta toisaalta ammattilaisilla myös tehokkuus oli matalampi.
 
 
 
-\subsection{Yhteenveto}
+
+
+\subsection{Johtopäätökset}
 
 
 
 Tutkimuksia-osiossa käsitellyt tutkimukset eivät anna testivetoisesta kehityksestä selvää kuvaa. Tulokset ovat useimmiten neutraaleja tai lievästi positiivisia.
-  Olen koonnut taulukkoon käsittelemieni tutkimusten tuloksia seuraavalla sivulla. Meta-analyysejä en ole tähän taulukkoon lisännyt. Positiiviset tulokset on merkitty plussalla, negatiiviset miinuksella, neutraalit yhtäsuuruusmerkillä ja tyhjällä ne tutkimukset joissa aiheeseen ei otettu kantaa. Olen valikoinut taulukkoon ne laadun osa-alueet joihin lukemani tutkimukset ottivat kantaa, tälläisiksi luokittelin luotettavuuden, ylläpidettävyyden ja taloudellisuuden. Lisäksi pidän käyttäjien mielipidettä menetelmästä kiinnostavana "laatunäkökulmana".
+  Taulukkoon 1 on koottu tässä tutkielmassa käsiteltyjä tutkimuksia. Positiiviset tulokset on merkitty plussalla, negatiiviset miinuksella, neutraalit yhtäsuuruusmerkillä ja tyhjällä ne tutkimukset joissa aiheeseen ei otettu kantaa. Luokittelut perustuvat tutkimusten tekijöiden näkemykseen, ja niissä on hieman tulkinnan varaa. Taulukkoon on valikoitu ne laadun osa-alueet joihin tutkimukset ottivat kantaa, tälläisiksi luokitteltiin luotettavuus, ylläpidettävyys ja taloudellisuus. Lisäksi käyttäjien mielipide menetelmästä on kiinnostava "laatunäkökulma".
 
-\begin{tabular}{| l | c | c | c | c |}
-\hline
-  Tutkimus & Luotettavuus & Ylläpidettävyys & Taloudellisuus & Mielipide \\ \hline
-\cite{George04} 	& + &  & = & + \\ \hline
-\cite{Wilkerson12} 	& = &  &   &   \\ \hline
-\cite{Erdogmus05} 	& - &  	& + &   \\ \hline
-\cite{Causevic12} 	& = & + &   &   \\ \hline
-\cite{Canfora06} 	& = &  & = &   \\ \hline
-\cite{Pancur11} 	& + & = & = & - \\ \hline
-\cite{Wilkerson12} 	& = &  &   &   \\ \hline
-\cite{Munir14} 	& = & = &   & - \\ \hline
-\cite{Nagappan08} 	& + &  & + &   \\ \hline
-\cite{Siniaalto07} 	& = & - & + &   \\ \hline
-\cite{Madeyski07} 	&   &   & + &   \\ \hline
-\cite{Latorre14}	&   &   & + & + \\ \hline
+\begin{table}
+\begin{tabular}{ l  c  c  c  c }
+\toprule
+  Tutkimus & Luotettavuus & Ylläpidettävyys & Taloudellisuus & Mielipide \\
+\midrule
+\cite{George04} 	& + &  & = & + \\ 
+\cite{Wilkerson12} 	& = &  &   &   \\ 
+\cite{Erdogmus05} 	& - &  	& + &   \\ 
+\cite{Causevic12} 	& = & + &   &   \\
+\cite{Canfora06} 	& = &  & = &   \\ 
+\cite{Pancur11} 	& + & = & = & - \\
+\cite{Wilkerson12} 	& = &  &   &   \\ 
+\cite{Munir14} 	& = & = &   & - \\ 
+\cite{Nagappan08} 	& + &  & + &   \\ 
+\cite{Siniaalto07} 	& = & - & + &   \\ 
+\cite{Madeyski07} 	&   &   & + &   \\ 
+\cite{Latorre14}	&   &   & + & + \\ 
+\bottomrule
 \end{tabular}
-\\
-\\
+\caption{Tulosten yhteenveto}
+\end{table}
+
 
 Parempi luotettavuus on esiintynyt useimmissa TDD:tä käsittelevissä artikkeleissa sen tärkeimpänä ehdotettuna hyötynä. Luotettavuus ei kuitenkaan ole erityisen voimakkaasti tullut esille näissä tutkimuksissa, vaan neutraaleja tuloksia on enemmän kuin positiivisia. Käsittelmäni tutkimukset olivat  kestoltaan ja laajuudeltaan melko lyhyitä, joten menetelmä ei ehkä ollut niissä vahvimmillaan. Useissa tutkimuksissa onkin mainittu syynä heikoille tuloksille tutkimusten pieni koko. 
 
 Ylläpidettävyydessä useat tutkimukset kärsivät liian pienestä tutkimuksesta. Molemmissa neutraaliksi merkityssä tutkimuksessa paremmasta laadusta oli merkkejä, mutta tulos ei tutkijoiden mukaan ollut tilastollisesti merkittävä johtuen pienestä otoksesta. Siniahon ja Abrahamssonin tutkimuksessa ohjelman rakenteessa oli havaittu negatiivinen vaikutus, mutta epäilen kyseessä olevan poikkeustapaus. 
 
-Taloudellisuudessa tulokset ovat yllättävän positiivisia. Olin päätellyt paremman laadun ja pidemmän prosessin johtavan parhaimmillaan neutraaliin vaikutukseen, mutta käsittelemissäni tutkimuksissa vaikutus onkin selkeästi positiivinen. Osassa tutkimuksista kirjoittajat havaitsivat ohjelman valmistuvan hitaammin, mutta arvioivat laatuvaikutuksen olevan suurempi.
+Taloudellisuudessa tulokset ovat yllättävän positiivisia. Olin päätellyt paremman laadun ja pidemmän prosessin johtavan parhaimmillaan neutraaliin vaikutukseen, käsitellyissä tutkimuksissa vaikutus onkin selkeästi positiivinen. Osassa tutkimuksista kirjoittajat havaitsivat ohjelman valmistuvan hitaammin, mutta arvioivat laatuvaikutuksen olevan suurempi. Rafiquen ja Misicin meta-analyysissä vaikutuksen taloudellisuuteen on kuitenkin havaittu olevan neutraali ja ammattilaisilla jopa negatiivinen. Valitsemani tutkimukset olivat melko lyhyitä, joten ehkä TDD tuottaa paremman taloudellisuuden varsinkin pienissä ohjelmissa.
 
 Lisäsin mielipiteen taulukkoon, koska uskon menetelmän aiheuttavan muutosvastarintaa kehittäjissä. Vanhat toimintatavat saattavat tuntua paremmilta, koska ohjelmointi "takaperin" pakottaa ohjelmoijan toimimaan uudella tavalla. Jos menetelmä vaikuttaa vastenmieliseltä, väitän sen vaikuttavan myös työnjälkeen. Otos on kuitenkin sen verran pieni, ettei näistä tuloksista voi vetää johtopäätöksiä. 
+
+\section{Yhteenveto}
+
+Artikkelissa tutkittiin TDD:n vaikutusta laatuun ja tehokkuuteen. Laatu määriteltiin käyttämällä apuna ISO 9126 standardin laadun osa-alueita. Tehokkuuden arviointiin käytettiin tarkasteltujen tutkimusten käsitystä tehokkuudesta, eli useimmiten tuotetun koodin määrää verrattuna aikaan. Tutkimusten tulokset aseteltiin parhaiten soveltuviin kategorioihin ja niitä verrattiin meta-analyysien tuloksiin.
+
+Luotettavuuden havaittiin paranevan hieman TDD:tä käytettäessä. Tehokkuudessa käsitelly tutkimukset osoittivat parannusta, mutta tulos eroaa meta-analyyseistä.
 
 
 

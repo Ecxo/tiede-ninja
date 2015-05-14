@@ -50,7 +50,7 @@
   {\btxlastnamefont {Kemerer}, C.F.}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {A metrics suite for object oriented design}{A metrics
   suite for object oriented design}}.
-\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+\newblock \btxjournalfont {IEEE Transactions on Software Engineering},
   20(6):476--493, \btxprintmonthyear{.}{Jun}{1994}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 
@@ -83,8 +83,8 @@
   quality in test driven development: A study design and a pilot
   experiment}{Test case quality in test driven development: A study design and
   a pilot experiment}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Evaluation Assessment in Software
-  Engineering (EASE 2012), 16th International Conference on}, \btxpageslong {}\
+\newblock \Btxinlong {}\ \btxtitlefont {16th International Conference on
+  Evaluation Assessment in Software Engineering (EASE 2012)}, \btxpageslong {}\
   223--227, \btxprintmonthyear{.}{May}{2012}{long}.
 
 \bibitem [{EHP{\etalchar{+}}06}]{Eldh06}
@@ -183,17 +183,6 @@
   (SQuaRE)--System and software quality models}}.
 \newblock \btxjournalfont {International Organization for Standardization},
   2011.
-
-\bibitem [{JMVS06}]{Juristo06}
-\btxnamefont {\btxlastnamefont {Juristo}, N.}, \btxnamefont {\btxlastnamefont
-  {Moreno}, A.M.}, \btxnamefont {\btxlastnamefont {Vegas}, S.}\btxandcomma {}
-  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Solari}, M.}\btxauthorcolon\
-  \btxjtitlefont {\btxifchangecase {In search of what we experimentally know
-  about unit testing}{In Search of What We Experimentally Know about Unit
-  Testing}}.
-\newblock \btxjournalfont {Software, IEEE}, 23(6):72--80,
-  \btxprintmonthyear{.}{Nov}{2006}{long}\ifbtxprintISSN {,
-  \mbox{\btxISSN~\btxISSNfont {0740-7459}}}.
 
 \bibitem [{JS05}]{Janzen05}
 \btxnamefont {\btxlastnamefont {Janzen}, David} \btxandlong {}\ \btxnamefont
@@ -314,6 +303,13 @@
   \btxurlfont{http://www.sciencedirect.com/science/article/pii/S0950584911000346}},
   Special Section: Best papers from the \{APSEC\} Best papers from the
   \{APSEC\}.
+
+\bibitem [{Quo}]{QuoraBeck}
+\btxtitlefont {\btxifchangecase {Why does kent beck refer to the rediscovery of
+  test driven development}{Why does Kent Beck refer to the rediscovery of test
+  driven development}}.
+\newblock \url{http://goo.gl/ZYnMMD}.
+\newblock Accessed: 2015-05-15.
 
 \bibitem [{RC{\etalchar{+}}69}]{Randell69}
 \btxnamefont {\btxlastnamefont {Randell}, Brian}, \btxnamefont

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.28)  30 APR 2015 05:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.28)  14 MAY 2015 17:05
 entering extended mode
 **D:/GoogleDrive/Kandi/tiede-ninja/Tutkielma/tutkielma.tex
 (D:/GoogleDrive/Kandi/tiede-ninja/Tutkielma/tutkielma.tex
@@ -640,21 +640,21 @@ Package tocbibind Note: Using section or other style headings.
 \c@lau=\count125
 \c@ong=\count126
  (tutkielma.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 122.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -686,7 +686,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 114.
+LaTeX Info: Redefining \microtypecontext on input line 122.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -715,7 +715,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 \everyMPtoPDFconversion=\toks33
 )
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 114.
+Package hyperref Info: Link coloring OFF on input line 122.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -724,16 +724,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
 
 (tutkielma.out) (tutkielma.out)
 \@outlinefile=\write3
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 122.
 
 babelbib: Set bibliography fall-back language to finnish
 ("C:\Program Files\MiKTeX 2.9\tex\latex\babelbib\finnish.bdf"
@@ -744,7 +744,7 @@ babelbib extension \btxifchangecaseoff added to \extrasfinnish
 babelbib: Load BibTeX extensions \bibsfinnish for finnish
 babelbib: Set language for keywords in the bibliography fixed to finnish
 babelbib: Set language for keywords in the bibliography fixed to finnish
-Package hyperref Info: Option `pageanchor' set `false' on input line 120.
+Package hyperref Info: Option `pageanchor' set `false' on input line 128.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -782,12 +782,12 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 120.
 \sideindent=\skip55
 \lowerspace=\skip56
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 128.
 [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 120.
+Package hyperref Info: Option `pageanchor' set `true' on input line 128.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -821,9 +821,9 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 120.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 129.
  [1
 
 
@@ -872,161 +872,156 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ))
 \tf@toc=\write4
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 135.
  [2
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 161.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 161.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 
-       [1
+l.161 B
+       arbara Kitchenham ja Shari Lawrence Pfleeger \cite{Kitchenham96} esit...
+[1
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 176.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 
+l.176 
        [2]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 193.
  [3]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 195.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 204.
+(babel)             in language  on input line 204.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 213.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 204.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 213.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 218.
  [4]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 234.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 239.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 239.
 
 [5]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 243.
-
-Overfull \hbox (2.03667pt too wide) in paragraph at lines 247--248
-\T1/lmr/m/n/10.95 (-20) Test Dri-ven De-ve-lop-ment on Kent Bec-kin "löy-tä-mä"
-ohjelmistokehitystekniikka
- []
-
-<tdd.png, id=203, 404.26031pt x 147.55125pt>
+(babel)             in language  on input line 252.
+ <tdd.png, id=195, 404.26031pt x 147.55125pt>
 File: tdd.png Graphic file (type png)
  <use tdd.png>
-Package pdftex.def Info: tdd.png used on input line 250.
-(pdftex.def)             Requested size: 404.25932pt x 147.55087pt.
+Package pdftex.def Info: tdd.png used on input line 259.
+(pdftex.def)             Requested size: 360.0pt x 131.39899pt.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 265.
+ [6 <./tdd.png>]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 285.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 289.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 289.
 
-Overfull \hbox (44.25932pt too wide) in paragraph at lines 250--251
-[][] 
+[7]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 297.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 301.
+
+Overfull \hbox (3.99341pt too wide) in paragraph at lines 307--308
+[]\T1/lmr/m/n/10.95 (-20) Wilkersonin ja kump-pa-nit [[]] ver-tai-le-vat TDD:tä
+ koodikatselmointi-
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 262.
-[6 <./tdd.png>]
+(babel)             in language  on input line 308.
+[8]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 287.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 290.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 290.
- [7]
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 291.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 295.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 304.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 304.
- [8]
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 311.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 314.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 316.
  [9]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 331.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 334.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 334.
  [10]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 333.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 341.
+(babel)             in language  on input line 347.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 350.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 350.
  [11]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 363.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 366.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 366.
  [12]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 359.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 383.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 378.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 383.
  [13]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 388.
 
-Overfull \hbox (6.54085pt too wide) in paragraph at lines 392--410
+Overfull \hbox (6.54085pt too wide) in paragraph at lines 396--414
 [][] 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 421.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 421.
 [14]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 426.
  (tutkielma.bbl
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 2.
@@ -1081,38 +1076,38 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 223.
 [17]
-Underfull \hbox (badness 1292) in paragraph at lines 236--241
+Underfull \hbox (badness 1292) in paragraph at lines 225--230
 \T1/lmr/m/n/10.95 (+20) ring, IEEE Tran-sac-tions on, SE-2(4):308--320, Dec 197
 6,
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 306.
 [18])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 457.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 457.
  [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
  (tutkielma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
 Package rerunfilecheck Info: File `tutkielma.out' has not changed.
-(rerunfilecheck)             Checksum: B0BCE3B6E949B685D5D228953093BA3A;1311.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
+(rerunfilecheck)             Checksum: 2855C4586DC5A2E76FAECFE9EA6FFBF1;1241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 457.
  ) 
 Here is how much of TeX's memory you used:
- 9948 strings out of 493698
- 146673 string characters out of 3144412
- 282493 words of memory out of 3000000
+ 9957 strings out of 493698
+ 146707 string characters out of 3144412
+ 282664 words of memory out of 3000000
  12867 multiletter control sequences out of 15000+200000
- 52458 words of font info for 112 fonts, out of 3000000 for 9000
+ 52920 words of font info for 117 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 31i,11n,35p,1655b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,11n,35p,1673b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10
@@ -1123,9 +1118,9 @@ lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on tutkielma.pdf (22 pages, 321757 bytes).
+Output written on tutkielma.pdf (22 pages, 323224 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 14502 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 14494 words of extra memory for PDF output out of 17280 (max. 10000000)
 

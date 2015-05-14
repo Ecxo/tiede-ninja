@@ -1,22 +1,21 @@
 \select@language {finnish}
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
-\contentsline {section}{\numberline {2}Laadun k\IeC {\"a}sitteest\IeC {\"a}}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}ISO 9126}{2}{subsection.2.1}
+\contentsline {section}{\numberline {2}Laadun ja tehokkuuden k\IeC {\"a}sitteist\IeC {\"a}}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}ISO 9126}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Laadun mittareita}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Tehokkuuden arviointi}{5}{subsection.2.3}
 \contentsline {section}{\numberline {3}Test Driven Development}{6}{section.3}
-\contentsline {section}{\numberline {4}Tutkimuksia}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Laatu}{7}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Toimivuus}{8}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Luotettavuus}{8}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}K\IeC {\"a}ytett\IeC {\"a}vyys}{10}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Tehokkuus}{10}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Yll\IeC {\"a}pidett\IeC {\"a}vyys}{10}{subsubsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.6}Siirrett\IeC {\"a}vyys}{11}{subsubsection.4.1.6}
-\contentsline {subsection}{\numberline {4.2}Taloudellisuus}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}K\IeC {\"a}ytt\IeC {\"a}jien mielipiteit\IeC {\"a} menetelm\IeC {\"a}st\IeC {\"a}}{13}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Meta-analyysi}{13}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Johtop\IeC {\"a}\IeC {\"a}t\IeC {\"o}kset}{14}{subsection.4.5}
+\contentsline {section}{\numberline {4}TDD:n vaikutus laatuun}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Toimivuus}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Luotettavuus}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}K\IeC {\"a}ytett\IeC {\"a}vyys}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Tehokkuus}{10}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Yll\IeC {\"a}pidett\IeC {\"a}vyys}{11}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Siirrett\IeC {\"a}vyys}{11}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Vaikutus taloudellisuuteen}{11}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Kehitt\IeC {\"a}jien mielipiteit\IeC {\"a} menetelm\IeC {\"a}st\IeC {\"a}}{13}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}Kirjallisuuskatsaukset}{13}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}Johtop\IeC {\"a}\IeC {\"a}t\IeC {\"o}kset}{14}{subsection.4.10}
 \contentsline {section}{\numberline {5}Yhteenveto}{15}{section.5}
 \contentsline {section}{L\IeC {\"a}hteet}{15}{section*.2}
 \select@language {finnish}

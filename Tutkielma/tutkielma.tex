@@ -34,6 +34,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 
+
 % Automatically set the PDF metadata fields
 \makeatletter
 \AtBeginDocument{\hypersetup{pdftitle = {\@title}, pdfauthor = {\@author}}}
@@ -81,7 +82,7 @@
 
 Test Driven Developmentissa kehittäjä noudattaa prosessia, jossa ensin kirjoitetaan vaatimusmäärittelyyn liittyvän tehtävän testi, testi ajetaan, kirjoitetaan testi ajetaan ja koodi siistitään. Kannattajien mukaan menetelmä takaa korkean testikattavuuden ja parantaa ohjelman rakennetta.
 
-Tässä tutkielmassa TDD:n laatua ja tehokkuutta on mitattu arvioimalla ja vertaamalla 12 testivetoisesta kehityksestä tehtyä empiiristä tutkimusta. Tutkimuksia ei ole valikoitu minkään kriteerin perusteella, vaan otoksesta on pyritty tekemään mahdollisimman yleinen.
+Tässä tutkielmassa TDD:n laatua ja tehokkuutta on mitattu arvioimalla ja vertaamalla 11 testivetoisesta kehityksestä tehtyä empiiristä tutkimusta. Tutkimuksia ei ole valikoitu minkään tutkimusaluetta tarkemman kriteerin perusteella, vaan otoksesta on pyritty tekemään mahdollisimman yleinen.
 
 Laatu on määritelty ISO9126-standardin avulla, ja eri tutkimusten tuloksia on pyritty asettelemaan kategorioihin soveltaen standardin määrittelemiä laadun osa-alueita. TDD:n tutkimuksen kannalta tärkeimmiksi laatukategorioiksi nousivat luotettavuus ja ylläpidettävyys.
 
@@ -97,7 +98,15 @@ Tutkimusten yhteenvedon mukaan TDD parantaa luotettavuutta, mutta ylläpidettäv
 % This is probably mostly relevant for computer scientists
 % uncomment the following; contents of \classification will be printed under the abstract with a title
 % "ACM Computing Classification System (CCS):"
-% \classification{}
+ \classification{
+
+
+\textbf{Software and its engineering\textasciitilde Software development techniques}
+
+\textit{Software and its engineering\textasciitilde Agile software development}
+
+
+}
 
 % If the automatic page number counting is not working as desired in your case,
 % uncomment the following to manually set the number of pages displayed in the abstract page:
@@ -149,7 +158,7 @@ Testien kirjoittajan on tunnettava ohjelman rakenne ja toiminta pystyäkseen suu
 
 Ohjelmiston testaus suoritetaan eri vaiheissa riippuen valitusta ohjelmistokehitysmenetelmästä. \emph{Vesiputousmalli} (waterfall model) kuvaa ohjelmistokehityksen vaiheisiin eroteltuna prosessina: ensin analysoidaan vaatimukset ja suunnitellaan koko ohjelma tarkasti, sitten kirjoitetaan varsinainen ohjelmakoodi ja lopuksi tuotettu ohjelmakoodi testataan. Vaiheittaisissa menetelmissä (Incremental Model) edellinen vesiputousmalli on jaettu useisiin pienempiin palasiin; koko ohjelmaa ei siis tarvitse suunnitella ja toteuttaa kerralla noudattaen vesiputousmallin järjestystä, vaan ohjelman rakentuu pienemmistä osista jotka on suunniteltu ja toteutettu erikseen. Stoican ja kumppanien \cite{Stoica13}  mukaan testaus on helppoa inkrementaalisissa menetelmissä, kun taas vesiputousmallissa testauksessa havaittujen virheiden korjaaminen voi olla hankaa. Ketterät  ohjelmistokehityksen menetelmät (agile models) perustuvat inkrementaaliseen malliin. Yksi erityisesti testaamiseen keskittyvät toimintapa on ketteriin malleihin perustuva \emph{Test Driven Development} \cite{Crispin06}.
 
-Tässä tutkimuksessa tarkastellaan TDD:n toimivuutta kahdella mittarilla: laadulla ja tehokkuudella. Mittareita on arvioitu 12 empiirisen tutkimuksen tuloksia tarkastelemalla.
+Tässä tutkimuksessa tarkastellaan TDD:n toimivuutta kahdella mittarilla: laadulla ja tehokkuudella. Mittareita on arvioitu 11 empiirisen tutkimuksen tuloksia tarkastelemalla.
 
 Luvussa 2 käsitellään miten termiä laatu ja tehokkuus on käytetty tutkimuksessa ja mitä ne oikeastaan tarkoittavat, sekä esitellään ISO9126-laatustandardi. Luvussa 3 Test Driven Development- menetelmää ja sen käyttöä on kuvattu tarkemmin. Luvussa 4 on tarkasteltu empiirisiä tutkimuksia menetelmän vaikutuksista.
 
@@ -286,7 +295,7 @@ Acceptance Test Driven Development, Behavior-Driven Development ja Story-Test-Dr
 
 Test Driven Development-menetelmästä on tehty useita tutkimuksia. Esimerkiksi Rafique ja kumppanit ovat tutkineet 27 empiiristä ennen helmikuuta 2011 julkaistua tutkimusta aiheesta \cite{Rafique13}. Turhan ja kumppanit löysivät peräti 325 artikkelia, joista he siivilöivät 22 tarkoituksenmukaista tutkimusta \cite{Turhan10}.
 
-Tässä tutkielmassa käsitellään 12 empiiristä tutkimusta TDD:n vaikutuksesta testiryhmän tekemän ohjelman laatuun ja taloudellisuuteen, ja niiden tuloksia arvioidaan seuraavissa kappaleissa. Tutkimuksia ei ole valikoitu esimerkiksi testiryhmän taustan tai kirjoitetun ohjelman ominaisuuksien perusteella, vaan tarkoituksena on ollut valita mahdollisimman yleinen otos. TDD:stä kirjoitettujen artikkelien tuloksia luokitellaan ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioita soveltamalla, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle: onko esimerkiksi virheiden määrä ohjelmassa luotettavuuteen vai toimivuuteen littyvä termi? 
+Tässä tutkielmassa käsitellään 11 empiiristä tutkimusta TDD:n vaikutuksesta testiryhmän tekemän ohjelman laatuun ja taloudellisuuteen, ja niiden tuloksia arvioidaan seuraavissa kappaleissa. Tutkimuksia ei ole valikoitu esimerkiksi testiryhmän taustan tai kirjoitetun ohjelman ominaisuuksien perusteella, vaan tarkoituksena on ollut valita mahdollisimman yleinen otos. TDD:stä kirjoitettujen artikkelien tuloksia luokitellaan ISO 9126:n määrittelemien sisäisen ja ulkoisen laadun kategorioita soveltamalla, vaikka erilaisia tuloksia onkin vaikea lokeroida luokkien sisälle: onko esimerkiksi virheiden määrä ohjelmassa luotettavuuteen vai toimivuuteen littyvä termi? 
 
 
 %Tähän erilaisia tutkimuksia, mitä mittareita niissä on käytetty, millaiset tutkimusryhmät, mitä tuloksia
@@ -296,11 +305,11 @@ Tässä tutkielmassa käsitellään 12 empiiristä tutkimusta TDD:n vaikutuksest
 
 \subsection{Toimivuus}
 
-Yksikään kahdestatoista tutkimuksesta ei arvioinut tuotetun ohjelman toimivuutta. Yksi ongelma on englanninkielinen termi functionality, jolla usein TDD:tä käsittelevissä artikkeleissa viitataan ohjelman osien, kuten metodien, toimintaan. ISO:n laatustandardi kuitenkin määrittelee toimivuuden ohjelman toimivuudeksi, joten tutkimusten tapa käyttää termiä ei sovellu selkeästi tähän luokkaan. TDD:n väitetyt parannukset ohjelman rakenteen laatuun saattavat vaikuttaa toimivuuteen, mutta mielestäni tutkimukset aiheesta asettuvat loogisemmin muihin laatukategorioihin.
+Yksikään yhdestätoista tutkimuksesta ei arvioinut tuotetun ohjelman toimivuutta. Yksi ongelma on englanninkielinen termi functionality, jolla usein TDD:tä käsittelevissä artikkeleissa viitataan ohjelman osien, kuten metodien, toimintaan. ISO:n laatustandardi kuitenkin määrittelee toimivuuden ohjelman toimivuudeksi, joten tutkimusten tapa käyttää termiä ei sovellu selkeästi tähän luokkaan. TDD:n väitetyt parannukset ohjelman rakenteen laatuun saattavat vaikuttaa toimivuuteen, mutta mielestäni tutkimukset aiheesta asettuvat loogisemmin muihin laatukategorioihin.
 
 \subsection{Luotettavuus}
 
-Luotettavuus vaikuttaa olevan suosituin laadun osa testivetoista kehitystä käsittelevissä artikkeleissa, ja sitä on tutkittu kymmenessä kahdestatoista tutkielmassa käsitellystä tutkimuksesta. Useat tutkimukset ovat mitanneet TDD:llä tuotetun ohjelmiston laatua testien läpäisyn perusteella, jota voidaan pitää luotettavuuteen liittyvänä tekijänä. Toisaalta ISO:n laatuluokitusten mukaan luotettavuus voidaan ymmärtää myös tarkoittavan virheistä palautumista, eikä niinkään virheiden vähyyttä. ISO 9126-3 kuitenkin esittää koodikattavuuden ja katselmoidusta koodista havaittujen virheiden määrän luotettavuuden mittareina, joten virheiden havaitsemiseen perustuvat tutkimukset ovat tässä osiossa perusteltuja.
+Luotettavuus vaikuttaa olevan suosituin laadun osa testivetoista kehitystä käsittelevissä artikkeleissa, ja sitä on tutkittu kymmenessä yhdestätoista tutkielmassa käsitellystä tutkimuksesta. Useat tutkimukset ovat mitanneet TDD:llä tuotetun ohjelmiston laatua testien läpäisyn perusteella, jota voidaan pitää luotettavuuteen liittyvänä tekijänä. Toisaalta ISO:n laatuluokitusten mukaan luotettavuus voidaan ymmärtää myös tarkoittavan virheistä palautumista, eikä niinkään virheiden vähyyttä. ISO 9126-3 kuitenkin esittää koodikattavuuden ja katselmoidusta koodista havaittujen virheiden määrän luotettavuuden mittareina, joten virheiden havaitsemiseen perustuvat tutkimukset ovat tässä osiossa perusteltuja.
 
 Georgen ja Williamsin \cite{George04} tutkimuksessa havaittiin TDD:tä käyttäneiden parien tuottamien ohjelmien läpäisevän 18 prosenttia enemmän tutkijoiden rakentamia testitapauksia kuin kontrolliryhmien. Tutkimuksessa oli kuitenkin ongelmia joiden takia tulosta voidaan pitää kyseenalaisena: Georgen ja Williamsin tutkimuksessa ohjelmat olivat erittäin lyhyitä, pituudeltaan n. 200 riviä, ja suurin osa kontrolliryhmistä ei ollut tehnyt minkäänlaisia testejä ennen ohjelman palautusta tutkijoille.
 
@@ -326,7 +335,7 @@ Oulun yliopiston Fucci, Turhan ja Oivo \cite{Fucci14} tutkivat TDD:n prosessin n
 
 \subsection{Tehokkuus}
 
-ISO 9126 mittaa tehokkuutta mittareilla kuten vasteaika ja muistinkäyttö. Tutkimus testivetoisen kehityksen vaikutuksesta ohjelmistojen tehokkuuten ei selvästi ole ollut kovin suosittu tutkimuskohde, koska yksikään kahdestatoista tutkimuksesta ei sitä noteerannut. Tutkimusta itse menetelmän tehokkuudesta löytyy runsaasti, mutta se asettuu paremmin omaan osioonsa TDD:n taloudellisuudesta. TDD:n toimintavat eivät suoranaisesti vaikuta ohjelman sellaiseen suunnitteluun, joka parantaisi ohjelman resurssienkäyttöä, vaan siihen tarvittaisiin tarkempia rakenteen suunnittelun ohjeita. TDD:n etuna esitetty selkeämpi ja modulaarinen rakenne tuskin suoraan vaikuta ISO-standardissa esiteltyjen tehokkuuden mittareiden tuloksiin.
+ISO 9126 mittaa tehokkuutta mittareilla kuten vasteaika ja muistinkäyttö. Tutkimus testivetoisen kehityksen vaikutuksesta ohjelmistojen tehokkuuten ei selvästi ole ollut kovin suosittu tutkimuskohde, koska yksikään yhdestätoista tutkimuksesta ei sitä noteerannut. Tutkimusta itse menetelmän tehokkuudesta löytyy runsaasti, mutta se asettuu paremmin omaan osioonsa TDD:n taloudellisuudesta. TDD:n toimintavat eivät suoranaisesti vaikuta ohjelman sellaiseen suunnitteluun, joka parantaisi ohjelman resurssienkäyttöä, vaan siihen tarvittaisiin tarkempia rakenteen suunnittelun ohjeita. TDD:n etuna esitetty selkeämpi ja modulaarinen rakenne tuskin suoraan vaikuta ISO-standardissa esiteltyjen tehokkuuden mittareiden tuloksiin.
 
 \subsection{Ylläpidettävyys}
 
@@ -403,7 +412,6 @@ Tutkimuksia-osiossa käsitellyt tutkimukset eivät anna testivetoisesta kehityks
 \cite{Causevic12} 	& = & + &   &   \\
 \cite{Canfora06} 	& = &  & = &   \\ 
 \cite{Pancur11} 	& + & = & = & - \\
-\cite{Wilkerson12} 	& = &  &   &   \\ 
 \cite{Munir14} 	& = & = &   & - \\ 
 \cite{Nagappan08} 	& + &  & + &   \\ 
 \cite{Siniaalto07} 	& = & - & + &   \\ 
